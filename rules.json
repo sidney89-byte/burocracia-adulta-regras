@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02g",
+  "version": "2026-09-02h",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -45,7 +45,7 @@
         "Detran",
         "Poupatempo",
         "Clínica de exame médico para CNH",
-        "Despachante"
+        "Despachante de veículos"
       ]
     },
     "passaporte": {
@@ -130,7 +130,7 @@
       "nearbyQueries": [
         "Detran",
         "Poupatempo",
-        "Despachante"
+        "Despachante de veículos"
       ]
     },
     "planoSaude": {
