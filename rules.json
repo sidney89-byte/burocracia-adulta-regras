@@ -1,0 +1,2920 @@
+{
+  "version": "2026-09-02c",
+  "rules": {
+    "cnh": {
+      "name": "CNH",
+      "icon": "car.fill",
+      "leadDays": 45,
+      "reminderDaysBefore": [
+        45,
+        15,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Agendar exame médico em clínica credenciada",
+          "daysBefore": 45
+        },
+        {
+          "text": "Fazer exame psicológico (se motorista profissional)",
+          "daysBefore": 40
+        },
+        {
+          "text": "Pagar taxa de renovação no site do Detran",
+          "daysBefore": 30
+        },
+        {
+          "text": "Coletar biometria/foto no Detran, se solicitado",
+          "daysBefore": 15
+        },
+        {
+          "text": "Baixar a CNH digital no app Carteira Digital de Trânsito",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "R$ 100–250 (varia por estado: taxa + exame)",
+      "place": "Detran do seu estado (site ou posto)",
+      "tip": "Você pode dirigir até 30 dias após o vencimento, mas o exame e o agendamento levam semanas. Comece antes.",
+      "recurring": false
+    },
+    "passaporte": {
+      "name": "Passaporte",
+      "icon": "airplane",
+      "leadDays": 120,
+      "reminderDaysBefore": [
+        120,
+        60,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Preencher formulário no site da Polícia Federal",
+          "daysBefore": 120
+        },
+        {
+          "text": "Pagar a GRU (R$ 257,25)",
+          "daysBefore": 110
+        },
+        {
+          "text": "Agendar atendimento na PF (filas podem passar de 60 dias)",
+          "daysBefore": 100
+        },
+        {
+          "text": "Levar RG, CPF, título e comprovante de quitação eleitoral",
+          "daysBefore": 7
+        },
+        {
+          "text": "Retirar o passaporte novo pessoalmente",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "R$ 257,25 (GRU)",
+      "place": "Polícia Federal — gov.br/pf",
+      "tip": "Muitos países exigem passaporte com 6 meses de validade além da viagem. Cadastre a viagem e o app calcula.",
+      "recurring": false
+    },
+    "ipva": {
+      "name": "IPVA e licenciamento",
+      "icon": "doc.text.fill",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Consultar valor e calendário pelo final da placa no site do Detran/Sefaz",
+          "daysBefore": 30
+        },
+        {
+          "text": "Pagar IPVA (à vista com desconto ou parcelado)",
+          "daysBefore": 20
+        },
+        {
+          "text": "Quitar multas pendentes",
+          "daysBefore": 10
+        },
+        {
+          "text": "Pagar taxa de licenciamento e baixar o CRLV digital",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "IPVA: % do valor do veículo por estado + taxa de licenciamento (~R$ 100–170)",
+      "place": "Detran / Sefaz do estado, app CDT",
+      "tip": "O calendário é pelo final da placa e muda de estado para estado. Informe o estado e a placa e o app calcula.",
+      "recurring": true
+    },
+    "planoSaude": {
+      "name": "Plano de saúde",
+      "icon": "cross.case.fill",
+      "leadDays": 60,
+      "reminderDaysBefore": [
+        60,
+        30,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Verificar o índice de reajuste anual anunciado",
+          "daysBefore": 60
+        },
+        {
+          "text": "Comparar com outros planos antes da renovação",
+          "daysBefore": 45
+        },
+        {
+          "text": "Conferir carências ao trocar (portabilidade evita carência)",
+          "daysBefore": 30
+        },
+        {
+          "text": "Atualizar dependentes",
+          "daysBefore": 7
+        },
+        {
+          "text": "Guardar a apólice/contrato renovado",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "Reajuste anual (ANS define o teto para planos individuais)",
+      "place": "Operadora ou corretor; portabilidade pelo site da ANS",
+      "tip": "O aniversário do contrato é a única janela para trocar sem carência via portabilidade. Marque a data.",
+      "recurring": true
+    },
+    "impostoRenda": {
+      "name": "Imposto de Renda",
+      "icon": "chart.bar.doc.horizontal.fill",
+      "leadDays": 75,
+      "reminderDaysBefore": [
+        75,
+        30,
+        7
+      ],
+      "checklist": [
+        {
+          "text": "Baixar informe de rendimentos de cada empregador/fonte",
+          "daysBefore": 75
+        },
+        {
+          "text": "Baixar informes de bancos, corretoras e previdência",
+          "daysBefore": 60
+        },
+        {
+          "text": "Reunir recibos médicos e de escola (com CPF/CNPJ do prestador)",
+          "daysBefore": 45
+        },
+        {
+          "text": "Ter o informe do plano de saúde",
+          "daysBefore": 45
+        },
+        {
+          "text": "Listar bens e dívidas com valores em 31/12",
+          "daysBefore": 30
+        },
+        {
+          "text": "Enviar a declaração pelo programa ou pelo app Meu Imposto de Renda",
+          "daysBefore": 7
+        }
+      ],
+      "cost": "Gratuito (multa mínima de R$ 165,74 se atrasar)",
+      "place": "Receita Federal — gov.br/receitafederal",
+      "tip": "Informes só saem no fim de fevereiro. Cadastre o prazo (normalmente 31 de maio) e o app avisa quando começar a juntar.",
+      "recurring": true
+    },
+    "garantia": {
+      "name": "Garantia de produto",
+      "icon": "shippingbox.fill",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Guardar a nota fiscal (foto ou PDF)"
+        },
+        {
+          "text": "Anotar número de série e loja"
+        },
+        {
+          "text": "Testar o produto antes do fim da garantia",
+          "daysBefore": 30
+        },
+        {
+          "text": "Acionar a assistência técnica se houver defeito",
+          "daysBefore": 7
+        }
+      ],
+      "cost": "Sem custo — mas depois do prazo o conserto é por sua conta",
+      "place": "Loja ou assistência autorizada do fabricante",
+      "tip": "Garantia legal é 90 dias para bens duráveis, somada à garantia do fabricante. Teste o produto antes de acabar.",
+      "recurring": false
+    },
+    "iptu": {
+      "name": "IPTU",
+      "icon": "house.fill",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Conferir se o carnê chegou ou emitir a 2ª via no site da prefeitura",
+          "daysBefore": 30
+        },
+        {
+          "text": "Conferir o valor venal e contestar se estiver errado (prazo curto!)",
+          "daysBefore": 25
+        },
+        {
+          "text": "Verificar se tem direito a isenção (aposentado, imóvel de baixo valor, etc.)",
+          "daysBefore": 20
+        },
+        {
+          "text": "Decidir: cota única com desconto ou parcelas",
+          "daysBefore": 15
+        },
+        {
+          "text": "Pagar e guardar o comprovante",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "Varia pelo valor venal; cota única costuma ter desconto",
+      "place": "Site da prefeitura do município",
+      "tip": "O desconto da cota única só vale até a data-limite. Cada cidade tem regra própria; informe a cidade e o app usa o calendário dela quando tiver.",
+      "recurring": true
+    }
+  },
+  "states": {
+    "AC": {
+      "name": "Acre",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://sefaz.ac.gov.br/2021/?p=23209",
+        "note": "IPVA: Portaria SEFAZ nº 751/2025, cota única com 10% de desconto ou até 5 parcelas, vencimento da cota única/1ª parcela por par de finais de placa (jan a mai). Licenciamento: Portaria DETRAN/AC nº 230/2026 (novo calendário, mar/2026) por final de placa, confirmado em agencia.ac.gov.br/ac24horas/legisweb.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 1,
+            "day": 30
+          },
+          "3": {
+            "month": 2,
+            "day": 27
+          },
+          "4": {
+            "month": 2,
+            "day": 27
+          },
+          "5": {
+            "month": 3,
+            "day": 31
+          },
+          "6": {
+            "month": 3,
+            "day": 31
+          },
+          "7": {
+            "month": 4,
+            "day": 30
+          },
+          "8": {
+            "month": 4,
+            "day": 30
+          },
+          "9": {
+            "month": 5,
+            "day": 29
+          },
+          "0": {
+            "month": 5,
+            "day": 29
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 5,
+            "day": 29
+          },
+          "2": {
+            "month": 5,
+            "day": 29
+          },
+          "3": {
+            "month": 6,
+            "day": 30
+          },
+          "4": {
+            "month": 6,
+            "day": 30
+          },
+          "5": {
+            "month": 7,
+            "day": 31
+          },
+          "6": {
+            "month": 7,
+            "day": 31
+          },
+          "7": {
+            "month": 8,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 30
+          }
+        }
+      }
+    },
+    "AL": {
+      "name": "Alagoas",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.detran.al.gov.br/conteudo/calendario-de-licenciamento/",
+        "note": "IPVA (IN SEF nº 84/2025): cota única com 5% de desconto para todas as placas, prazo prorrogado pela Sefaz-AL de 30/01 para 27/02/2026 (sefaz.al.gov.br/noticias/item/3866); parcelamento em até 6x (mín. R$ 100) com 1ª parcela por par de finais (fev a jun). Licenciamento é cobrado junto com o IPVA; a data usada é a 'Validade do CRLV' da tabela oficial do Detran-AL (último dia do 6º mês após a 1ª parcela); taxa R$ 155,41 segundo fonte não oficial. Sites não oficiais citam o mês da 1ª parcela (27/02, 31/03, 30/04, 29/05, 30/06) como 'vencimento do licenciamento'.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 2,
+            "day": 27
+          },
+          "2": {
+            "month": 2,
+            "day": 27
+          },
+          "3": {
+            "month": 2,
+            "day": 27
+          },
+          "4": {
+            "month": 2,
+            "day": 27
+          },
+          "5": {
+            "month": 2,
+            "day": 27
+          },
+          "6": {
+            "month": 2,
+            "day": 27
+          },
+          "7": {
+            "month": 2,
+            "day": 27
+          },
+          "8": {
+            "month": 2,
+            "day": 27
+          },
+          "9": {
+            "month": 2,
+            "day": 27
+          },
+          "0": {
+            "month": 2,
+            "day": 27
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 8,
+            "day": 31
+          },
+          "2": {
+            "month": 8,
+            "day": 31
+          },
+          "3": {
+            "month": 9,
+            "day": 30
+          },
+          "4": {
+            "month": 9,
+            "day": 30
+          },
+          "5": {
+            "month": 10,
+            "day": 31
+          },
+          "6": {
+            "month": 10,
+            "day": 31
+          },
+          "7": {
+            "month": 11,
+            "day": 30
+          },
+          "8": {
+            "month": 11,
+            "day": 30
+          },
+          "9": {
+            "month": 12,
+            "day": 31
+          },
+          "0": {
+            "month": 12,
+            "day": 31
+          }
+        }
+      }
+    },
+    "AP": {
+      "name": "Amapá",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://agenciaamapa.com.br/noticia/33972/governo-do-amapa-divulga-prazos-e-desconto-de-20-para-pagamento-do-ipva-2026",
+        "note": "Amapá não usa final de placa: cota única com 20% de desconto até 16/03 para todos; parcelamento em até 6x (16/03, 15/04, 18/05, 15/06, 15/07, 17/08) sem desconto. Licenciamento com data única para todos: até 31/08, fiscalização a partir de 01/09; taxa R$ 128,54 (fonte não oficial). A página oficial da Agência Amapá estava indisponível (suspensão eleitoral); datas confirmadas por duas fontes independentes (autopapo.com.br e timesbrasil.com.br) que citam a Sefaz-AP.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 3,
+            "day": 16
+          },
+          "2": {
+            "month": 3,
+            "day": 16
+          },
+          "3": {
+            "month": 3,
+            "day": 16
+          },
+          "4": {
+            "month": 3,
+            "day": 16
+          },
+          "5": {
+            "month": 3,
+            "day": 16
+          },
+          "6": {
+            "month": 3,
+            "day": 16
+          },
+          "7": {
+            "month": 3,
+            "day": 16
+          },
+          "8": {
+            "month": 3,
+            "day": 16
+          },
+          "9": {
+            "month": 3,
+            "day": 16
+          },
+          "0": {
+            "month": 3,
+            "day": 16
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 8,
+            "day": 31
+          },
+          "2": {
+            "month": 8,
+            "day": 31
+          },
+          "3": {
+            "month": 8,
+            "day": 31
+          },
+          "4": {
+            "month": 8,
+            "day": 31
+          },
+          "5": {
+            "month": 8,
+            "day": 31
+          },
+          "6": {
+            "month": 8,
+            "day": 31
+          },
+          "7": {
+            "month": 8,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 8,
+            "day": 31
+          },
+          "0": {
+            "month": 8,
+            "day": 31
+          }
+        }
+      }
+    },
+    "AM": {
+      "name": "Amazonas",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.sefaz.am.gov.br/noticias/32313",
+        "note": "IPVA (Resolução nº 0034/2025-GSEFAZ, IPVA 50% mais barato, isento se valor <= R$ 420): cota única com 10% de desconto ou 1ª de 3 parcelas (10%/5%/integral) até o fim do mês de mesmo número do final da placa; prazo final 2 meses depois. Página da Sefaz-AM suspensa no período eleitoral; tabela confirmada por timesbrasil, itatiaia, meoo.localiza e usezapay (concordam), com ipvaconsulta divergindo apenas nas placas 8 (31/08) e 0 (30/10). Licenciamento omitido (ver omitidos).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 2,
+            "day": 27
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 4,
+            "day": 30
+          },
+          "5": {
+            "month": 5,
+            "day": 29
+          },
+          "6": {
+            "month": 6,
+            "day": 30
+          },
+          "7": {
+            "month": 7,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 29
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 31
+          }
+        }
+      }
+    },
+    "BA": {
+      "name": "Bahia",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.sefaz.ba.gov.br/docs/inspetoria-eletronica/ipva/calendario_ipva_2026.pdf",
+        "note": "IPVA (Portaria SEFAZ nº 163/2025): 15% de desconto na cota única até 10/02 para todas as placas; a data listada é a cota única com 8% (= vencimento da 1ª de 5 parcelas) por final de placa (mar a jul). Licenciamento por final de placa de jul a nov; taxa TRLAV R$ 173,50. PDF oficial é imagem (não extraível); tabelas confirmadas por zuldigital, autopapo, COAD e legisweb, que concordam.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 3,
+            "day": 30
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 4,
+            "day": 29
+          },
+          "4": {
+            "month": 4,
+            "day": 30
+          },
+          "5": {
+            "month": 5,
+            "day": 28
+          },
+          "6": {
+            "month": 5,
+            "day": 29
+          },
+          "7": {
+            "month": 6,
+            "day": 29
+          },
+          "8": {
+            "month": 6,
+            "day": 30
+          },
+          "9": {
+            "month": 7,
+            "day": 30
+          },
+          "0": {
+            "month": 7,
+            "day": 31
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 7,
+            "day": 30
+          },
+          "2": {
+            "month": 7,
+            "day": 31
+          },
+          "3": {
+            "month": 8,
+            "day": 28
+          },
+          "4": {
+            "month": 8,
+            "day": 31
+          },
+          "5": {
+            "month": 9,
+            "day": 29
+          },
+          "6": {
+            "month": 9,
+            "day": 30
+          },
+          "7": {
+            "month": 10,
+            "day": 29
+          },
+          "8": {
+            "month": 10,
+            "day": 30
+          },
+          "9": {
+            "month": 11,
+            "day": 27
+          },
+          "0": {
+            "month": 11,
+            "day": 30
+          }
+        }
+      }
+    },
+    "CE": {
+      "name": "Ceará",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.ce.gov.br/sefaz/2025/12/20/calendario-de-pagamento-do-ipva-2026-e-divulgado-condutores-poderao-ter-ate-10-de-desconto/",
+        "note": "IPVA sem calendário por placa: cota única com 5% (até 10% com Sua Nota Tem Valor) até 30/01 para todos; até 5 parcelas (13/02, 13/03, 13/04, 13/05, 12/06, mín. R$ 100). Licenciamento (Detran-CE, divulgado 23/02/2026, ce.gov.br) por final de placa no dia 10 de cada mês (mar a dez, ajustado em maio e outubro); taxa R$ 220,46 (carros) e R$ 188,96 (motos).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 1,
+            "day": 30
+          },
+          "3": {
+            "month": 1,
+            "day": 30
+          },
+          "4": {
+            "month": 1,
+            "day": 30
+          },
+          "5": {
+            "month": 1,
+            "day": 30
+          },
+          "6": {
+            "month": 1,
+            "day": 30
+          },
+          "7": {
+            "month": 1,
+            "day": 30
+          },
+          "8": {
+            "month": 1,
+            "day": 30
+          },
+          "9": {
+            "month": 1,
+            "day": 30
+          },
+          "0": {
+            "month": 1,
+            "day": 30
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 10
+          },
+          "2": {
+            "month": 4,
+            "day": 10
+          },
+          "3": {
+            "month": 5,
+            "day": 11
+          },
+          "4": {
+            "month": 6,
+            "day": 10
+          },
+          "5": {
+            "month": 7,
+            "day": 10
+          },
+          "6": {
+            "month": 8,
+            "day": 10
+          },
+          "7": {
+            "month": 9,
+            "day": 10
+          },
+          "8": {
+            "month": 10,
+            "day": 12
+          },
+          "9": {
+            "month": 11,
+            "day": 10
+          },
+          "0": {
+            "month": 12,
+            "day": 10
+          }
+        }
+      }
+    },
+    "DF": {
+      "name": "Distrito Federal",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.economia.df.gov.br/w/gdf-define-datas-para-o-pagamento-do-ipva-2026",
+        "note": "IPVA: cota única com 10% de desconto ou 1ª de até 6 parcelas na semana de 23 a 27/02 por par de finais (Secretaria de Economia; tabela completa confirmada por seudinheiro e acheconcursos, que concordam). Licenciamento (Detran-DF, detran.df.gov.br e Metrópoles 28/08/2026): finais 1-2 até 30/09, 3-5 até 31/10, 6-8 até 30/11, 9-0 até 31/12; taxa R$ 106,26. Uma fonte (soubrasilia) cita 'a partir de 1º de setembro' como início dos vencimentos, mas a página oficial do Detran-DF confirma 30/09 para finais 1 e 2.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 2,
+            "day": 23
+          },
+          "2": {
+            "month": 2,
+            "day": 23
+          },
+          "3": {
+            "month": 2,
+            "day": 24
+          },
+          "4": {
+            "month": 2,
+            "day": 24
+          },
+          "5": {
+            "month": 2,
+            "day": 25
+          },
+          "6": {
+            "month": 2,
+            "day": 25
+          },
+          "7": {
+            "month": 2,
+            "day": 26
+          },
+          "8": {
+            "month": 2,
+            "day": 26
+          },
+          "9": {
+            "month": 2,
+            "day": 27
+          },
+          "0": {
+            "month": 2,
+            "day": 27
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 9,
+            "day": 30
+          },
+          "2": {
+            "month": 9,
+            "day": 30
+          },
+          "3": {
+            "month": 10,
+            "day": 31
+          },
+          "4": {
+            "month": 10,
+            "day": 31
+          },
+          "5": {
+            "month": 10,
+            "day": 31
+          },
+          "6": {
+            "month": 11,
+            "day": 30
+          },
+          "7": {
+            "month": 11,
+            "day": 30
+          },
+          "8": {
+            "month": 11,
+            "day": 30
+          },
+          "9": {
+            "month": 12,
+            "day": 31
+          },
+          "0": {
+            "month": 12,
+            "day": 31
+          }
+        }
+      }
+    },
+    "ES": {
+      "name": "Espírito Santo",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://sefaz.es.gov.br/Noticia/pagamento-do-ipva-2026-comeca-em-abril-e-pode-ser-feito-em-seis-cotas",
+        "note": "Cota única com 15% de desconto vence junto com a 1ª de 6 cotas, entre 1 e 8 de abril por final de placa (Sefaz-ES confirma o intervalo; dias exatos por placa conferidos em Money Times e Zul+, que concordam). Licenciamento por final de placa em setembro, taxa R$ 237,04, conforme PDF oficial do Detran-ES (https://detran.es.gov.br/Media/detran/Calendarios%20de%20pagamento/2026/Calend%C3%A1rio%20de%20Licenciamento%202026.pdf).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 4,
+            "day": 1
+          },
+          "2": {
+            "month": 4,
+            "day": 1
+          },
+          "3": {
+            "month": 4,
+            "day": 2
+          },
+          "4": {
+            "month": 4,
+            "day": 2
+          },
+          "5": {
+            "month": 4,
+            "day": 6
+          },
+          "6": {
+            "month": 4,
+            "day": 6
+          },
+          "7": {
+            "month": 4,
+            "day": 7
+          },
+          "8": {
+            "month": 4,
+            "day": 7
+          },
+          "9": {
+            "month": 4,
+            "day": 8
+          },
+          "0": {
+            "month": 4,
+            "day": 8
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 9,
+            "day": 9
+          },
+          "2": {
+            "month": 9,
+            "day": 9
+          },
+          "3": {
+            "month": 9,
+            "day": 10
+          },
+          "4": {
+            "month": 9,
+            "day": 10
+          },
+          "5": {
+            "month": 9,
+            "day": 11
+          },
+          "6": {
+            "month": 9,
+            "day": 11
+          },
+          "7": {
+            "month": 9,
+            "day": 14
+          },
+          "8": {
+            "month": 9,
+            "day": 14
+          },
+          "9": {
+            "month": 9,
+            "day": 15
+          },
+          "0": {
+            "month": 9,
+            "day": 15
+          }
+        }
+      }
+    },
+    "GO": {
+      "name": "Goiás",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://goias.gov.br/economia/governo-de-goias-mantem-calendario-do-ipva-2026-e-concede-8-para-pagamento-a-vista/",
+        "note": "Data única para todas as placas: cota única com 8% de desconto (ou 1ª parcela) em 15/01/2026; parcelamento em 9 (finais 1-2) ou 10 (finais 3-0) vezes com vencimento dia 15 de cada mês. Licenciamento (taxa R$ 274,61) pode ser parcelado junto com o IPVA e tem prazo final 15/09 para finais 1 e 2 e 15/10 para finais 3 a 0 (Secretaria da Economia via Legisweb e Gringo concordam; portal do governo em suspensão eleitoral).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 15
+          },
+          "2": {
+            "month": 1,
+            "day": 15
+          },
+          "3": {
+            "month": 1,
+            "day": 15
+          },
+          "4": {
+            "month": 1,
+            "day": 15
+          },
+          "5": {
+            "month": 1,
+            "day": 15
+          },
+          "6": {
+            "month": 1,
+            "day": 15
+          },
+          "7": {
+            "month": 1,
+            "day": 15
+          },
+          "8": {
+            "month": 1,
+            "day": 15
+          },
+          "9": {
+            "month": 1,
+            "day": 15
+          },
+          "0": {
+            "month": 1,
+            "day": 15
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 9,
+            "day": 15
+          },
+          "2": {
+            "month": 9,
+            "day": 15
+          },
+          "3": {
+            "month": 10,
+            "day": 15
+          },
+          "4": {
+            "month": 10,
+            "day": 15
+          },
+          "5": {
+            "month": 10,
+            "day": 15
+          },
+          "6": {
+            "month": 10,
+            "day": 15
+          },
+          "7": {
+            "month": 10,
+            "day": 15
+          },
+          "8": {
+            "month": 10,
+            "day": 15
+          },
+          "9": {
+            "month": 10,
+            "day": 15
+          },
+          "0": {
+            "month": 10,
+            "day": 15
+          }
+        }
+      }
+    },
+    "MA": {
+      "name": "Maranhão",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.legisweb.com.br/noticia/?id=32047",
+        "note": "Cota única com 10% de desconto em data única para todas as placas (27/02/2026); parcelamento em 3x sem desconto de março a maio por final de placa. Licenciamento (taxa R$ 157,33) vence em junho por final de placa, coincidindo com o 'início da fiscalização' da tabela Sefaz-MA; datas de licenciamento confirmadas por duas fontes não oficiais (Zul+ e Consulta de Placa citando Portaria GABIN 405/2025), pois o site do Detran-MA não retornou tabela.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 2,
+            "day": 27
+          },
+          "2": {
+            "month": 2,
+            "day": 27
+          },
+          "3": {
+            "month": 2,
+            "day": 27
+          },
+          "4": {
+            "month": 2,
+            "day": 27
+          },
+          "5": {
+            "month": 2,
+            "day": 27
+          },
+          "6": {
+            "month": 2,
+            "day": 27
+          },
+          "7": {
+            "month": 2,
+            "day": 27
+          },
+          "8": {
+            "month": 2,
+            "day": 27
+          },
+          "9": {
+            "month": 2,
+            "day": 27
+          },
+          "0": {
+            "month": 2,
+            "day": 27
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 6,
+            "day": 4
+          },
+          "2": {
+            "month": 6,
+            "day": 4
+          },
+          "3": {
+            "month": 6,
+            "day": 8
+          },
+          "4": {
+            "month": 6,
+            "day": 8
+          },
+          "5": {
+            "month": 6,
+            "day": 15
+          },
+          "6": {
+            "month": 6,
+            "day": 15
+          },
+          "7": {
+            "month": 6,
+            "day": 22
+          },
+          "8": {
+            "month": 6,
+            "day": 22
+          },
+          "9": {
+            "month": 6,
+            "day": 29
+          },
+          "0": {
+            "month": 6,
+            "day": 29
+          }
+        }
+      }
+    },
+    "MT": {
+      "name": "Mato Grosso",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www5.sefaz.mt.gov.br/en/w/ipva-2026-poder%C3%A1-ser-pago-com-desconto-%C3%A0-vista-ou-parcelado-em-at%C3%A9-oito-vezes",
+        "note": "Cota única com 5% de desconto até o dia 10 do mês da placa (11/05 para finais 8-9-0), 3% até o dia 20, e sem desconto/1ª de até 8 parcelas até o fim do mês (31/03, 30/04, 29/05). Licenciamento por final de placa até o último dia do mês (finais 1-2-3 em março, depois um final por mês até outubro), conforme Detran-MT reproduzido por MidiaNews e Parlamento News.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 3,
+            "day": 10
+          },
+          "2": {
+            "month": 3,
+            "day": 10
+          },
+          "3": {
+            "month": 3,
+            "day": 10
+          },
+          "4": {
+            "month": 3,
+            "day": 10
+          },
+          "5": {
+            "month": 4,
+            "day": 10
+          },
+          "6": {
+            "month": 4,
+            "day": 10
+          },
+          "7": {
+            "month": 4,
+            "day": 10
+          },
+          "8": {
+            "month": 5,
+            "day": 11
+          },
+          "9": {
+            "month": 5,
+            "day": 11
+          },
+          "0": {
+            "month": 5,
+            "day": 11
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 4,
+            "day": 30
+          },
+          "5": {
+            "month": 5,
+            "day": 31
+          },
+          "6": {
+            "month": 6,
+            "day": 30
+          },
+          "7": {
+            "month": 7,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 31
+          }
+        }
+      }
+    },
+    "MS": {
+      "name": "Mato Grosso do Sul",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.sefaz.ms.gov.br/ipva/",
+        "note": "IPVA com data única para todas as placas: cota única com 15% de desconto até 08/01/2026, ou 5 parcelas sem desconto (30/01 a 29/05). Licenciamento por final de placa conforme Detran-MS (https://www.detran.ms.gov.br/informativo/calendario-de-licenciamento/): finais 1-2-3 prorrogados de junho para 29/07 (Portaria 212/2026), finais 4-5-6 em 31/07, 7-8 em 31/08, 9 em 30/09 e 0 em 30/10; taxa 4,53 UFERMS em dia.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 8
+          },
+          "2": {
+            "month": 1,
+            "day": 8
+          },
+          "3": {
+            "month": 1,
+            "day": 8
+          },
+          "4": {
+            "month": 1,
+            "day": 8
+          },
+          "5": {
+            "month": 1,
+            "day": 8
+          },
+          "6": {
+            "month": 1,
+            "day": 8
+          },
+          "7": {
+            "month": 1,
+            "day": 8
+          },
+          "8": {
+            "month": 1,
+            "day": 8
+          },
+          "9": {
+            "month": 1,
+            "day": 8
+          },
+          "0": {
+            "month": 1,
+            "day": 8
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 7,
+            "day": 29
+          },
+          "2": {
+            "month": 7,
+            "day": 29
+          },
+          "3": {
+            "month": 7,
+            "day": 29
+          },
+          "4": {
+            "month": 7,
+            "day": 31
+          },
+          "5": {
+            "month": 7,
+            "day": 31
+          },
+          "6": {
+            "month": 7,
+            "day": 31
+          },
+          "7": {
+            "month": 8,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 30
+          }
+        }
+      }
+    },
+    "MG": {
+      "name": "Minas Gerais",
+      "detranURL": "https://www.detran.mg.gov.br",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.legisweb.com.br/noticia/?id=32552",
+        "note": "Cota única com 3% de desconto (cumulável com Bom Pagador) ou 1ª de 3 parcelas entre 9 e 13 de fevereiro por final de placa; 2ª parcela em março (9-13) e 3ª em abril (9-15). TRLAV (licenciamento) R$ 35,62 com vencimento único 31/03/2026 para todas as placas. Dias por placa conferidos em Zul+ e Gringo, que concordam com o intervalo oficial da SEF/MG.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 2,
+            "day": 9
+          },
+          "2": {
+            "month": 2,
+            "day": 9
+          },
+          "3": {
+            "month": 2,
+            "day": 10
+          },
+          "4": {
+            "month": 2,
+            "day": 10
+          },
+          "5": {
+            "month": 2,
+            "day": 11
+          },
+          "6": {
+            "month": 2,
+            "day": 11
+          },
+          "7": {
+            "month": 2,
+            "day": 12
+          },
+          "8": {
+            "month": 2,
+            "day": 12
+          },
+          "9": {
+            "month": 2,
+            "day": 13
+          },
+          "0": {
+            "month": 2,
+            "day": 13
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 3,
+            "day": 31
+          },
+          "5": {
+            "month": 3,
+            "day": 31
+          },
+          "6": {
+            "month": 3,
+            "day": 31
+          },
+          "7": {
+            "month": 3,
+            "day": 31
+          },
+          "8": {
+            "month": 3,
+            "day": 31
+          },
+          "9": {
+            "month": 3,
+            "day": 31
+          },
+          "0": {
+            "month": 3,
+            "day": 31
+          }
+        }
+      }
+    },
+    "PA": {
+      "name": "Pará"
+    },
+    "PB": {
+      "name": "Paraíba",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.sefaz.pb.gov.br/announcements/17102-sefaz-pb-publica-calendario-de-pagamento-do-ipva-2026-e-mantem-regras",
+        "note": "Cota única com 10% de desconto vence no último dia útil do mês (jan–out, maio dia 29) conforme final de placa; parcelamento em 3x, cota sem desconto na 3ª parcela. Licenciamento (Detran-PB, Portaria 590/2025/DS, taxa R$ 214,32) vence na data-limite da 3ª parcela do IPVA de cada placa (detran.pb.gov.br/veiculos/calendario). Tabela do IPVA confirmada por Jornal da Paraíba e CBN Paraíba, coerentes com a regra publicada pela Sefaz-PB.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 2,
+            "day": 27
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 4,
+            "day": 30
+          },
+          "5": {
+            "month": 5,
+            "day": 29
+          },
+          "6": {
+            "month": 6,
+            "day": 30
+          },
+          "7": {
+            "month": 7,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 30
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 4,
+            "day": 30
+          },
+          "3": {
+            "month": 5,
+            "day": 29
+          },
+          "4": {
+            "month": 6,
+            "day": 30
+          },
+          "5": {
+            "month": 7,
+            "day": 31
+          },
+          "6": {
+            "month": 8,
+            "day": 31
+          },
+          "7": {
+            "month": 9,
+            "day": 30
+          },
+          "8": {
+            "month": 10,
+            "day": 30
+          },
+          "9": {
+            "month": 11,
+            "day": 30
+          },
+          "0": {
+            "month": 12,
+            "day": 30
+          }
+        }
+      }
+    },
+    "PR": {
+      "name": "Paraná",
+      "detranURL": "https://www.detran.pr.gov.br",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.fazenda.pr.gov.br/Noticia/IPVA-2026-calendario-de-vencimento-inicia-nesta-sexta-feira-com-desconto",
+        "note": "Cota única com 6% de desconto (ou 1ª de 5 parcelas sem desconto) entre 9 e 15 de janeiro por final de placa; alíquota 1,9%. A Fazenda-PR confirma o intervalo 9–15/jan e a data das placas 1 e 2; a distribuição das demais placas foi confirmada por duas fontes independentes (Gringo e Zul+). Licenciamento (Detran-PR, taxa R$ 94,61) por placa de 14/ago a 27/nov, confirmado por Autopapo e Zul+ citando o Detran-PR.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 9
+          },
+          "2": {
+            "month": 1,
+            "day": 9
+          },
+          "3": {
+            "month": 1,
+            "day": 12
+          },
+          "4": {
+            "month": 1,
+            "day": 12
+          },
+          "5": {
+            "month": 1,
+            "day": 13
+          },
+          "6": {
+            "month": 1,
+            "day": 13
+          },
+          "7": {
+            "month": 1,
+            "day": 14
+          },
+          "8": {
+            "month": 1,
+            "day": 14
+          },
+          "9": {
+            "month": 1,
+            "day": 15
+          },
+          "0": {
+            "month": 1,
+            "day": 15
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 8,
+            "day": 14
+          },
+          "2": {
+            "month": 8,
+            "day": 28
+          },
+          "3": {
+            "month": 9,
+            "day": 9
+          },
+          "4": {
+            "month": 9,
+            "day": 18
+          },
+          "5": {
+            "month": 9,
+            "day": 28
+          },
+          "6": {
+            "month": 10,
+            "day": 9
+          },
+          "7": {
+            "month": 10,
+            "day": 20
+          },
+          "8": {
+            "month": 10,
+            "day": 30
+          },
+          "9": {
+            "month": 11,
+            "day": 13
+          },
+          "0": {
+            "month": 11,
+            "day": 27
+          }
+        }
+      }
+    },
+    "PE": {
+      "name": "Pernambuco",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.sefaz.pe.gov.br/Noticias-Destaque/Paginas/Governo-de-Pernambuco-divulga-calend%C3%A1rio-do-IPVA-2026-com-al%C3%ADquota-mantida-em-2,4,-a-menor-do-Nordeste.aspx",
+        "note": "Cota única com 7% de desconto vence na data da 1ª cota de fevereiro de cada final de placa (Sefaz-PE); parcelamento em até 10 cotas (fev–nov, mínimo R$ 54,78); alíquota 2,4%. Licenciamento: a taxa (R$ 158,00) é paga junto com as cotas do IPVA; o prazo-limite para circular com o CRLV 2026 é por grupo de placas (set–dez). O Detran-PE não pôde ser acessado; as datas de licenciamento vêm de três fontes não oficiais que concordam (Zul+, Gringo, DetranGuia).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 2,
+            "day": 5
+          },
+          "2": {
+            "month": 2,
+            "day": 5
+          },
+          "3": {
+            "month": 2,
+            "day": 10
+          },
+          "4": {
+            "month": 2,
+            "day": 10
+          },
+          "5": {
+            "month": 2,
+            "day": 19
+          },
+          "6": {
+            "month": 2,
+            "day": 19
+          },
+          "7": {
+            "month": 2,
+            "day": 20
+          },
+          "8": {
+            "month": 2,
+            "day": 20
+          },
+          "9": {
+            "month": 2,
+            "day": 25
+          },
+          "0": {
+            "month": 2,
+            "day": 25
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 9,
+            "day": 30
+          },
+          "2": {
+            "month": 9,
+            "day": 30
+          },
+          "3": {
+            "month": 10,
+            "day": 31
+          },
+          "4": {
+            "month": 10,
+            "day": 31
+          },
+          "5": {
+            "month": 10,
+            "day": 31
+          },
+          "6": {
+            "month": 11,
+            "day": 30
+          },
+          "7": {
+            "month": 11,
+            "day": 30
+          },
+          "8": {
+            "month": 11,
+            "day": 30
+          },
+          "9": {
+            "month": 12,
+            "day": 31
+          },
+          "0": {
+            "month": 12,
+            "day": 31
+          }
+        }
+      }
+    },
+    "PI": {
+      "name": "Piauí",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.pi.gov.br/governo-divulga-prazos-do-ipva-2026-com-descontos-de-ate-15-para-quem-pagar-em-cota-unica-confira-as-datas-de-pagamentos/",
+        "note": "Data única para todas as placas (IN Sefaz/UNATRI nº 1/2025): cota única com 15% até 30/jan, 10% até 27/fev, sem desconto ou 3ª parcela até 31/mar; parcelamento em 3x (30/jan, 27/fev, 31/mar). Licenciamento também em data única: taxa (R$ 168,50 carros) deve ser quitada até 31/03/2026 para todas as placas, conforme pi.gov.br/Detran-PI, com confirmação de Legisweb, Mobills e DetranGuia.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 1,
+            "day": 30
+          },
+          "3": {
+            "month": 1,
+            "day": 30
+          },
+          "4": {
+            "month": 1,
+            "day": 30
+          },
+          "5": {
+            "month": 1,
+            "day": 30
+          },
+          "6": {
+            "month": 1,
+            "day": 30
+          },
+          "7": {
+            "month": 1,
+            "day": 30
+          },
+          "8": {
+            "month": 1,
+            "day": 30
+          },
+          "9": {
+            "month": 1,
+            "day": 30
+          },
+          "0": {
+            "month": 1,
+            "day": 30
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 3,
+            "day": 31
+          },
+          "5": {
+            "month": 3,
+            "day": 31
+          },
+          "6": {
+            "month": 3,
+            "day": 31
+          },
+          "7": {
+            "month": 3,
+            "day": 31
+          },
+          "8": {
+            "month": 3,
+            "day": 31
+          },
+          "9": {
+            "month": 3,
+            "day": 31
+          },
+          "0": {
+            "month": 3,
+            "day": 31
+          }
+        }
+      }
+    },
+    "RJ": {
+      "name": "Rio de Janeiro",
+      "detranURL": "https://www.detran.rj.gov.br",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://portal.fazenda.rj.gov.br/noticias/governo-do-estado-divulga-calendario-de-pagamento-do-ipva-2026/",
+        "note": "Cota única com 3% de desconto (ou 1ª de 3 parcelas) de 21/jan (placa 0) a 3/fev (placa 9); DARJ emitido no hotsite da Sefaz-RJ. Tabela por placa confirmada por CertaDoc, Sem Parar e DespachanteDok. Licenciamento (Detran-RJ, GRT R$ 293,71) foi prorrogado: finais 0-1-2 até 31/jul, 3-4-5 até 31/ago, 6-7-8-9 até 30/set (detran.rj.gov.br/veiculo/calendarios/licenciamento.html).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 22
+          },
+          "2": {
+            "month": 1,
+            "day": 23
+          },
+          "3": {
+            "month": 1,
+            "day": 26
+          },
+          "4": {
+            "month": 1,
+            "day": 27
+          },
+          "5": {
+            "month": 1,
+            "day": 28
+          },
+          "6": {
+            "month": 1,
+            "day": 29
+          },
+          "7": {
+            "month": 1,
+            "day": 30
+          },
+          "8": {
+            "month": 2,
+            "day": 2
+          },
+          "9": {
+            "month": 2,
+            "day": 3
+          },
+          "0": {
+            "month": 1,
+            "day": 21
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 7,
+            "day": 31
+          },
+          "2": {
+            "month": 7,
+            "day": 31
+          },
+          "3": {
+            "month": 8,
+            "day": 31
+          },
+          "4": {
+            "month": 8,
+            "day": 31
+          },
+          "5": {
+            "month": 8,
+            "day": 31
+          },
+          "6": {
+            "month": 9,
+            "day": 30
+          },
+          "7": {
+            "month": 9,
+            "day": 30
+          },
+          "8": {
+            "month": 9,
+            "day": 30
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 7,
+            "day": 31
+          }
+        }
+      }
+    },
+    "RN": {
+      "name": "Rio Grande do Norte",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://defato.com/estado/124796/detran-define-calendrio-do-licenciamento-veicular-para-o-exerccio-2026",
+        "note": "IPVA (Portaria SEI nº 1472 Sefaz-RN, alíquota 3%): cota única com 5% de desconto ou 1ª de até 7 parcelas em 10/mar (finais 1-2), 10/abr (3-4-5), 11/mai (6-7-8) e 10/jun (9-0); confirmado por Times Brasil, Portal N10 e 96FM. Licenciamento (Detran-RN, DOE, taxa R$ 90,00) segue exatamente as mesmas datas por grupo de placas.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 3,
+            "day": 10
+          },
+          "2": {
+            "month": 3,
+            "day": 10
+          },
+          "3": {
+            "month": 4,
+            "day": 10
+          },
+          "4": {
+            "month": 4,
+            "day": 10
+          },
+          "5": {
+            "month": 4,
+            "day": 10
+          },
+          "6": {
+            "month": 5,
+            "day": 11
+          },
+          "7": {
+            "month": 5,
+            "day": 11
+          },
+          "8": {
+            "month": 5,
+            "day": 11
+          },
+          "9": {
+            "month": 6,
+            "day": 10
+          },
+          "0": {
+            "month": 6,
+            "day": 10
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 10
+          },
+          "2": {
+            "month": 3,
+            "day": 10
+          },
+          "3": {
+            "month": 4,
+            "day": 10
+          },
+          "4": {
+            "month": 4,
+            "day": 10
+          },
+          "5": {
+            "month": 4,
+            "day": 10
+          },
+          "6": {
+            "month": 5,
+            "day": 11
+          },
+          "7": {
+            "month": 5,
+            "day": 11
+          },
+          "8": {
+            "month": 5,
+            "day": 11
+          },
+          "9": {
+            "month": 6,
+            "day": 10
+          },
+          "0": {
+            "month": 6,
+            "day": 10
+          }
+        }
+      }
+    },
+    "RS": {
+      "name": "Rio Grande do Sul",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://ipva.rs.gov.br/lista/649/calendario-e-vencimento-do-ipva-2026",
+        "note": "Sem calendário por placa: desconto de 3% para cota única até 30/01/2026 (2% até 27/fev, 1% até 31/mar; houve antecipação com desconto maior até 30/12/2025), vencimento final único em 30/04/2026 para todas as placas; parcelamento em 3x solicitado até 30/jan. Licenciamento (Detran-RS, taxa R$ 114,09) também em data única, 31/07/2026, conforme estado.rs.gov.br; CRLV 2025 válido até essa data.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 1,
+            "day": 30
+          },
+          "3": {
+            "month": 1,
+            "day": 30
+          },
+          "4": {
+            "month": 1,
+            "day": 30
+          },
+          "5": {
+            "month": 1,
+            "day": 30
+          },
+          "6": {
+            "month": 1,
+            "day": 30
+          },
+          "7": {
+            "month": 1,
+            "day": 30
+          },
+          "8": {
+            "month": 1,
+            "day": 30
+          },
+          "9": {
+            "month": 1,
+            "day": 30
+          },
+          "0": {
+            "month": 1,
+            "day": 30
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 7,
+            "day": 31
+          },
+          "2": {
+            "month": 7,
+            "day": 31
+          },
+          "3": {
+            "month": 7,
+            "day": 31
+          },
+          "4": {
+            "month": 7,
+            "day": 31
+          },
+          "5": {
+            "month": 7,
+            "day": 31
+          },
+          "6": {
+            "month": 7,
+            "day": 31
+          },
+          "7": {
+            "month": 7,
+            "day": 31
+          },
+          "8": {
+            "month": 7,
+            "day": 31
+          },
+          "9": {
+            "month": 7,
+            "day": 31
+          },
+          "0": {
+            "month": 7,
+            "day": 31
+          }
+        }
+      }
+    },
+    "RO": {
+      "name": "Rondônia",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://ipva.sefin.ro.gov.br/",
+        "note": "IPVA por final de placa com cota única em 3 janelas: 10% desconto (data informada), 5% um mês depois e sem desconto/1ª parcela no mês seguinte (placas 1,2,3 vencem juntas). Licenciamento (Detran-RO) por final de placa, coincide com a data final do IPVA sem desconto. Fonte do licenciamento: rondonia.ro.gov.br.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 1,
+            "day": 30
+          },
+          "3": {
+            "month": 1,
+            "day": 30
+          },
+          "4": {
+            "month": 2,
+            "day": 27
+          },
+          "5": {
+            "month": 3,
+            "day": 31
+          },
+          "6": {
+            "month": 4,
+            "day": 30
+          },
+          "7": {
+            "month": 5,
+            "day": 29
+          },
+          "8": {
+            "month": 6,
+            "day": 30
+          },
+          "9": {
+            "month": 7,
+            "day": 31
+          },
+          "0": {
+            "month": 8,
+            "day": 31
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 4,
+            "day": 30
+          },
+          "5": {
+            "month": 5,
+            "day": 29
+          },
+          "6": {
+            "month": 6,
+            "day": 30
+          },
+          "7": {
+            "month": 7,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 30
+          }
+        }
+      }
+    },
+    "RR": {
+      "name": "Roraima",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://portal.rr.gov.br/governo-de-roraima-regulamenta-parcelamento-do-ipva-2026-em-ate-10-vezes/",
+        "note": "Calendário unificado, sem distinção por placa: cota única com 10% de desconto até 27/02; 10 parcelas de 31/03 a 29/12; sem desconto até 29/12. Licenciamento vence em 31/03 para todas as placas; taxa R$ 172,30. Datas confirmadas por três fontes concordantes (página oficial estava fora do ar).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 2,
+            "day": 27
+          },
+          "2": {
+            "month": 2,
+            "day": 27
+          },
+          "3": {
+            "month": 2,
+            "day": 27
+          },
+          "4": {
+            "month": 2,
+            "day": 27
+          },
+          "5": {
+            "month": 2,
+            "day": 27
+          },
+          "6": {
+            "month": 2,
+            "day": 27
+          },
+          "7": {
+            "month": 2,
+            "day": 27
+          },
+          "8": {
+            "month": 2,
+            "day": 27
+          },
+          "9": {
+            "month": 2,
+            "day": 27
+          },
+          "0": {
+            "month": 2,
+            "day": 27
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 3,
+            "day": 31
+          },
+          "5": {
+            "month": 3,
+            "day": 31
+          },
+          "6": {
+            "month": 3,
+            "day": 31
+          },
+          "7": {
+            "month": 3,
+            "day": 31
+          },
+          "8": {
+            "month": 3,
+            "day": 31
+          },
+          "9": {
+            "month": 3,
+            "day": 31
+          },
+          "0": {
+            "month": 3,
+            "day": 31
+          }
+        }
+      }
+    },
+    "SC": {
+      "name": "Santa Catarina",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.detran.sc.gov.br/calendario-do-ipva-2026/",
+        "note": "SC não dá desconto na cota única; ela vence no último dia do mês conforme o final da placa (1 = janeiro … 0 = outubro), ou 3 parcelas sem juros com a 1ª até o dia 10 do mesmo mês. Licenciamento (taxa R$ 149,37) de março a dezembro por placa, segundo fontes não oficiais concordantes.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 31
+          },
+          "2": {
+            "month": 2,
+            "day": 28
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 4,
+            "day": 30
+          },
+          "5": {
+            "month": 5,
+            "day": 31
+          },
+          "6": {
+            "month": 6,
+            "day": 30
+          },
+          "7": {
+            "month": 7,
+            "day": 31
+          },
+          "8": {
+            "month": 8,
+            "day": 31
+          },
+          "9": {
+            "month": 9,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 31
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 4,
+            "day": 30
+          },
+          "3": {
+            "month": 5,
+            "day": 31
+          },
+          "4": {
+            "month": 6,
+            "day": 30
+          },
+          "5": {
+            "month": 7,
+            "day": 31
+          },
+          "6": {
+            "month": 8,
+            "day": 31
+          },
+          "7": {
+            "month": 9,
+            "day": 30
+          },
+          "8": {
+            "month": 10,
+            "day": 31
+          },
+          "9": {
+            "month": 11,
+            "day": 30
+          },
+          "0": {
+            "month": 12,
+            "day": 30
+          }
+        }
+      }
+    },
+    "SP": {
+      "name": "São Paulo",
+      "detranURL": "https://www.detran.sp.gov.br",
+      "ipva": {
+        "validFor": 2026,
+        "source": "Sefaz-SP (portal.fazenda.sp.gov.br) e Detran-SP via Agência SP, calendário 2026",
+        "note": "IPVA: à vista em janeiro com 3% de desconto, à vista em fevereiro sem desconto, ou em até 5 parcelas (jan a mai) no mesmo dia do mês. Licenciamento de veículo de passeio vence no último dia do mês; taxa 2026: R$ 174,08. Caminhões têm calendário próprio (set a dez).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 12
+          },
+          "2": {
+            "month": 1,
+            "day": 13
+          },
+          "3": {
+            "month": 1,
+            "day": 14
+          },
+          "4": {
+            "month": 1,
+            "day": 15
+          },
+          "5": {
+            "month": 1,
+            "day": 16
+          },
+          "6": {
+            "month": 1,
+            "day": 19
+          },
+          "7": {
+            "month": 1,
+            "day": 20
+          },
+          "8": {
+            "month": 1,
+            "day": 21
+          },
+          "9": {
+            "month": 1,
+            "day": 22
+          },
+          "0": {
+            "month": 1,
+            "day": 23
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 7,
+            "day": 31
+          },
+          "2": {
+            "month": 7,
+            "day": 31
+          },
+          "3": {
+            "month": 8,
+            "day": 31
+          },
+          "4": {
+            "month": 8,
+            "day": 31
+          },
+          "5": {
+            "month": 9,
+            "day": 30
+          },
+          "6": {
+            "month": 9,
+            "day": 30
+          },
+          "7": {
+            "month": 10,
+            "day": 31
+          },
+          "8": {
+            "month": 10,
+            "day": 31
+          },
+          "9": {
+            "month": 11,
+            "day": 30
+          },
+          "0": {
+            "month": 12,
+            "day": 31
+          }
+        }
+      }
+    },
+    "SE": {
+      "name": "Sergipe",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.legisweb.com.br/legislacao/?id=487681",
+        "note": "Portaria DETRAN-SE nº 930/2025 unifica IPVA e licenciamento: cota única com 10% de desconto até 31/03 para todas as placas; sem desconto e licenciamento vencem juntos por final de placa (1-2 abril … 0 novembro). Parcelamento em até 10x só no cartão.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 3,
+            "day": 31
+          },
+          "2": {
+            "month": 3,
+            "day": 31
+          },
+          "3": {
+            "month": 3,
+            "day": 31
+          },
+          "4": {
+            "month": 3,
+            "day": 31
+          },
+          "5": {
+            "month": 3,
+            "day": 31
+          },
+          "6": {
+            "month": 3,
+            "day": 31
+          },
+          "7": {
+            "month": 3,
+            "day": 31
+          },
+          "8": {
+            "month": 3,
+            "day": 31
+          },
+          "9": {
+            "month": 3,
+            "day": 31
+          },
+          "0": {
+            "month": 3,
+            "day": 31
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 4,
+            "day": 30
+          },
+          "2": {
+            "month": 4,
+            "day": 30
+          },
+          "3": {
+            "month": 5,
+            "day": 29
+          },
+          "4": {
+            "month": 5,
+            "day": 29
+          },
+          "5": {
+            "month": 6,
+            "day": 30
+          },
+          "6": {
+            "month": 7,
+            "day": 31
+          },
+          "7": {
+            "month": 8,
+            "day": 31
+          },
+          "8": {
+            "month": 9,
+            "day": 30
+          },
+          "9": {
+            "month": 10,
+            "day": 30
+          },
+          "0": {
+            "month": 11,
+            "day": 30
+          }
+        }
+      }
+    },
+    "TO": {
+      "name": "Tocantins",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.to.gov.br/sefaz/noticias/ipva-2026-no-tocantins-tem-desconto-de-10-para-pagamento-a-vista-em-ate-30-de-janeiro/5j7g5aj1h47x",
+        "note": "IPVA sem distinção por placa: cota única com 10% de desconto até 30/01 (ou 1ª de até 10 parcelas, última em 30/10). Licenciamento pela Portaria 26/2026 do Detran-TO: placas 1 e 2 até 30/09, demais até 30/10.",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 30
+          },
+          "2": {
+            "month": 1,
+            "day": 30
+          },
+          "3": {
+            "month": 1,
+            "day": 30
+          },
+          "4": {
+            "month": 1,
+            "day": 30
+          },
+          "5": {
+            "month": 1,
+            "day": 30
+          },
+          "6": {
+            "month": 1,
+            "day": 30
+          },
+          "7": {
+            "month": 1,
+            "day": 30
+          },
+          "8": {
+            "month": 1,
+            "day": 30
+          },
+          "9": {
+            "month": 1,
+            "day": 30
+          },
+          "0": {
+            "month": 1,
+            "day": 30
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 9,
+            "day": 30
+          },
+          "2": {
+            "month": 9,
+            "day": 30
+          },
+          "3": {
+            "month": 10,
+            "day": 30
+          },
+          "4": {
+            "month": 10,
+            "day": 30
+          },
+          "5": {
+            "month": 10,
+            "day": 30
+          },
+          "6": {
+            "month": 10,
+            "day": 30
+          },
+          "7": {
+            "month": 10,
+            "day": 30
+          },
+          "8": {
+            "month": 10,
+            "day": 30
+          },
+          "9": {
+            "month": 10,
+            "day": 30
+          },
+          "0": {
+            "month": 10,
+            "day": 30
+          }
+        }
+      }
+    }
+  },
+  "passportDestinations": {
+    "default": {
+      "monthsRequired": 6,
+      "note": "A maioria dos países exige passaporte válido por 6 meses além da entrada."
+    },
+    "Argentina": {
+      "monthsRequired": 0,
+      "note": "Mercosul: brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Uruguai": {
+      "monthsRequired": 0,
+      "note": "Mercosul: brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Paraguai": {
+      "monthsRequired": 0,
+      "note": "Mercosul: brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Chile": {
+      "monthsRequired": 0,
+      "note": "Brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Bolívia": {
+      "monthsRequired": 0,
+      "note": "Brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Peru": {
+      "monthsRequired": 0,
+      "note": "Brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Colômbia": {
+      "monthsRequired": 0,
+      "note": "Brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Equador": {
+      "monthsRequired": 0,
+      "note": "Brasileiro entra com RG. Passaporte é opcional."
+    },
+    "Estados Unidos": {
+      "monthsRequired": 0,
+      "note": "Exige visto. O passaporte precisa estar válido durante toda a estadia."
+    },
+    "Portugal": {
+      "monthsRequired": 3,
+      "note": "Espaço Schengen: válido por 3 meses além da data de saída."
+    },
+    "Espanha": {
+      "monthsRequired": 3,
+      "note": "Espaço Schengen: válido por 3 meses além da data de saída."
+    },
+    "França": {
+      "monthsRequired": 3,
+      "note": "Espaço Schengen: válido por 3 meses além da data de saída."
+    },
+    "Itália": {
+      "monthsRequired": 3,
+      "note": "Espaço Schengen: válido por 3 meses além da data de saída."
+    },
+    "Alemanha": {
+      "monthsRequired": 3,
+      "note": "Espaço Schengen: válido por 3 meses além da data de saída."
+    }
+  },
+  "cities": {
+    "São Paulo": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://prefeitura.sp.gov.br/web/fazenda/w/editaldoiptu2026",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 1
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 28
+      },
+      "discountPercent": 3,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://iptu.prefeitura.sp.gov.br",
+      "note": "Fonte oficial (edital IPTU 2026, PDF em prefeitura.sp.gov.br/documents/d/fazenda/edital-eg-2026-pdf): a cota única/1ª parcela vence em fevereiro no dia escolhido pelo contribuinte na atualização cadastral, ou no dia 9 ou 14 para quem não escolheu; quem optou por notificação via administradora de imóveis vence em 20 de março. Mais de 1 milhão de imóveis residenciais ficam isentos e cerca de 540 mil têm redução proporcional por faixa de valor venal (edital 2026); parcelas não são enviadas pelos correios, é preciso emitir no portal."
+    },
+    "Rio de Janeiro": {
+      "state": "RJ",
+      "validFor": 2026,
+      "source": "https://prefeitura.rio/fazenda/prefeitura-divulga-datas-de-pagamento-do-iptu-2026-cota-unica-tera-desconto-de-7/",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 6
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 6
+      },
+      "discountPercent": 7,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://carioca.rio/servicos/iptu/",
+      "note": "Data única para todos os contribuintes (6/2); parcelas em 6/3, 8/4, 8/5, 8/6, 7/7, 7/8, 8/9, 7/10 e 9/11. Guia (DARM) emitida no Carioca Digital, pagamento via PIX; a fonte oficial não detalha isenções."
+    },
+    "Belo Horizonte": {
+      "state": "MG",
+      "validFor": 2026,
+      "source": "https://prefeitura.pbh.gov.br/fazenda/iptu",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 30
+      },
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 30
+      },
+      "discountPercent": 7,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://servicos.pbh.gov.br/servicos/i/5e838678d9521a26a96ee9d9/servicos+guias-iptu-emissao",
+      "note": "Data única: pagamento antecipado até 30/1 com 7% de desconto (vale também para antecipação parcial de no mínimo 2 parcelas); a cota única sem desconto/1ª parcela vence 15/2 e as demais todo dia 15 até dezembro. Fonte oficial não detalha isenções; reajuste 2026 apenas pela inflação (4,41%)."
+    },
+    "Curitiba": {
+      "state": "PR",
+      "validFor": 2026,
+      "source": "https://www.curitiba.pr.gov.br/noticias/iptu-2026-vence-na-sexta-feira-e-pagamento-a-vista-tem-desconto-de-10/82150",
+      "singleQuotaFrom": {
+        "month": 3,
+        "day": 20
+      },
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 20
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://iptu-dam.curitiba.pr.gov.br/parcelamento",
+      "note": "Data única (20/3) para cota única com 10% ou 1ª parcela; 10 parcelas de março a dezembro, sempre dia 20 (ou próximo dia útil: 22/6, 21/9, 23/11, 21/12). Fonte oficial da prefeitura (notícias em curitiba.pr.gov.br) confirmada por Band/BandaB; 135 mil imóveis isentos em 2026, critérios em servicos.curitiba.pr.gov.br/iptu-isencao-e-reducao/897."
+    },
+    "Porto Alegre": {
+      "state": "RS",
+      "validFor": 2026,
+      "source": "https://prefeitura.poa.br/smf/noticias/pagamento-do-iptu-2026-com-desconto-pode-ser-feito-ate-9-de-fevereiro",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 9
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 9
+      },
+      "discountPercent": 11,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://prefeitura.poa.br/smf/iptu",
+      "note": "Data única (9/2). Desconto de ATÉ 11%: 5% pela antecipação + 3% para bom pagador + até 3% para pessoa física com CPF em notas fiscais de serviço (desconto base garantido é 5%). Sem cota única, o imposto é parcelado automaticamente em até 10x sem juros, 1ª parcela 9/3 e demais dia 8 de cada mês; último mês (dezembro) calculado a partir das 10 parcelas, não citado literalmente pela fonte. Fonte oficial não detalha isenções."
+    },
+    "Salvador": {
+      "state": "BA",
+      "validFor": 2026,
+      "source": "https://www2.sefaz.salvador.ba.gov.br/noticias/iptu-2026-prazo-para-pagamento-da-cota-unica-e-da-primeira-parcela-termina-na-quinta-feira-5",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 1
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 28
+      },
+      "discountPercent": 7,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://www2.sefaz.salvador.ba.gov.br/servico/2-via-dam-pagamento-iptu-trsd",
+      "note": "Para inscrições recadastradas, o vencimento da cota única/1ª parcela é a data escolhida pelo proprietário entre 1 e 28 de fevereiro (demais parcelas na mesma data, de março a dezembro); para não recadastrados vence em 5/2. O site da Sefaz Salvador não abriu por certificado inválido; dados confirmados pela reprodução da notícia oficial (LegisWeb id 32513) e por A Tarde, que concordam. Fonte não detalha isenções."
+    },
+    "Brasília": {
+      "state": "DF",
+      "validFor": 2026,
+      "source": "https://www.receita.fazenda.df.gov.br/aplicacoes/CartaServicos/servico.cfm?codServico=447&codTipoPessoa=6&codCategoriaServico=6&codSubCategoria=58",
+      "singleQuotaFrom": {
+        "month": 5,
+        "day": 11
+      },
+      "singleQuotaTo": {
+        "month": 5,
+        "day": 15
+      },
+      "discountPercent": 10,
+      "installments": 6,
+      "lastInstallmentMonth": 10,
+      "payURL": "https://www.receita.fazenda.df.gov.br",
+      "note": "Data definida pelo dígito final da inscrição (CIDF): finais 1-2 em 11/5, 3-4 em 12/5, 5-6 em 13/5, 7-8 em 14/5, 9-0-X em 15/5 (calendário oficial da Receita DF, atualizado 25/3/2026; portaria no DODF). Desconto de 10% na cota única condicionado à ausência de débitos vencidos do imóvel (Metrópoles/Contábeis, concordantes); até 6 parcelas, mínimo R$ 20, última em 19/10; total IPTU+TLP abaixo de R$ 40 só em cota única. Isenções não detalhadas na fonte oficial."
+    },
+    "Recife": {
+      "state": "PE",
+      "validFor": 2026,
+      "source": "https://recifeemdia.recife.pe.gov.br/node/1856",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 10
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://recifeemdia.recife.pe.gov.br",
+      "note": "Data única (10/2). Desconto de 10% = 5% já aplicado no boleto de imóveis adimplentes + 5% pela cota única; contribuintes com pendências têm só 5%, e apenas na cota única. 10 parcelas sempre dia 10 (último mês calculado: novembro; Folha PE indica novembro e Diario de Pernambuco dezembro). Portal oficial retornou 403 ao acesso automatizado; dados confirmados por Folha PE, Diario de Pernambuco e CBN Recife, concordantes. Créditos de NFS-e podem abater até 50% do IPTU."
+    },
+    "Fortaleza": {
+      "state": "CE",
+      "validFor": 2026,
+      "source": "https://www.fortaleza.ce.gov.br/noticias/iptu-2026-pagamento-ja-pode-ser-feito-a-partir-desta-quinta-feira-08-01",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 6
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 6
+      },
+      "discountPercent": 8,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://www.sefin.fortaleza.ce.gov.br/Home",
+      "note": "Três opções de cota única: 8% até 6/2, 6% até 6/3, 4% até 8/4 (5º dia útil do mês); cadastrados no Nota Fortaleza somam até +2%, chegando a 10%. Descontos só para adimplentes. Até 11 parcelas (mínimo R$ 82,59) no 5º dia útil de cada mês; último mês (dezembro) calculado a partir de 11 parcelas iniciando em fevereiro. Isenção para imóveis com valor venal até R$ 101.260,13 e categorias como aposentados, ex-combatentes e entidades religiosas, conforme critérios."
+    },
+    "Goiânia": {
+      "state": "GO",
+      "validFor": 2026,
+      "source": "https://www.legisweb.com.br/noticia/?id=32498",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 20
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 20
+      },
+      "discountPercent": 10,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://www.goiania.go.gov.br/sing_servicos/emissao-duam-itu-iptu-issqn/",
+      "note": "Data única (20/2) para cota única com 10% ou 1ª de 11 parcelas iguais, vencendo dia 20 de cada mês até dezembro; também 12x no cartão de crédito. As páginas de notícias da prefeitura não abriram (403); dados vêm da reprodução do release oficial da Prefeitura de Goiânia (LegisWeb) e de Encontra Goiânia/QuintoAndar, concordantes. IPTU Social isenta imóveis com valor venal até R$ 181.600,88 (cerca de 100 mil imóveis)."
+    }
+  },
+  "validity": {
+    "cnh": {
+      "byAge": [
+        {
+          "maxAge": 49,
+          "years": 10
+        },
+        {
+          "maxAge": 69,
+          "years": 5
+        },
+        {
+          "years": 3
+        }
+      ],
+      "note": "Validade da CNH pela idade na emissão: até 49 anos vale 10 anos; de 50 a 69, 5 anos; a partir de 70, 3 anos (CTB, Lei 14.071/2020)."
+    },
+    "passaporte": {
+      "byAge": [
+        {
+          "maxAge": 1,
+          "years": 1
+        },
+        {
+          "maxAge": 3,
+          "years": 2
+        },
+        {
+          "maxAge": 5,
+          "years": 3
+        },
+        {
+          "maxAge": 7,
+          "years": 4
+        },
+        {
+          "maxAge": 9,
+          "years": 5
+        },
+        {
+          "maxAge": 11,
+          "years": 6
+        },
+        {
+          "maxAge": 13,
+          "years": 7
+        },
+        {
+          "maxAge": 15,
+          "years": 8
+        },
+        {
+          "maxAge": 17,
+          "years": 9
+        },
+        {
+          "years": 10
+        }
+      ],
+      "note": "Passaporte de adulto vale 10 anos; de menor, a validade cresce com a idade (1 ano até 1 ano de idade, +1 ano a cada 2 anos, 9 anos aos 16-17)."
+    },
+    "garantia": {
+      "legalDays": 90,
+      "note": "Garantia legal de 90 dias para bens duráveis (CDC), somada à garantia contratual do fabricante."
+    }
+  }
+}
