@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02c",
+  "version": "2026-09-02g",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -13,29 +13,40 @@
       "checklist": [
         {
           "text": "Agendar exame médico em clínica credenciada",
-          "daysBefore": 45
+          "daysBefore": 45,
+          "place": "Clínica de exame médico para CNH"
         },
         {
           "text": "Fazer exame psicológico (se motorista profissional)",
-          "daysBefore": 40
+          "daysBefore": 40,
+          "place": "Clínica de exame médico para CNH"
         },
         {
           "text": "Pagar taxa de renovação no site do Detran",
-          "daysBefore": 30
+          "daysBefore": 30,
+          "url": "{detran}"
         },
         {
           "text": "Coletar biometria/foto no Detran, se solicitado",
-          "daysBefore": 15
+          "daysBefore": 15,
+          "place": "Detran"
         },
         {
           "text": "Baixar a CNH digital no app Carteira Digital de Trânsito",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "url": "https://www.gov.br/pt-br/apps/carteira-digital-de-transito"
         }
       ],
       "cost": "R$ 100–250 (varia por estado: taxa + exame)",
       "place": "Detran do seu estado (site ou posto)",
       "tip": "Você pode dirigir até 30 dias após o vencimento, mas o exame e o agendamento levam semanas. Comece antes.",
-      "recurring": false
+      "recurring": false,
+      "nearbyQueries": [
+        "Detran",
+        "Poupatempo",
+        "Clínica de exame médico para CNH",
+        "Despachante"
+      ]
     },
     "passaporte": {
       "name": "Passaporte",
@@ -49,29 +60,37 @@
       "checklist": [
         {
           "text": "Preencher formulário no site da Polícia Federal",
-          "daysBefore": 120
+          "daysBefore": 120,
+          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte"
         },
         {
           "text": "Pagar a GRU (R$ 257,25)",
-          "daysBefore": 110
+          "daysBefore": 110,
+          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte"
         },
         {
           "text": "Agendar atendimento na PF (filas podem passar de 60 dias)",
-          "daysBefore": 100
+          "daysBefore": 100,
+          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte"
         },
         {
           "text": "Levar RG, CPF, título e comprovante de quitação eleitoral",
-          "daysBefore": 7
+          "daysBefore": 7,
+          "place": "Polícia Federal"
         },
         {
           "text": "Retirar o passaporte novo pessoalmente",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "place": "Polícia Federal"
         }
       ],
       "cost": "R$ 257,25 (GRU)",
       "place": "Polícia Federal — gov.br/pf",
       "tip": "Muitos países exigem passaporte com 6 meses de validade além da viagem. Cadastre a viagem e o app calcula.",
-      "recurring": false
+      "recurring": false,
+      "nearbyQueries": [
+        "Polícia Federal"
+      ]
     },
     "ipva": {
       "name": "IPVA e licenciamento",
@@ -85,25 +104,34 @@
       "checklist": [
         {
           "text": "Consultar valor e calendário pelo final da placa no site do Detran/Sefaz",
-          "daysBefore": 30
+          "daysBefore": 30,
+          "url": "{detran}"
         },
         {
           "text": "Pagar IPVA (à vista com desconto ou parcelado)",
-          "daysBefore": 20
+          "daysBefore": 20,
+          "url": "{detran}"
         },
         {
           "text": "Quitar multas pendentes",
-          "daysBefore": 10
+          "daysBefore": 10,
+          "url": "{detran}"
         },
         {
           "text": "Pagar taxa de licenciamento e baixar o CRLV digital",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "url": "https://www.gov.br/pt-br/apps/carteira-digital-de-transito"
         }
       ],
       "cost": "IPVA: % do valor do veículo por estado + taxa de licenciamento (~R$ 100–170)",
       "place": "Detran / Sefaz do estado, app CDT",
       "tip": "O calendário é pelo final da placa e muda de estado para estado. Informe o estado e a placa e o app calcula.",
-      "recurring": true
+      "recurring": true,
+      "nearbyQueries": [
+        "Detran",
+        "Poupatempo",
+        "Despachante"
+      ]
     },
     "planoSaude": {
       "name": "Plano de saúde",
@@ -117,15 +145,18 @@
       "checklist": [
         {
           "text": "Verificar o índice de reajuste anual anunciado",
-          "daysBefore": 60
+          "daysBefore": 60,
+          "url": "https://www.gov.br/ans/pt-br"
         },
         {
           "text": "Comparar com outros planos antes da renovação",
-          "daysBefore": 45
+          "daysBefore": 45,
+          "url": "https://www.gov.br/ans/pt-br"
         },
         {
           "text": "Conferir carências ao trocar (portabilidade evita carência)",
-          "daysBefore": 30
+          "daysBefore": 30,
+          "url": "https://www.gov.br/ans/pt-br"
         },
         {
           "text": "Atualizar dependentes",
@@ -139,7 +170,10 @@
       "cost": "Reajuste anual (ANS define o teto para planos individuais)",
       "place": "Operadora ou corretor; portabilidade pelo site da ANS",
       "tip": "O aniversário do contrato é a única janela para trocar sem carência via portabilidade. Marque a data.",
-      "recurring": true
+      "recurring": true,
+      "nearbyQueries": [
+        "Corretora de planos de saúde"
+      ]
     },
     "impostoRenda": {
       "name": "Imposto de Renda",
@@ -173,13 +207,18 @@
         },
         {
           "text": "Enviar a declaração pelo programa ou pelo app Meu Imposto de Renda",
-          "daysBefore": 7
+          "daysBefore": 7,
+          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda"
         }
       ],
       "cost": "Gratuito (multa mínima de R$ 165,74 se atrasar)",
       "place": "Receita Federal — gov.br/receitafederal",
       "tip": "Informes só saem no fim de fevereiro. Cadastre o prazo (normalmente 31 de maio) e o app avisa quando começar a juntar.",
-      "recurring": true
+      "recurring": true,
+      "nearbyQueries": [
+        "Escritório de contabilidade",
+        "Receita Federal"
+      ]
     },
     "garantia": {
       "name": "Garantia de produto",
@@ -203,13 +242,18 @@
         },
         {
           "text": "Acionar a assistência técnica se houver defeito",
-          "daysBefore": 7
+          "daysBefore": 7,
+          "place": "Assistência técnica autorizada"
         }
       ],
       "cost": "Sem custo — mas depois do prazo o conserto é por sua conta",
       "place": "Loja ou assistência autorizada do fabricante",
       "tip": "Garantia legal é 90 dias para bens duráveis, somada à garantia do fabricante. Teste o produto antes de acabar.",
-      "recurring": false
+      "recurring": false,
+      "nearbyQueries": [
+        "Assistência técnica autorizada",
+        "Procon"
+      ]
     },
     "iptu": {
       "name": "IPTU",
@@ -223,15 +267,18 @@
       "checklist": [
         {
           "text": "Conferir se o carnê chegou ou emitir a 2ª via no site da prefeitura",
-          "daysBefore": 30
+          "daysBefore": 30,
+          "url": "{cityPay}"
         },
         {
           "text": "Conferir o valor venal e contestar se estiver errado (prazo curto!)",
-          "daysBefore": 25
+          "daysBefore": 25,
+          "place": "Prefeitura"
         },
         {
           "text": "Verificar se tem direito a isenção (aposentado, imóvel de baixo valor, etc.)",
-          "daysBefore": 20
+          "daysBefore": 20,
+          "url": "{cityPay}"
         },
         {
           "text": "Decidir: cota única com desconto ou parcelas",
@@ -239,13 +286,18 @@
         },
         {
           "text": "Pagar e guardar o comprovante",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "url": "{cityPay}"
         }
       ],
       "cost": "Varia pelo valor venal; cota única costuma ter desconto",
       "place": "Site da prefeitura do município",
       "tip": "O desconto da cota única só vale até a data-limite. Cada cidade tem regra própria; informe a cidade e o app usa o calendário dela quando tiver.",
-      "recurring": true
+      "recurring": true,
+      "nearbyQueries": [
+        "Prefeitura",
+        "Escritório de contabilidade"
+      ]
     }
   },
   "states": {
@@ -2916,5 +2968,21 @@
       "legalDays": 90,
       "note": "Garantia legal de 90 dias para bens duráveis (CDC), somada à garantia contratual do fabricante."
     }
+  },
+  "placesQuality": {
+    "minRating": 4.0,
+    "minReviews": 10,
+    "publicKeywords": [
+      "detran",
+      "poupatempo",
+      "ciretran",
+      "polícia federal",
+      "policia federal",
+      "prefeitura",
+      "receita federal",
+      "procon",
+      "sefaz"
+    ],
+    "note": "Serviços privados (despachante, contador, clínica, corretora, assistência) só aparecem com nota >= minRating e >= minReviews avaliações no Google. Órgãos públicos não passam pelo filtro."
   }
 }
