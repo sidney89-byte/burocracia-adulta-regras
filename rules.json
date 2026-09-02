@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02j",
+  "version": "2026-09-02l",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -558,6 +558,451 @@
       "nearbyQueries": [
         "Loja da operadora"
       ]
+    },
+    "visto": {
+      "name": "Visto de viagem",
+      "icon": "airplane",
+      "leadDays": 120,
+      "reminderDaysBefore": [
+        180,
+        120,
+        60,
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Confira a validade do passaporte: muitos países exigem 6 meses a mais que a viagem",
+          "daysBefore": 180,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Descubra se o destino exige visto, autorização eletrônica (eTA/ETA/ETIAS) ou nada",
+          "daysBefore": 150,
+          "url": "https://www.gov.br/mre/pt-br",
+          "place": null
+        },
+        {
+          "text": "EUA: preencha o DS-160 e pague a taxa MRV no sistema oficial de agendamento",
+          "daysBefore": 120,
+          "url": "https://ais.usvisa-info.com/pt-br/niv",
+          "place": null
+        },
+        {
+          "text": "EUA: agende a entrevista (CASV para biometria + consulado) e leve o comprovante do DS-160",
+          "daysBefore": 100,
+          "url": "https://www.ustraveldocs.com/br_pt/br-niv-typeb1b2.asp",
+          "place": "Consulado dos EUA / CASV"
+        },
+        {
+          "text": "Canadá: peça a eTA online (CAD 7) se você já teve visto canadense nos últimos 10 anos ou tem visto americano válido; caso contrário peça o visto de visitante",
+          "daysBefore": 60,
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
+          "place": null
+        },
+        {
+          "text": "Austrália: peça o Visitor visa 600 pelo ImmiAccount (brasileiro não usa ETA/eVisitor)",
+          "daysBefore": 90,
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-overseas",
+          "place": null
+        },
+        {
+          "text": "Reino Unido: peça a ETA (£16, vale 2 anos) antes de comprar a passagem de conexão",
+          "daysBefore": 30,
+          "url": "https://www.gov.uk/eta/apply",
+          "place": null
+        },
+        {
+          "text": "Europa/Schengen: quando o ETIAS entrar em vigor (previsto para o último trimestre de 2026), peça a autorização (€20) antes de embarcar",
+          "daysBefore": 30,
+          "url": "https://travel-europe.europa.eu/etias",
+          "place": null
+        },
+        {
+          "text": "Índia: peça o e-Visa no portal oficial pelo menos 4 dias antes do embarque",
+          "daysBefore": 30,
+          "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+          "place": null
+        },
+        {
+          "text": "China: confira se a isenção de visto para brasileiros (até 30 dias) segue valendo na data da viagem",
+          "daysBefore": 45,
+          "url": "https://br.china-embassy.gov.cn/por/lqfw/lqfw2/",
+          "place": null
+        },
+        {
+          "text": "Separe seguro-viagem, comprovante de hospedagem, passagem de volta e comprovação financeira",
+          "daysBefore": 30,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Confirme que o visto/autorização foi emitido e salve o PDF no celular",
+          "daysBefore": 7,
+          "url": null,
+          "place": null
+        }
+      ],
+      "cost": "EUA cerca de US$ 185 (taxa MRV); Canadá eTA CAD 7; Reino Unido ETA £16; ETIAS €20 (isento abaixo de 18 e acima de 70 anos); Índia e-Visa cerca de US$ 25 a US$ 80; Austrália visto 600 custa algumas centenas de dólares australianos; China isento hoje.",
+      "place": "Quase tudo é online, no site oficial de cada país; EUA exige ir presencialmente ao CASV (biometria) e ao consulado (entrevista).",
+      "tip": "A pegadinha é o prazo: fila de entrevista nos EUA pode passar de um ano, e o visto vale até a data impressa, não até a viagem. Confira também a validade do passaporte, que precisa sobrar 6 meses.",
+      "recurring": false,
+      "cadence": "yearly",
+      "nearbyQueries": [
+        "despachante de vistos",
+        "consulado",
+        "fotos para visto e passaporte",
+        "cartório",
+        "clínica de vacina internacional"
+      ]
+    },
+    "aluguel": {
+      "name": "Aluguel",
+      "icon": "house",
+      "leadDays": 7,
+      "reminderDaysBefore": [
+        7,
+        3,
+        1,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Confira o boleto ou o valor do PIX e se já entraram condomínio e IPTU",
+          "daysBefore": 7,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Pague até a data do contrato para não pegar multa e juros de mora",
+          "daysBefore": 0,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "No mês do aniversário do contrato, confira o reajuste anual pelo índice combinado (IPCA ou IGP-M)",
+          "daysBefore": 30,
+          "url": "https://www3.bcb.gov.br/CALCIDADAO/publico/exibirFormCorrecaoValores.do?method=exibirFormCorrecaoValores",
+          "place": null
+        },
+        {
+          "text": "Faltando 3 meses para o fim do contrato, decida entre renovar, renegociar ou sair",
+          "daysBefore": 90,
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm",
+          "place": null
+        },
+        {
+          "text": "Se for sair, avise por escrito com 30 dias de antecedência e agende a vistoria de saída",
+          "daysBefore": 30,
+          "url": null,
+          "place": "Imobiliária"
+        },
+        {
+          "text": "Guarde os comprovantes: eles provam a quitação em caso de cobrança indevida",
+          "daysBefore": 0,
+          "url": null,
+          "place": null
+        }
+      ],
+      "cost": "O valor do aluguel mais condomínio e IPTU quando previstos no contrato; atraso costuma custar multa de 2% a 10% mais juros de 1% ao mês, conforme o contrato.",
+      "place": "Pagamento por boleto, PIX ou débito automático para a imobiliária ou direto para o proprietário.",
+      "tip": "O reajuste só pode ser anual (Lei 8.245/91) e pelo índice que está escrito no contrato. Se sair antes do fim do prazo, a multa é proporcional ao tempo que faltava, não o valor cheio.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "imobiliária",
+        "cartório",
+        "vistoria de imóvel",
+        "lotérica"
+      ]
+    },
+    "cartaoCredito": {
+      "name": "Fatura do cartão",
+      "icon": "creditcard",
+      "leadDays": 10,
+      "reminderDaysBefore": [
+        10,
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Na data de fechamento, veja a prévia da fatura no app do banco",
+          "daysBefore": 10,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Confira lançamento por lançamento e conteste em até 90 dias o que não reconhecer",
+          "daysBefore": 7,
+          "url": "https://www.consumidor.gov.br/",
+          "place": null
+        },
+        {
+          "text": "Pague o total até o vencimento; se não der, pague o máximo possível e peça o parcelamento da fatura",
+          "daysBefore": 0,
+          "url": "https://www.bcb.gov.br/meubc/faqs/p/cartao-de-credito",
+          "place": null
+        },
+        {
+          "text": "Se acabou no rotativo, troque por um parcelamento com juros menores ainda neste ciclo",
+          "daysBefore": 0,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Se não resolveu com o banco, registre reclamação no Banco Central ou no consumidor.gov.br",
+          "daysBefore": 0,
+          "url": "https://www.bcb.gov.br/meubc/registrar-reclamacao",
+          "place": null
+        }
+      ],
+      "cost": "Pagar em dia custa zero; o rotativo é o crédito mais caro do mercado, e desde 2024 juros e encargos não podem passar de 100% da dívida original.",
+      "place": "App ou internet banking do emissor; boleto da fatura também aceita PIX na maioria dos bancos.",
+      "tip": "Pagar o mínimo joga o resto no rotativo, que só pode durar até o vencimento seguinte: depois disso o banco é obrigado a oferecer parcelamento mais barato. Compra feita depois do fechamento cai na fatura do mês seguinte.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "agência bancária",
+        "lotérica",
+        "Procon"
+      ]
+    },
+    "rg": {
+      "name": "Identidade (CIN)",
+      "icon": "person.text.rectangle",
+      "leadDays": 90,
+      "reminderDaysBefore": [
+        90,
+        60,
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Veja a validade impressa no seu documento e a regra por idade da CIN",
+          "daysBefore": 90,
+          "url": "https://www.gov.br/governodigital/pt-br/identidade/cin",
+          "place": null
+        },
+        {
+          "text": "Separe a certidão de nascimento ou de casamento original ou cópia autenticada e o CPF",
+          "daysBefore": 60,
+          "url": null,
+          "place": "Cartório"
+        },
+        {
+          "text": "Agende o atendimento no portal do seu estado (Poupatempo em SP, Detran ou Instituto de Identificação nos demais)",
+          "daysBefore": 45,
+          "url": "https://www.poupatempo.sp.gov.br/",
+          "place": "Poupatempo ou Instituto de Identificação"
+        },
+        {
+          "text": "Compareça no dia com os documentos originais para foto e biometria",
+          "daysBefore": 30,
+          "url": null,
+          "place": "Poupatempo ou Instituto de Identificação"
+        },
+        {
+          "text": "Ao receber, ative a versão digital no app gov.br",
+          "daysBefore": 0,
+          "url": "https://www.gov.br/governodigital/pt-br/identidade/cin",
+          "place": null
+        }
+      ],
+      "cost": "1ª via da CIN é gratuita em todo o país; 2ª via é gratuita em alguns estados e paga em outros (em geral de R$ 30 a R$ 100).",
+      "place": "Postos de identificação do seu estado: Poupatempo em São Paulo, Detran ou Instituto de Identificação nos demais, sempre com agendamento.",
+      "tip": "A CIN vale 10 anos entre 12 e 59 anos, 5 anos até os 11 e sem prazo a partir dos 60. O RG antigo continua valendo até 28/02/2032, mas cartório e agendamento demoram, então comece uns 3 meses antes.",
+      "recurring": true,
+      "cadence": "yearly",
+      "nearbyQueries": [
+        "Poupatempo",
+        "Instituto de Identificação",
+        "posto de identificação RG",
+        "cartório de registro civil",
+        "foto 3x4"
+      ]
+    },
+    "anuidadeConselho": {
+      "name": "Anuidade do conselho",
+      "icon": "checkmark.seal",
+      "leadDays": 60,
+      "reminderDaysBefore": [
+        60,
+        30,
+        15,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Em dezembro, procure a resolução da anuidade do ano seguinte no site do seu conselho",
+          "daysBefore": 60,
+          "url": "https://www.oab.org.br/",
+          "place": null
+        },
+        {
+          "text": "Compare: pagar à vista em janeiro costuma dar desconto, parcelar não dá",
+          "daysBefore": 45,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Emita o boleto no portal do conselho regional (OAB, CRM, CREA, CRC, CRP, CRO ou COREN)",
+          "daysBefore": 30,
+          "url": "https://www.confea.org.br/",
+          "place": null
+        },
+        {
+          "text": "Pague à vista ou contrate o parcelamento antes do vencimento",
+          "daysBefore": 0,
+          "url": null,
+          "place": null
+        },
+        {
+          "text": "Se mudou de endereço ou de situação (licença, aposentadoria), atualize o cadastro: isso pode reduzir ou isentar a anuidade",
+          "daysBefore": 30,
+          "url": "https://portal.cfm.org.br/",
+          "place": "Sede do conselho regional"
+        }
+      ],
+      "cost": "Varia por conselho e por região: em geral de R$ 400 a R$ 2.500 por ano. A OAB fixou anuidade mínima de R$ 1.050 a partir de 2026, com desconto de até 20% para pagamento à vista.",
+      "place": "Portal do conselho regional do seu estado; boleto ou cartão, quase sempre online.",
+      "tip": "O desconto à vista quase sempre acaba no fim de janeiro (em alguns conselhos até março) e não volta. Anuidade atrasada vira dívida com juros e pode acabar em execução fiscal e suspensão do registro.",
+      "recurring": true,
+      "cadence": "yearly",
+      "nearbyQueries": [
+        "OAB seccional",
+        "CRM",
+        "CREA",
+        "CRC",
+        "COREN",
+        "conselho profissional"
+      ]
+    },
+    "mei": {
+      "name": "DAS do MEI",
+      "icon": "building.columns",
+      "leadDays": 10,
+      "reminderDaysBefore": [
+        10,
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Emita o DAS do mês no PGMEI ou no app MEI",
+          "daysBefore": 10,
+          "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes/atspo/pgmei.app/identificacao",
+          "place": null
+        },
+        {
+          "text": "Pague até o dia 20 (se cair em fim de semana ou feriado, antecipe)",
+          "daysBefore": 0,
+          "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/pagamento-de-contribuicao-mensal",
+          "place": null
+        },
+        {
+          "text": "Guarde as notas e o controle mensal de faturamento: eles alimentam a declaração anual",
+          "daysBefore": 0,
+          "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
+          "place": null
+        },
+        {
+          "text": "Entre janeiro e maio, entregue a DASN-SIMEI com o faturamento do ano anterior",
+          "daysBefore": 30,
+          "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes/ATSPO/dasnsimei.app/Identificacao",
+          "place": null
+        },
+        {
+          "text": "Se tiver DAS atrasado, gere as guias com juros no próprio PGMEI ou peça parcelamento",
+          "daysBefore": 0,
+          "url": "https://www.gov.br/mei",
+          "place": null
+        }
+      ],
+      "cost": "Em 2026 o DAS mensal é de R$ 82,05 (comércio ou indústria), R$ 86,05 (serviços) e R$ 87,05 (comércio e serviços), com o INSS em 5% do salário mínimo de R$ 1.621,00.",
+      "place": "Online no PGMEI (Receita Federal) ou no aplicativo MEI; o boleto é pago em banco, lotérica ou PIX.",
+      "tip": "A armadilha é a DASN-SIMEI: mesmo faturando zero, a declaração anual vence em 31 de maio e o atraso gera multa. E pagar o DAS em dia é o que mantém aposentadoria e auxílio-doença ativos.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "Sebrae",
+        "escritório de contabilidade",
+        "sala do empreendedor",
+        "lotérica"
+      ]
+    },
+    "vacina": {
+      "name": "Vacinas em dia",
+      "icon": "cross.vial",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        60,
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Baixe a carteira digital no Meu SUS Digital e confira o que já tomou",
+          "daysBefore": 60,
+          "url": "https://meususdigital.saude.gov.br/",
+          "place": null
+        },
+        {
+          "text": "Compare com o calendário nacional do adulto e liste o que está atrasado",
+          "daysBefore": 45,
+          "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+          "place": null
+        },
+        {
+          "text": "Reforço de dT (difteria e tétano) a cada 10 anos",
+          "daysBefore": 30,
+          "url": null,
+          "place": "UBS"
+        },
+        {
+          "text": "Febre amarela: dose única para a vida, aplicada pelo menos 10 dias antes de viajar",
+          "daysBefore": 30,
+          "url": null,
+          "place": "UBS"
+        },
+        {
+          "text": "Influenza: uma dose por ano, na campanha (em geral entre março e maio)",
+          "daysBefore": 30,
+          "url": null,
+          "place": "UBS ou clínica particular"
+        },
+        {
+          "text": "Hepatite B: esquema de 3 doses para quem nunca tomou; HPV conforme a faixa e a indicação clínica",
+          "daysBefore": 30,
+          "url": null,
+          "place": "UBS"
+        },
+        {
+          "text": "Para viagem que exige comprovante, peça o CIVP à Anvisa (até 5 dias úteis)",
+          "daysBefore": 30,
+          "url": "https://www.gov.br/pt-br/servicos/obter-o-certificado-internacional-de-vacinacao-e-profilaxia",
+          "place": null
+        }
+      ],
+      "cost": "Gratuito na rede pública (UBS) para as vacinas do calendário e o CIVP; em clínica particular a dose costuma custar de R$ 90 a R$ 400.",
+      "place": "Unidade Básica de Saúde do seu bairro ou clínica de vacinas particular; segunda via da carteira no Meu SUS Digital.",
+      "tip": "O reforço de dT some do radar porque é a cada 10 anos: anote a data da última dose. Para viajar, febre amarela precisa de 10 dias de antecedência e o CIVP só sai depois que a dose está registrada.",
+      "recurring": true,
+      "cadence": "yearly",
+      "nearbyQueries": [
+        "UBS posto de saúde",
+        "clínica de vacinação",
+        "vacina febre amarela",
+        "posto de vacinação"
+      ]
     }
   },
   "states": {
@@ -651,7 +1096,9 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.ac.gov.br/",
+      "ipvaURL": "https://sefaz.ac.gov.br/2021/"
     },
     "AL": {
       "name": "Alagoas",
@@ -743,7 +1190,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.al.gov.br/",
+      "ipvaURL": "https://www.sefaz.al.gov.br/"
     },
     "AP": {
       "name": "Amapá",
@@ -835,7 +1284,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.ap.gov.br/detranap/",
+      "ipvaURL": "https://sefaz.ap.gov.br/"
     },
     "AM": {
       "name": "Amazonas",
@@ -885,7 +1336,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.am.gov.br/",
+      "ipvaURL": "https://www.sefaz.am.gov.br/"
     },
     "BA": {
       "name": "Bahia",
@@ -977,7 +1430,9 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://www.ba.gov.br/detran/",
+      "ipvaURL": "https://www.ba.gov.br/sefaz/ipva"
     },
     "CE": {
       "name": "Ceará",
@@ -1069,7 +1524,9 @@
             "day": 10
           }
         }
-      }
+      },
+      "detranURL": "https://www.ce.gov.br/detran/",
+      "ipvaURL": "https://www.ce.gov.br/sefaz/"
     },
     "DF": {
       "name": "Distrito Federal",
@@ -1161,7 +1618,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.df.gov.br/",
+      "ipvaURL": "https://www.receita.fazenda.df.gov.br/"
     },
     "ES": {
       "name": "Espírito Santo",
@@ -1253,7 +1712,9 @@
             "day": 15
           }
         }
-      }
+      },
+      "detranURL": "https://detran.es.gov.br/",
+      "ipvaURL": "https://sefaz.es.gov.br/"
     },
     "GO": {
       "name": "Goiás",
@@ -1345,7 +1806,9 @@
             "day": 15
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.go.gov.br/psw/",
+      "ipvaURL": "https://goias.gov.br/economia/ipva/"
     },
     "MA": {
       "name": "Maranhão",
@@ -1437,7 +1900,9 @@
             "day": 29
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.ma.gov.br/inicio/",
+      "ipvaURL": "https://www.sefaz.ma.gov.br/"
     },
     "MT": {
       "name": "Mato Grosso",
@@ -1529,7 +1994,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.mt.gov.br/",
+      "ipvaURL": "https://www5.sefaz.mt.gov.br/"
     },
     "MS": {
       "name": "Mato Grosso do Sul",
@@ -1621,11 +2088,13 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.ms.gov.br/",
+      "ipvaURL": "https://www.sefaz.ms.gov.br/"
     },
     "MG": {
       "name": "Minas Gerais",
-      "detranURL": "https://www.detran.mg.gov.br",
+      "detranURL": "https://www.detran.mg.gov.br/",
       "ipva": {
         "validFor": 2026,
         "source": "https://www.legisweb.com.br/noticia/?id=32552",
@@ -1714,10 +2183,102 @@
             "day": 31
           }
         }
-      }
+      },
+      "ipvaURL": "https://www.fazenda.mg.gov.br/"
     },
     "PA": {
-      "name": "Pará"
+      "name": "Pará",
+      "detranURL": "https://www.detran.pa.gov.br/",
+      "ipva": {
+        "validFor": 2026,
+        "source": "https://www.oliberal.com/economia/ipva-2026-veja-o-calendario-de-vencimento-e-descontos-para-pagamento-antecipado-no-para-1.1062630",
+        "note": "Cota única com desconto de 15% (sem multas nos últimos dois anos), 10% (sem multas no último exercício) ou 5% nos demais casos, ou parcelamento em até 3 vezes sem desconto; o calendário do PA (IN Sefa 030/2025) escalona pelos dois últimos dígitos da placa, e as datas abaixo são as do primeiro grupo de cada final (grupos 40-60/70-90 vencem 1 a 3 semanas depois).",
+        "ipvaByPlate": {
+          "1": {
+            "month": 1,
+            "day": 6
+          },
+          "2": {
+            "month": 1,
+            "day": 27
+          },
+          "3": {
+            "month": 2,
+            "day": 24
+          },
+          "4": {
+            "month": 3,
+            "day": 23
+          },
+          "5": {
+            "month": 4,
+            "day": 20
+          },
+          "6": {
+            "month": 5,
+            "day": 11
+          },
+          "7": {
+            "month": 6,
+            "day": 15
+          },
+          "8": {
+            "month": 7,
+            "day": 6
+          },
+          "9": {
+            "month": 7,
+            "day": 27
+          },
+          "0": {
+            "month": 8,
+            "day": 24
+          }
+        },
+        "licensingByPlate": {
+          "1": {
+            "month": 3,
+            "day": 6
+          },
+          "2": {
+            "month": 3,
+            "day": 27
+          },
+          "3": {
+            "month": 4,
+            "day": 24
+          },
+          "4": {
+            "month": 5,
+            "day": 22
+          },
+          "5": {
+            "month": 6,
+            "day": 19
+          },
+          "6": {
+            "month": 7,
+            "day": 10
+          },
+          "7": {
+            "month": 8,
+            "day": 14
+          },
+          "8": {
+            "month": 9,
+            "day": 4
+          },
+          "9": {
+            "month": 9,
+            "day": 25
+          },
+          "0": {
+            "month": 10,
+            "day": 23
+          }
+        }
+      },
+      "ipvaURL": "https://www.sefa.pa.gov.br/"
     },
     "PB": {
       "name": "Paraíba",
@@ -1809,11 +2370,13 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://detran.pb.gov.br/",
+      "ipvaURL": "https://www.sefaz.pb.gov.br/"
     },
     "PR": {
       "name": "Paraná",
-      "detranURL": "https://www.detran.pr.gov.br",
+      "detranURL": "https://www.detran.pr.gov.br/",
       "ipva": {
         "validFor": 2026,
         "source": "https://www.fazenda.pr.gov.br/Noticia/IPVA-2026-calendario-de-vencimento-inicia-nesta-sexta-feira-com-desconto",
@@ -1902,7 +2465,8 @@
             "day": 27
           }
         }
-      }
+      },
+      "ipvaURL": "https://www.fazenda.pr.gov.br/"
     },
     "PE": {
       "name": "Pernambuco",
@@ -1994,7 +2558,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://detran.pe.gov.br/",
+      "ipvaURL": "https://www.sefaz.pe.gov.br/"
     },
     "PI": {
       "name": "Piauí",
@@ -2086,11 +2652,13 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.pi.gov.br/",
+      "ipvaURL": "https://portal.sefaz.pi.gov.br/"
     },
     "RJ": {
       "name": "Rio de Janeiro",
-      "detranURL": "https://www.detran.rj.gov.br",
+      "detranURL": "https://www.detran.rj.gov.br/",
       "ipva": {
         "validFor": 2026,
         "source": "https://portal.fazenda.rj.gov.br/noticias/governo-do-estado-divulga-calendario-de-pagamento-do-ipva-2026/",
@@ -2179,7 +2747,8 @@
             "day": 31
           }
         }
-      }
+      },
+      "ipvaURL": "https://portal.fazenda.rj.gov.br/ipva/"
     },
     "RN": {
       "name": "Rio Grande do Norte",
@@ -2271,7 +2840,8 @@
             "day": 10
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.rn.gov.br/"
     },
     "RS": {
       "name": "Rio Grande do Sul",
@@ -2363,7 +2933,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.rs.gov.br/inicial",
+      "ipvaURL": "https://receita.fazenda.rs.gov.br/inicial"
     },
     "RO": {
       "name": "Rondônia",
@@ -2455,7 +3027,9 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.ro.gov.br/",
+      "ipvaURL": "https://sefin.ro.gov.br/"
     },
     "RR": {
       "name": "Roraima",
@@ -2547,7 +3121,9 @@
             "day": 31
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.rr.gov.br/",
+      "ipvaURL": "https://www.sefaz.rr.gov.br/"
     },
     "SC": {
       "name": "Santa Catarina",
@@ -2639,11 +3215,13 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://www.detran.sc.gov.br/",
+      "ipvaURL": "https://www.sef.sc.gov.br/"
     },
     "SP": {
       "name": "São Paulo",
-      "detranURL": "https://www.detran.sp.gov.br",
+      "detranURL": "https://www.detran.sp.gov.br/detransp",
       "ipva": {
         "validFor": 2026,
         "source": "Sefaz-SP (portal.fazenda.sp.gov.br) e Detran-SP via Agência SP, calendário 2026",
@@ -2732,7 +3310,8 @@
             "day": 31
           }
         }
-      }
+      },
+      "ipvaURL": "https://portal.fazenda.sp.gov.br/servicos/ipva"
     },
     "SE": {
       "name": "Sergipe",
@@ -2824,7 +3403,9 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://detran.se.gov.br/",
+      "ipvaURL": "https://www.sefaz.se.gov.br/"
     },
     "TO": {
       "name": "Tocantins",
@@ -2916,7 +3497,9 @@
             "day": 30
           }
         }
-      }
+      },
+      "detranURL": "https://www.to.gov.br/detran/",
+      "ipvaURL": "https://www.to.gov.br/sefaz/"
     }
   },
   "passportDestinations": {
@@ -3161,6 +3744,570 @@
       "lastInstallmentMonth": 12,
       "payURL": "https://www.goiania.go.gov.br/sing_servicos/emissao-duam-itu-iptu-issqn/",
       "note": "Data única (20/2) para cota única com 10% ou 1ª de 11 parcelas iguais, vencendo dia 20 de cada mês até dezembro; também 12x no cartão de crédito. As páginas de notícias da prefeitura não abriram (403); dados vêm da reprodução do release oficial da Prefeitura de Goiânia (LegisWeb) e de Encontra Goiânia/QuintoAndar, concordantes. IPTU Social isenta imóveis com valor venal até R$ 181.600,88 (cerca de 100 mil imóveis)."
+    },
+    "Manaus": {
+      "state": "AM",
+      "validFor": 2026,
+      "source": "https://www.manaus.am.gov.br/noticia/beneficios/calendario-tributos-2026/",
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 16
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://semefatende.manaus.am.gov.br/",
+      "note": "Desconto escalonado no carnê digital (app Manaus Atende): 12% até 30/1, 11% até 27/2 e 10% até 16/3; no carnê físico a cota única tem 8%. Parcelado em até 10 vezes, primeira parcela em 16/3, com 2% de desconto por parcela paga em dia no carnê digital."
+    },
+    "Belém": {
+      "state": "PA",
+      "validFor": 2026,
+      "source": "https://www.legisweb.com.br/legislacao/?id=489106",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://sefin.belem.pa.gov.br/",
+      "note": "Edital de Lançamento SEFIN nº 1/2026: cota única com 10% de desconto até 10/2 ou com 7% até 10/3. O parcelamento vai até 10 vezes, sem desconto, com a primeira parcela em 10/2."
+    },
+    "Campinas": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://www.acidadeon.com/campinas/cotidiano/iptu-2026-cota-unica-e-1a-parcela-vencem-hoje-em-campinas/",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 5,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://iptu.campinas.sp.gov.br/",
+      "note": "Cota única com 5% de desconto, mais 1% (limitado a R$ 100) para quem aderiu ao IPTU Digital. O vencimento é 26/1 para imóveis não residenciais e 10/2 para residenciais; o parcelamento vai até 11 vezes."
+    },
+    "Guarulhos": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://guarulhosweb.com.br/ja-e-possivel-consultar-valor-do-iptu-de-2026-vencimentos-em-guarulhos-tem-inicio-neste-mes/",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 21
+      },
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 25
+      },
+      "discountPercent": 10,
+      "installments": 12,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://iptu.guarulhos.sp.gov.br/",
+      "note": "A cota única tem 10% de desconto e vence entre 21 e 25 de janeiro, conforme o final da inscrição imobiliária. Quem preferir pode parcelar em até 12 vezes."
+    },
+    "São Luís": {
+      "state": "MA",
+      "validFor": 2026,
+      "source": "https://www.saoluis.ma.gov.br/portal/noticias/0/3/3666/prefeitura-de-sao-luis-disponibiliza-guias-do-iptu-2026-e-garante-desconto-de-15-para-pagamento-em-cota-unica",
+      "singleQuotaTo": {
+        "month": 7,
+        "day": 10
+      },
+      "discountPercent": 15,
+      "installments": 6,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://semfaz.saoluis.ma.gov.br",
+      "note": "A cota única tem 15% de desconto e vence em 10/7/2026, mesma data da primeira parcela. O parcelamento vai até 6 vezes, sem desconto."
+    },
+    "Maceió": {
+      "state": "AL",
+      "validFor": 2026,
+      "source": "https://maceio.al.gov.br/noticias/sefaz/prefeitura-de-maceio-oferece-desconto-de-20-na-cota-unica-do-iptu-2026-boletos-ja-estao-disponiveis",
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 30
+      },
+      "discountPercent": 20,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://online.maceio.al.gov.br",
+      "note": "Desconto escalonado na cota única: 20% até 30/1, 10% até 27/2 e 5% até 31/3. O parcelamento vai até 10 vezes sem desconto, de 31/3 a 28/12/2026."
+    },
+    "Natal": {
+      "state": "RN",
+      "validFor": 2026,
+      "source": "https://www.natal.rn.gov.br/news/post2/43858",
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 9
+      },
+      "discountPercent": 16,
+      "installments": 10,
+      "payURL": "https://natal.rn.gov.br/sefin",
+      "note": "Cota única antecipada até 9/1 dá 16% de desconto para quem estava adimplente em 30/12/2025; depois dessa data o desconto cai para 12%. O parcelamento vai até 10 vezes, com a primeira parcela em 20/2 (zonas Sul e Leste) ou 20/3 (zonas Norte e Oeste)."
+    },
+    "João Pessoa": {
+      "state": "PB",
+      "validFor": 2026,
+      "source": "https://www.joaopessoa.pb.gov.br/noticias/prefeitura-prorroga-prazo-para-pagamento-da-cota-unica-do-iptu-e-tcr/",
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 31
+      },
+      "discountPercent": 15,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://receita.joaopessoa.pb.gov.br/portal-web/paginas/iptu/index.jsf",
+      "note": "A cota única de IPTU e TCR tem 15% de desconto, com prazo prorrogado de 6/3 para 31/3/2026; quem estava em dia em 31/12/2025 ganha mais 5%, chegando a 20%. O parcelamento vai até 10 vezes, com a última em 7/12."
+    },
+    "Teresina": {
+      "state": "PI",
+      "validFor": 2026,
+      "source": "https://portalodia.com/noticias/teresina/iptu-2026-em-teresina-tem-desconto-ate-30-de-junho-veja-como-pagar-457831.html",
+      "singleQuotaTo": {
+        "month": 6,
+        "day": 30
+      },
+      "discountPercent": 10,
+      "installments": 6,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://iptu.teresina.pi.gov.br",
+      "note": "Cota única com 10% de desconto até 30/6/2026; o parcelamento vai até 6 prestações, sem desconto, da mesma data até 30/11. As mesmas regras valem para a TCRD e a COSISP."
+    },
+    "Campo Grande": {
+      "state": "MS",
+      "validFor": 2026,
+      "source": "https://www.campogrande.ms.gov.br/cgnoticias/noticia/iptu-2026-pagamento-e-desconto-de-10-sao-definidos/",
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 12
+      },
+      "discountPercent": 10,
+      "installments": 12,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://iptu.campogrande.ms.gov.br",
+      "note": "Pagamento à vista com 10% de desconto até 12/1/2026, apenas para quem não tem débitos em Dívida Ativa. O parcelamento vai até 12 vezes conforme o valor do imposto, com a primeira parcela na mesma data."
+    },
+    "Cuiabá": {
+      "state": "MT",
+      "validFor": 2026,
+      "source": "https://www.cuiaba.mt.gov.br/noticias/prazo-do-iptu-com-desconto-e-prorrogado-em-cuiaba-e-pagamento-pode-ser-feito-no-cartao-de-credito",
+      "singleQuotaTo": {
+        "month": 4,
+        "day": 10
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://portalfazenda.cuiaba.mt.gov.br/portalfazenda/PortalContribuinte/Home",
+      "note": "A cota única com 10% de desconto vencia em 25/3/2026 e teve o prazo prorrogado para 10/4. O parcelamento vai até 10 vezes, com a última parcela em 30/12/2026."
+    },
+    "Florianópolis": {
+      "state": "SC",
+      "validFor": 2026,
+      "source": "https://www.legisweb.com.br/legislacao/?id=489049",
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 5
+      },
+      "discountPercent": 20,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://iptu.pmf.sc.gov.br/iptu-virtual/main-iptu/index.php",
+      "note": "Desconto escalonado na cota única: 20% até 5/1, 10% até 5/2 e 5% até 5/3/2026. O parcelamento é em 10 parcelas mensais, a primeira em 5/3 e a última em dezembro."
+    },
+    "Vitória": {
+      "state": "ES",
+      "validFor": 2026,
+      "source": "https://www.vitoria.es.gov.br/semfa/iptu-quando-e-onde-pagar",
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 23
+      },
+      "discountPercent": 8,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://tributario.vitoria.es.gov.br/Servicos/DocumentoArrecadacao/DocumentoArrecadacao.aspx",
+      "note": "A cota única com 8% de desconto vence em 23/3/2026. O imposto pode ser parcelado em até 10 vezes (5 vezes para valores até R$ 100), com a última cota em 21/12/2026."
+    },
+    "Aracaju": {
+      "state": "SE",
+      "validFor": 2026,
+      "source": "https://www.aracaju.se.gov.br/noticias/115087/prefeitura_de_aracaju_prorroga_prazo_da_cota_unica_do_iptu_com_desconto_de_7,5_ate_6_de_fevereiro.html",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 6
+      },
+      "discountPercent": 7.5,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://fazenda.aracaju.se.gov.br",
+      "note": "O IPTU foi congelado em 2026 (Decreto 8.429). A cota única com 7,5% de desconto vencia em 16/1 e foi prorrogada para 6/2/2026; o parcelamento vai até 10 vezes, de 6/2 a 9/11, com parcela mínima de R$ 300."
+    },
+    "Porto Velho": {
+      "state": "RO",
+      "validFor": 2026,
+      "source": "https://www.portovelho.ro.gov.br/artigo/52978/desconto-pagamento-em-cota-unica-de-iptu-e-trsd-2026-tem-10-de-desconto-ate-o-dia-5-de-fevereiro",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 5
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 5
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "payURL": "https://gpi-trb.portovelho.ro.gov.br/ServerExec/acessoBase/?idPortal=dbde30ec-cf59-4803-9653-00121a704021",
+      "note": "A cota única de IPTU e TRSD tem 10% de desconto até 5/2/2026 e 5% entre 6/2 e 5/3. O parcelamento é em até 10 vezes sem desconto, com a primeira parcela em 5/2 e parcela mínima de 1 UPF."
+    },
+    "Macapá": {
+      "state": "AP",
+      "validFor": 2026,
+      "source": "https://www.legisweb.com.br/legislacao/?id=489485",
+      "singleQuotaTo": {
+        "month": 4,
+        "day": 10
+      },
+      "discountPercent": 20,
+      "installments": 8,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://agencia.macapa.ap.gov.br",
+      "note": "Decreto nº 175/2026: cota única com 20% de desconto até 10/4; entre 11/4 e 10/5 o desconto cai para 10%. O parcelamento vai até 8 parcelas, vencendo todo dia 10, de abril a novembro de 2026."
+    },
+    "Boa Vista": {
+      "state": "RR",
+      "validFor": 2026,
+      "source": "https://boavista.rr.gov.br/noticias/2026/5/prazo-para-pagamento-da-primeira-parcela-do-iptu-e-da-taxa-de-lixo-e-prorrogado-em-boa-vista",
+      "singleQuotaTo": {
+        "month": 5,
+        "day": 15
+      },
+      "discountPercent": 10,
+      "installments": 6,
+      "lastInstallmentMonth": 10,
+      "payURL": "https://boavista.rr.gov.br/",
+      "note": "A cota única do IPTU e da taxa de lixo dá 10% de desconto; o vencimento era 5/5/2026 e foi prorrogado para 15/5. O parcelamento vai até 6 vezes, com a última parcela em 6/10/2026."
+    },
+    "Rio Branco": {
+      "state": "AC",
+      "validFor": 2026,
+      "source": "https://www.riobranco.ac.gov.br/sefin/prefeitura-de-rio-branco-anuncia-calendario-de-pagamento-e-regras-de-isencao-do-iptu-2026/",
+      "singleQuotaTo": {
+        "month": 4,
+        "day": 30
+      },
+      "discountPercent": 20,
+      "installments": 8,
+      "payURL": "https://portalcidadao.riobranco.ac.gov.br",
+      "note": "Cota única até 30/4/2026 com 20% de desconto para quem não tem débitos de exercícios anteriores (10% para quem tem pendências). O parcelamento vai até 8 vezes, sem desconto."
+    },
+    "Palmas": {
+      "state": "TO",
+      "validFor": 2026,
+      "source": "https://www.palmas.to.gov.br/core/noticias/contribuintes-tem-ate-esta-terca-feira-31-para-realizar-pagamento-a-vista-com-desconto-do-iptu-2026/",
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 31
+      },
+      "discountPercent": 20,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://portal2013.palmas.to.gov.br/servicos/online/1/1/",
+      "note": "A cota única vence em 31/3/2026 com até 20% de desconto, que pode chegar a 30% somando o abatimento de quem está adimplente com o município. O parcelamento vai até 10 vezes, com a última parcela em 29/12/2026."
+    },
+    "São Gonçalo": {
+      "state": "RJ",
+      "validFor": 2026,
+      "source": "https://www.saogoncalo.rj.gov.br/prefeitura-de-sao-goncalo-divulga-regras-e-prazos-do-iptu-2026/",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 10,
+      "installments": 11,
+      "payURL": "https://sistema.pmsg.rj.gov.br/pmsaogoncalo/websis/siapegov/arrecadacao/2via/index.php",
+      "note": "Cota única até 10 de fevereiro com 10% de desconto, que pode chegar a 20% somando 5% do Bom Pagador e 5% da atualização cadastral. Alternativamente, parcelamento em até 11 vezes, sem desconto."
+    },
+    "Duque de Caxias": {
+      "state": "RJ",
+      "validFor": 2026,
+      "source": "https://sitedabaixada.com.br/geral/2026/01/19/duque-de-caxias-oferece-7-de-desconto-no-iptu-ate-13-fevereiro",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 13
+      },
+      "discountPercent": 7,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://portalcontribuinte.duquedecaxias.rj.gov.br/",
+      "note": "Cota única com 7% de desconto até 13 de fevereiro; quem pagar até 16 de março ainda tem 4%. O parcelamento vai até 10 vezes, de março a dezembro, com parcela mínima de R$ 99,00."
+    },
+    "Nova Iguaçu": {
+      "state": "RJ",
+      "validFor": 2026,
+      "source": "https://novaiguacu.rj.gov.br/2025/11/28/nova-iguacu-divulga-calendario-de-pagamento-do-iptu-e-demais-tributos-municipais-para-2026/",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "http://contribuinte.novaiguacu.rj.gov.br/",
+      "note": "Cota única até 10 de fevereiro com 10% de desconto. Quem preferir pode parcelar em até 10 vezes, com vencimento no dia 15 de cada mês, de março a dezembro."
+    },
+    "Niterói": {
+      "state": "RJ",
+      "validFor": 2026,
+      "source": "https://niteroi.rj.gov.br/desconto-para-contribuintes-que-pagarem-iptu-2026-em-cota-unica-pode-chegar-a-16/",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 6
+      },
+      "discountPercent": 10,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://www.fazenda.niteroi.rj.gov.br/site/servicos/iptu/",
+      "note": "Cota única até 6 de fevereiro com 10% de desconto, chegando a 16% com os 6% da Lei do Bom Pagador. O parcelamento é em 11 cotas, de 10 de fevereiro a 10 de dezembro."
+    },
+    "Santo André": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://web.santoandre.sp.gov.br/portal/noticias/0/3/19920/santo-andre-prorroga-vencimento-do-iptu-para-30-de-janeiro",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 15
+      },
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 30
+      },
+      "discountPercent": 10,
+      "installments": 12,
+      "payURL": "https://www.santoandre.sp.gov.br/PortalServico/SegundasVias/Iptu/IptuCarne.aspx",
+      "note": "Vencimento original de 15/01 a 20/01 foi prorrogado para 30 de janeiro por atraso na entrega dos carnês. Cota única tem 10% de desconto; em duas vezes, 5%; em até 12 vezes, sem desconto."
+    },
+    "São Bernardo do Campo": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://www.saobernardo.sp.gov.br/en/orientacoesiptu",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 12
+      },
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 23
+      },
+      "discountPercent": 5,
+      "installments": 12,
+      "payURL": "https://www.saobernardo.sp.gov.br/consultar-debitos",
+      "note": "Os vencimentos começam em 12 de janeiro e variam conforme o lançamento (12, 13, 14, 16 e 23 de janeiro). A cota única dá 5% de desconto; o parcelamento vai até 12 vezes, com parcela mínima de R$ 59,60."
+    },
+    "Sorocaba": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://noticias.sorocaba.sp.gov.br/a-prefeitura-inicia-a-entrega-dos-carnes-do-iptu-2026-na-segunda-quinzena-de-fevereiro/",
+      "singleQuotaFrom": {
+        "month": 3,
+        "day": 9
+      },
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 20
+      },
+      "discountPercent": 5,
+      "installments": 10,
+      "payURL": "https://fazenda.sorocaba.sp.gov.br/iptu/",
+      "note": "Vencimentos escalonados por CEP entre 9 e 20 de março. Pagamento à vista tem 5% de desconto, assim como o parcelamento em 3 vezes pelo site; em até 10 vezes pelo carnê, sem desconto."
+    },
+    "Ribeirão Preto": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://www.ribeiraopreto.sp.gov.br/portal/noticia/prefeitura-de-ribeirao-preto-divulga-calendario-do-iptu-2026",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 30
+      },
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 30
+      },
+      "discountPercent": 10,
+      "installments": 12,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://www.ribeiraopreto.sp.gov.br/fazenda/pesquisa-debito-imovel",
+      "note": "Cota única e 1ª parcela vencem em 30 de janeiro, com 10% de desconto à vista. O parcelamento vai até 12 vezes, com a última parcela em 10 de dezembro."
+    },
+    "São José dos Campos": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://www.sjc.sp.gov.br/servicos/gestao-administrativa-e-financas/iptu-2026/pagamento/",
+      "singleQuotaFrom": {
+        "month": 2,
+        "day": 9
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 13
+      },
+      "discountPercent": 7.5,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://servicos.sjc.sp.gov.br/servicos/iptu/index.aspx",
+      "note": "A cota única e a 1ª parcela vencem entre 9 e 13 de fevereiro, conforme a data impressa no carnê; à vista há 7,5% de desconto. Parcelamento em até 10 vezes, de março a novembro."
+    },
+    "Santos": {
+      "state": "SP",
+      "validFor": 2026,
+      "source": "https://www.santos.sp.gov.br/?q=noticia%2Freajuste-de-iptu-de-santos-acompanha-indice-da-inflacao",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 6
+      },
+      "discountPercent": 4,
+      "payURL": "https://egov.santos.sp.gov.br/tribusweb/Imobiliario/Lancamento",
+      "note": "A cota única e a 1ª parcela vencem a partir de 6 de janeiro, conforme a data indicada em cada carnê. Cota única tem 4% de desconto, e quem aderiu ao IPTU Digital ganha mais 1%, limitado a R$ 100."
+    },
+    "Uberlândia": {
+      "state": "MG",
+      "validFor": 2026,
+      "source": "https://www.uberlandia.mg.gov.br/2026/02/27/prazo-para-pagamento-a-vista-com-desconto-do-iptu-2026-e-prorrogado-para-o-dia-16-de-marco/",
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 16
+      },
+      "discountPercent": 5,
+      "installments": 6,
+      "lastInstallmentMonth": 8,
+      "payURL": "https://segundavia.uberlandia.mg.gov.br/",
+      "note": "A cota única com 5% de desconto vencia em 27 de fevereiro e foi prorrogada para 16 de março; sem desconto, o pagamento integral vai até 31 de março. Parcelamento em até 6 vezes, de março a agosto."
+    },
+    "Contagem": {
+      "state": "MG",
+      "validFor": 2026,
+      "source": "https://portal.contagem.mg.gov.br/portal/noticias/0/3/83149/iptu-2026-em-contagem-confira-prazos-descontos-isencoes-e-como-pagar",
+      "singleQuotaTo": {
+        "month": 3,
+        "day": 10
+      },
+      "discountPercent": 12,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://receita.contagem.mg.gov.br/iptu2026/guia/",
+      "note": "Cota única até 10 de março com 12% de desconto. Alternativamente, até 10 parcelas mensais de no mínimo R$ 50, sempre no dia 10, até dezembro."
+    },
+    "Juiz de Fora": {
+      "state": "MG",
+      "validFor": 2026,
+      "source": "https://www.pjf.mg.gov.br/noticias/view.php?modo=link2&idnoticia2=88194",
+      "singleQuotaFrom": {
+        "month": 1,
+        "day": 9
+      },
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 2
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://tributos4.pjf.mg.gov.br/iptu/",
+      "note": "Cota única com 10% de desconto de 9 de janeiro a 2 de fevereiro, desde que não haja débitos anteriores na inscrição do imóvel. No parcelamento em 10 vezes, a primeira parcela vence em 20 de março."
+    },
+    "Londrina": {
+      "state": "PR",
+      "validFor": 2026,
+      "source": "https://blog.londrina.pr.gov.br/?p=206072",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "installments": 10,
+      "payURL": "https://app.londrina.pr.gov.br/app/r/fazenda_front/iptu/login",
+      "note": "Cota única e primeira parcela vencem em 10 de fevereiro (segundo lote em 10 de março). O desconto à vista é progressivo, de 10% a 15%, subindo 1% por ano para quem pagou à vista no ano anterior."
+    },
+    "Maringá": {
+      "state": "PR",
+      "validFor": 2026,
+      "source": "https://www.maringa.pr.gov.br/noticias/prazo-para-pagamento-a-vista-do-iptu-2026-com-7-de-desconto-segue-ate-10-de-marco/41939",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 10,
+      "installments": 11,
+      "lastInstallmentMonth": 12,
+      "payURL": "https://cidadao.maringa.pr.gov.br/portal-contribuinte/",
+      "note": "Cota única com 10% de desconto até 10 de fevereiro; quem perder esse prazo ainda paga à vista com 7% até 10 de março. Valores acima de R$ 120 podem ser divididos em até 11 parcelas."
+    },
+    "Joinville": {
+      "state": "SC",
+      "validFor": 2026,
+      "source": "https://www.joinville.sc.gov.br/servicos/efetuar-pagamento-do-iptu/",
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 9
+      },
+      "discountPercent": 10,
+      "installments": 10,
+      "payURL": "https://www.joinville.sc.gov.br/servicos/obter-2a-via-do-carne-de-iptu/",
+      "note": "Parcela única com 10% de desconto até 9 de janeiro; até 10 de fevereiro o desconto à vista cai para 8%. O parcelamento vai até 10 vezes, com a primeira parcela em 9 de janeiro."
+    },
+    "Caxias do Sul": {
+      "state": "RS",
+      "validFor": 2026,
+      "source": "https://caxias.rs.gov.br/servicos/receita/iptu/ano-corrente",
+      "singleQuotaTo": {
+        "month": 1,
+        "day": 6
+      },
+      "discountPercent": 12,
+      "installments": 4,
+      "lastInstallmentMonth": 7,
+      "payURL": "https://caxias.rs.gov.br/servicos/receita/iptu/ano-corrente",
+      "note": "Carnê 100% digital. A cota única tem dois vencimentos: 6 de janeiro com até 12% de desconto e 6 de fevereiro com até 10%. Quem não paga à vista divide em 4 parcelas, de abril a julho, sem desconto."
+    },
+    "Feira de Santana": {
+      "state": "BA",
+      "validFor": 2026,
+      "source": "https://www.feiradesantana.ba.gov.br/secom/whats_app.asp?idn=43001",
+      "singleQuotaTo": {
+        "month": 4,
+        "day": 30
+      },
+      "discountPercent": 20,
+      "payURL": "https://sefaz.feiradesantana.ba.gov.br",
+      "note": "A cota única vence em 30 de abril com 20% de desconto. Quem não paga à vista perde o desconto e pode parcelar em prestações mensais iguais; em atraso incidem multa e juros de 1% ao mês."
+    },
+    "Jaboatão dos Guararapes": {
+      "state": "PE",
+      "validFor": 2026,
+      "source": "https://www.folhape.com.br/economia/prefeitura-de-jaboatao-concede-descontos-de-ate-20-no-iptu-2026-para/459689/",
+      "singleQuotaTo": {
+        "month": 2,
+        "day": 10
+      },
+      "discountPercent": 20,
+      "installments": 10,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://jaboatao.pe.gov.br/carta-de-servico/impostos-taxas/iptu-tlp",
+      "note": "Cota única vence em 10 de fevereiro com 20% de desconto para quem não tem débitos (10% com parcelamento em dia, 5% para inadimplentes). O parcelamento vai até 10 vezes, sempre no dia 10, de fevereiro a novembro."
+    },
+    "Anápolis": {
+      "state": "GO",
+      "validFor": 2026,
+      "source": "https://www.anapolis.go.gov.br/prazo-para-pagamento-do-iptu-e-itu-com-desconto-em-anapolis-e-prorrogado-ate-30-de-abril/",
+      "singleQuotaTo": {
+        "month": 4,
+        "day": 30
+      },
+      "discountPercent": 10,
+      "installments": 8,
+      "lastInstallmentMonth": 11,
+      "payURL": "https://iptu.anapolis.go.gov.br/",
+      "note": "A cota única vencia em 10 de abril e foi prorrogada para 30 de abril, com 10% de desconto (até 15% para cadastrados no Contribuinte Legal sem débitos). O parcelamento é em até 8 vezes, de abril a novembro."
     }
   },
   "validity": {
@@ -3244,5 +4391,71 @@
       "sefaz"
     ],
     "note": "Serviços privados (despachante, contador, clínica, corretora, assistência) só aparecem com nota >= minRating e >= minReviews avaliações no Google. Órgãos públicos não passam pelo filtro."
+  },
+  "vistoDestinations": {
+    "Estados Unidos": {
+      "code": "US",
+      "visaRequired": true,
+      "leadDays": 180,
+      "url": "https://ais.usvisa-info.com/pt-br/niv",
+      "validityYears": 10,
+      "note": "Visto B1/B2 exige DS-160, taxa MRV de cerca de US$ 185, biometria no CASV e entrevista no consulado. A fila de entrevista pode passar de um ano; renovação com dispensa de entrevista ficou bem mais restrita desde 2025."
+    },
+    "Canadá": {
+      "code": "CA",
+      "visaRequired": true,
+      "leadDays": 60,
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
+      "validityYears": 5,
+      "note": "Brasileiro só usa a eTA (CAD 7, aprovada em minutos) se teve visto canadense nos últimos 10 anos ou tem visto americano válido; fora disso precisa do visto de visitante, que leva semanas."
+    },
+    "Austrália": {
+      "code": "AU",
+      "visaRequired": true,
+      "leadDays": 90,
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-overseas",
+      "validityYears": 1,
+      "note": "Brasileiro não tem ETA nem eVisitor: precisa do Visitor visa subclass 600, pedido pelo ImmiAccount, com taxa em dólares australianos e estada de até 3 a 12 meses por entrada."
+    },
+    "Reino Unido": {
+      "code": "GB",
+      "visaRequired": true,
+      "leadDays": 30,
+      "url": "https://www.gov.uk/eta/apply",
+      "validityYears": 2,
+      "note": "ETA obrigatória para brasileiros, inclusive em conexão. Custa £16, vale 2 anos ou até o passaporte vencer, e a resposta costuma sair em minutos (peça com 3 dias úteis de folga)."
+    },
+    "Japão": {
+      "code": "JP",
+      "visaRequired": false,
+      "leadDays": 30,
+      "url": "https://www.moj.go.jp/isa/",
+      "validityYears": null,
+      "note": "Isento de visto para estadas de até 90 dias desde 30/09/2023, mas só para quem tem passaporte eletrônico brasileiro no padrão ICAO. Passaporte antigo, sem chip, ainda exige visto."
+    },
+    "Índia": {
+      "code": "IN",
+      "visaRequired": true,
+      "leadDays": 30,
+      "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+      "validityYears": 1,
+      "note": "e-Visa de turismo pedido só no portal oficial, com pelo menos 4 dias de antecedência. Há opções de 30 dias, 1 ano e 5 anos, com taxas diferentes; a entrada só vale em aeroportos e portos autorizados."
+    },
+    "China": {
+      "code": "CN",
+      "visaRequired": false,
+      "leadDays": 45,
+      "url": "https://br.china-embassy.gov.cn/por/lqfw/lqfw2/",
+      "validityYears": null,
+      "note": "Brasileiro está isento de visto para até 30 dias (turismo, negócios, visita e trânsito) por política unilateral chinesa prorrogada até 31/12/2026. Para ficar mais tempo ou estudar/trabalhar, o visto continua obrigatório: confira o aviso da embaixada antes de viajar."
+    },
+    "Europa (Schengen)": {
+      "code": "EU",
+      "visaRequired": false,
+      "leadDays": 30,
+      "url": "https://travel-europe.europa.eu/etias",
+      "validityYears": 3,
+      "note": "Brasileiro entra sem visto por até 90 dias a cada 180. O ETIAS ainda não está em vigor: previsto para o último trimestre de 2026, custará €20 (isento abaixo de 18 e acima de 70 anos) e valerá 3 anos ou até o passaporte vencer."
+    }
   }
 }
