@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02i",
+  "version": "2026-09-02j",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -417,6 +417,146 @@
       "recurring": true,
       "nearbyQueries": [
         "Corretora de seguros"
+      ]
+    },
+    "contaLuz": {
+      "name": "Conta de luz",
+      "icon": "bolt.fill",
+      "leadDays": 5,
+      "reminderDaysBefore": [
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
+          "daysBefore": 5
+        },
+        {
+          "text": "Conferir consumo e valor; contestar se estiver fora do normal",
+          "daysBefore": 3
+        },
+        {
+          "text": "Pagar até o vencimento (copiar o código e colar no banco)",
+          "daysBefore": 0
+        },
+        {
+          "text": "Guardar a fatura e o comprovante"
+        }
+      ],
+      "cost": "Varia todo mês pelo consumo",
+      "place": "Distribuidora de energia (Enel, CPFL, Cemig, Light…)",
+      "tip": "Atraso gera juros e, depois de 15 dias de aviso, corte. Cadastre a fatura e o app avisa antes do vencimento.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "Atendimento distribuidora de energia"
+      ]
+    },
+    "contaAgua": {
+      "name": "Água e esgoto",
+      "icon": "drop.fill",
+      "leadDays": 5,
+      "reminderDaysBefore": [
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
+          "daysBefore": 5
+        },
+        {
+          "text": "Conferir consumo e valor; contestar se estiver fora do normal",
+          "daysBefore": 3
+        },
+        {
+          "text": "Pagar até o vencimento (copiar o código e colar no banco)",
+          "daysBefore": 0
+        },
+        {
+          "text": "Guardar a fatura e o comprovante"
+        }
+      ],
+      "cost": "Varia todo mês pelo consumo",
+      "place": "Companhia de saneamento (Sabesp, Cedae, Copasa, Sanepar…)",
+      "tip": "Conta muito acima do normal pode ser vazamento: confira o hidrômetro antes de pagar.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "Atendimento companhia de saneamento"
+      ]
+    },
+    "condominio": {
+      "name": "Condomínio",
+      "icon": "building.2.fill",
+      "leadDays": 5,
+      "reminderDaysBefore": [
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
+          "daysBefore": 5
+        },
+        {
+          "text": "Conferir consumo e valor; contestar se estiver fora do normal",
+          "daysBefore": 3
+        },
+        {
+          "text": "Pagar até o vencimento (copiar o código e colar no banco)",
+          "daysBefore": 0
+        },
+        {
+          "text": "Guardar a fatura e o comprovante"
+        }
+      ],
+      "cost": "Varia todo mês pelo consumo",
+      "place": "Administradora do condomínio",
+      "tip": "Boleto do condomínio costuma ter multa de 2% e juros no atraso. Guarde os comprovantes: são exigidos na venda do imóvel.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "Administradora de condomínios"
+      ]
+    },
+    "contaTelefone": {
+      "name": "Telefone e internet",
+      "icon": "antenna.radiowaves.left.and.right",
+      "leadDays": 5,
+      "reminderDaysBefore": [
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
+          "daysBefore": 5
+        },
+        {
+          "text": "Conferir consumo e valor; contestar se estiver fora do normal",
+          "daysBefore": 3
+        },
+        {
+          "text": "Pagar até o vencimento (copiar o código e colar no banco)",
+          "daysBefore": 0
+        },
+        {
+          "text": "Guardar a fatura e o comprovante"
+        }
+      ],
+      "cost": "Varia todo mês pelo consumo",
+      "place": "Operadora (Vivo, Claro, TIM, Oi, provedor local)",
+      "tip": "Fatura acima do combinado? Confira serviços adicionais e negocie; a fidelidade tem prazo.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "Loja da operadora"
       ]
     }
   },
