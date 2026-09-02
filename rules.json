@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02h",
+  "version": "2026-09-02i",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -297,6 +297,126 @@
       "nearbyQueries": [
         "Prefeitura",
         "Escritório de contabilidade"
+      ]
+    },
+    "seguroAuto": {
+      "name": "Seguro do carro",
+      "icon": "car.side.lock.fill",
+      "leadDays": 45,
+      "reminderDaysBefore": [
+        45,
+        15,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Pedir cotação na sua corretora e em outras duas",
+          "daysBefore": 45,
+          "place": "Corretora de seguros"
+        },
+        {
+          "text": "Comparar cobertura (roubo, colisão, terceiros, carro reserva) e franquia",
+          "daysBefore": 30
+        },
+        {
+          "text": "Conferir bônus e classe de bônus na apólice atual",
+          "daysBefore": 30
+        },
+        {
+          "text": "Decidir e assinar a proposta antes do fim da vigência",
+          "daysBefore": 7
+        },
+        {
+          "text": "Guardar a apólice nova e anotar o número",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "Varia pelo carro, perfil e região; renovação costuma subir com sinistro",
+      "place": "Corretora de seguros ou seguradora (SUSEP regula)",
+      "tip": "Cotar 45 dias antes evita ficar descoberto e dá tempo de negociar. Seguradora reguladora: SUSEP.",
+      "recurring": true,
+      "nearbyQueries": [
+        "Corretora de seguros"
+      ]
+    },
+    "seguroResidencial": {
+      "name": "Seguro residencial",
+      "icon": "house.lodge.fill",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Pedir cotação (incêndio, roubo, danos elétricos, responsabilidade civil)",
+          "daysBefore": 30,
+          "place": "Corretora de seguros"
+        },
+        {
+          "text": "Atualizar o valor do imóvel e dos bens segurados",
+          "daysBefore": 20
+        },
+        {
+          "text": "Conferir assistências incluídas (chaveiro, encanador, eletricista)",
+          "daysBefore": 20
+        },
+        {
+          "text": "Renovar ou trocar antes do fim da vigência",
+          "daysBefore": 7
+        },
+        {
+          "text": "Guardar a apólice nova e anotar o número",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "Geralmente 0,1% a 0,3% do valor do imóvel por ano",
+      "place": "Corretora de seguros, seguradora ou banco",
+      "tip": "Seguro residencial é barato e cobre danos elétricos e assistência 24h; muita gente só descobre depois do prejuízo.",
+      "recurring": true,
+      "nearbyQueries": [
+        "Corretora de seguros"
+      ]
+    },
+    "seguroVida": {
+      "name": "Seguro de vida",
+      "icon": "heart.text.square.fill",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        30,
+        7,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Revisar beneficiários e percentuais",
+          "daysBefore": 30
+        },
+        {
+          "text": "Conferir capital segurado frente à renda e dívidas da família",
+          "daysBefore": 30
+        },
+        {
+          "text": "Comparar preço e coberturas (invalidez, doenças graves)",
+          "daysBefore": 20,
+          "place": "Corretora de seguros"
+        },
+        {
+          "text": "Renovar antes do fim da vigência",
+          "daysBefore": 7
+        },
+        {
+          "text": "Guardar a apólice e avisar os beneficiários onde ela está",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "Depende de idade, saúde e capital segurado",
+      "place": "Corretora de seguros ou seguradora",
+      "tip": "Beneficiário desatualizado é o erro mais comum: revise a cada renovação e sempre que a família mudar.",
+      "recurring": true,
+      "nearbyQueries": [
+        "Corretora de seguros"
       ]
     }
   },
