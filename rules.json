@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02l",
+  "version": "2026-09-02o",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -1002,6 +1002,41 @@
         "clínica de vacinação",
         "vacina febre amarela",
         "posto de vacinação"
+      ]
+    },
+    "contaGas": {
+      "name": "Conta de gás",
+      "icon": "flame",
+      "leadDays": 5,
+      "reminderDaysBefore": [
+        5,
+        2,
+        0
+      ],
+      "checklist": [
+        {
+          "text": "Conferir se a conta chegou (e-mail, app ou site da distribuidora)",
+          "daysBefore": 5
+        },
+        {
+          "text": "Conferir consumo (m³) e valor; contestar se estiver fora do normal",
+          "daysBefore": 3
+        },
+        {
+          "text": "Pagar até o vencimento (copiar o código e colar no banco)",
+          "daysBefore": 0
+        },
+        {
+          "text": "Guardar a conta e o comprovante"
+        }
+      ],
+      "cost": "Varia todo mês pelo consumo",
+      "place": "Distribuidora (Naturgy, Comgás, Ultragaz, Supergasbras)",
+      "tip": "Gás encanado tem leitura mensal; botijão não gera conta. Débito automático evita corte.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "Distribuidora de gás"
       ]
     }
   },
@@ -4457,5 +4492,311 @@
       "validityYears": 3,
       "note": "Brasileiro entra sem visto por até 90 dias a cada 180. O ETIAS ainda não está em vigor: previsto para o último trimestre de 2026, custará €20 (isento abaixo de 18 e acima de 70 anos) e valerá 3 anos ou até o passaporte vencer."
     }
+  },
+  "vaccineDestinations": {
+    "Estados Unidos": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela de quem vem do Brasil, nem outras vacinas obrigatórias na entrada. Mantenha em dia as vacinas de rotina (tríplice viral, dT, hepatite B).",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Canadá": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Sem exigência de febre amarela nem de outras vacinas na entrada. Apenas vacinas de rotina em dia.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "México": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Não exige certificado nenhum na entrada. Hepatite A e tifoide são recomendadas pela transmissão por água e alimentos; há risco baixo de malária em áreas rurais de Chiapas, Chihuahua, Campeche e Sinaloa.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Argentina": {
+      "yellowFever": "recomendado",
+      "civpRequired": false,
+      "vaccines": [
+        "febre amarela"
+      ],
+      "note": "Não exige o CIVP na entrada. A OMS recomenda a vacina de febre amarela para quem vai a Corrientes e Misiones, inclusive as Cataratas do Iguaçu.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Chile": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada. Sem risco de malária.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Uruguai": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Paraguai": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela"
+      ],
+      "note": "Exige o CIVP de febre amarela para quem chega do Brasil (a partir de 1 ano de idade), inclusive de quem passou mais de 24 horas em trânsito no país. A vacina também é recomendada para o próprio viajante, exceto se ficar só em Assunção.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Bolívia": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem vem de país com risco, o que inclui o Brasil (a partir de 1 ano). Há risco de malária (quase só P. vivax) abaixo de 2500 m, maior em Beni e Pando.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Peru": {
+      "yellowFever": "recomendado",
+      "civpRequired": false,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Não exige o CIVP na entrada, mas a OMS recomenda a vacina para quem vai a Amazônia peruana (Loreto, Madre de Dios, Cusco de selva, Puno) abaixo de 2300 m. Não é recomendada para roteiros só em Lima, cidade de Cusco e Machu Picchu.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Colômbia": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela especificamente de quem chega do Brasil (e de Angola, RD Congo e Uganda), inclusive em trânsito acima de 12 horas. A vacina também é recomendada para quase todo o país, exceto Bogotá e áreas acima de 2300 m.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Portugal": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada de quem vem do Brasil.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Espanha": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "França": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado na entrada. Atenção: o departamento da Guiana Francesa tem regra própria e exige febre amarela.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Itália": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Alemanha": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Reino Unido": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Japão": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada de quem vem do Brasil.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "China": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega de país com risco, o que inclui o Brasil (a partir de 9 meses), e de quem ficou mais de 12 horas em trânsito nesses países. País certificado livre de malária desde 2021.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Coreia do Sul": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada. Risco muito baixo de malária (P. vivax) perto da zona desmilitarizada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Tailândia": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 9 meses) e de quem passou mais de 12 horas em aeroporto de país com risco. Há risco de malária em áreas rurais de fronteira; não há risco em Bangkok, Phuket ou Chiang Mai.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Índia": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "A Índia lista o Brasil como área de risco: quem chega sem o CIVP pode ficar em isolamento por até 6 dias. Há risco de malária em quase todo o país abaixo de 2000 m, e hepatite A e tifoide são fortemente recomendadas.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Emirados Árabes": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega de país com risco, incluindo o Brasil (a partir de 9 meses), e de quem ficou mais de 12 horas em trânsito. Sem risco de malária.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Arábia Saudita": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "meningocócica ACWY"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 9 meses). Para Hajj e Umrah exige também certificado de vacina meningocócica quadrivalente ACWY aplicada pelo menos 10 dias antes da chegada (polissacarídica vale 3 anos, conjugada 5 anos).",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "África do Sul": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 1 ano) e de quem passou mais de 12 horas em aeroporto de país com risco. Há risco de malária no Kruger, em Mpumalanga, Limpopo e nordeste do KwaZulu-Natal, com pico de outubro a maio.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Egito": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 9 meses) e de quem ficou mais de 12 horas em trânsito em país com risco. Sem necessidade de profilaxia de malária.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Marrocos": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Não exige certificado de febre amarela de quem vem do Brasil. Só exige comprovante de pólio de quem chega de países afetados por poliomielite, o que não é o caso do Brasil.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Quênia": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 1 ano) e a OMS também recomenda a vacina para a maior parte do país. Há risco de malária o ano inteiro em quase todo o território; profilaxia recomendada.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Australia": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega de país com risco, o que inclui o Brasil (a partir de 1 ano), e de quem passou mais de 12 horas em aeroporto de país com risco. Sem risco de malária.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Nova Zelândia": {
+      "yellowFever": "nao",
+      "civpRequired": false,
+      "vaccines": [],
+      "note": "Não exige certificado de febre amarela nem outras vacinas na entrada. Se fizer escala longa na Austrália, a regra australiana pode valer.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Cuba": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 9 meses) e de quem ficou mais de 12 horas em trânsito em país com risco. Sem risco de malária.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "República Dominicana": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A"
+      ],
+      "note": "Exige o CIVP de febre amarela apenas de quem chega dos estados de Minas Gerais, Espírito Santo, São Paulo e Rio de Janeiro (a partir de 1 ano), incluindo trânsito acima de 12 horas nesses estados. Há risco baixo de malária por P. falciparum, maior em Santo Domingo e San Juan.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Panamá": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A",
+        "tifoide"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 1 ano). A vacina também é recomendada para o leste do país (Darién, Embera, Guna Yala); não é necessária para roteiros só na Cidade do Panamá e no Canal.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    },
+    "Costa Rica": {
+      "yellowFever": "obrigatorio",
+      "civpRequired": true,
+      "vaccines": [
+        "febre amarela",
+        "hepatite A"
+      ],
+      "note": "Exige o CIVP de febre amarela de quem chega do Brasil (a partir de 9 meses); a lista foi ampliada em janeiro de 2025 e o Brasil está expressamente incluído. Risco de malária hoje desprezível.",
+      "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+    }
+  },
+  "vaccineGeneral": {
+    "civpURL": "https://www.gov.br/pt-br/servicos/obter-o-certificado-internacional-de-vacinacao-e-profilaxia",
+    "yellowFeverLeadDays": 10,
+    "note": "O CIVP é emitido pela Anvisa (gov.br/ConecteSUS) e vale por toda a vida. A validade só começa 10 dias depois da dose de febre amarela, então vacine-se com pelo menos 10 dias de antecedência da viagem. O Brasil é considerado pela OMS país com risco de transmissão de febre amarela, por isso países que exigem o certificado 'de quem vem de área de risco' estão exigindo de você. O Brasil NÃO exige nenhuma vacina de quem entra ou retorna ao país; a exigência é sempre do destino. Regras mudam sem aviso: confirme com o consulado do destino e de qualquer escala acima de 12 horas.",
+    "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
   }
 }
