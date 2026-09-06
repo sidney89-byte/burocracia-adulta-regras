@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-02o",
+  "version": "2026-09-06a-passaporte",
   "rules": {
     "cnh": {
       "name": "CNH",
@@ -89,7 +89,11 @@
       "tip": "Muitos países exigem passaporte com 6 meses de validade além da viagem. Cadastre a viagem e o app calcula.",
       "recurring": false,
       "nearbyQueries": [
-        "Polícia Federal"
+        "Polícia Federal",
+        "despachante de passaporte",
+        "agência de vistos e passaportes",
+        "fotos para passaporte",
+        "cartório"
       ]
     },
     "ipva": {
@@ -184,6 +188,10 @@
         30,
         7
       ],
+      "annualDeadline": {
+        "month": 5,
+        "day": 31
+      },
       "checklist": [
         {
           "text": "Baixar informe de rendimentos de cada empregador/fonte",
@@ -217,6 +225,7 @@
       "recurring": true,
       "nearbyQueries": [
         "Escritório de contabilidade",
+        "contador para imposto de renda",
         "Receita Federal"
       ]
     },
@@ -252,6 +261,7 @@
       "recurring": false,
       "nearbyQueries": [
         "Assistência técnica autorizada",
+        "conserto de eletrodomésticos",
         "Procon"
       ]
     },
@@ -296,7 +306,8 @@
       "recurring": true,
       "nearbyQueries": [
         "Prefeitura",
-        "Escritório de contabilidade"
+        "Escritório de contabilidade",
+        "despachante imobiliário"
       ]
     },
     "seguroAuto": {
@@ -521,7 +532,8 @@
       "recurring": true,
       "cadence": "monthly",
       "nearbyQueries": [
-        "Administradora de condomínios"
+        "Administradora de condomínios",
+        "síndico profissional"
       ]
     },
     "contaTelefone": {
@@ -4365,46 +4377,30 @@
     "passaporte": {
       "byAge": [
         {
-          "maxAge": 1,
+          "maxAge": 0,
           "years": 1
         },
         {
-          "maxAge": 3,
+          "maxAge": 1,
           "years": 2
         },
         {
-          "maxAge": 5,
+          "maxAge": 2,
           "years": 3
         },
         {
-          "maxAge": 7,
+          "maxAge": 3,
           "years": 4
         },
         {
-          "maxAge": 9,
-          "years": 5
-        },
-        {
-          "maxAge": 11,
-          "years": 6
-        },
-        {
-          "maxAge": 13,
-          "years": 7
-        },
-        {
-          "maxAge": 15,
-          "years": 8
-        },
-        {
           "maxAge": 17,
-          "years": 9
+          "years": 5
         },
         {
           "years": 10
         }
       ],
-      "note": "Passaporte de adulto vale 10 anos; de menor, a validade cresce com a idade (1 ano até 1 ano de idade, +1 ano a cada 2 anos, 9 anos aos 16-17)."
+      "note": "Validade do passaporte pela idade no atendimento: menos de 1 ano vale 1 ano; 1 ano completo, 2; 2 anos, 3; 3 anos, 4; de 4 a 17 anos, 5; a partir de 18 anos, 10. O prazo é improrrogável. Fonte: Polícia Federal, https://www.gov.br/pf/pt-br/assuntos/passaporte/ajuda/duvidas_/caderneta/caderneta-validade-do-passaporte (conferida em 06/09/2026). Conta a idade no atendimento; a data impressa no documento prevalece."
     },
     "garantia": {
       "legalDays": 90,
@@ -4423,9 +4419,21 @@
       "prefeitura",
       "receita federal",
       "procon",
-      "sefaz"
+      "sefaz",
+      "instituto de identificação",
+      "posto de identificação",
+      "consulado",
+      "sebrae",
+      "sala do empreendedor",
+      "ubs",
+      "posto de saúde",
+      "posto de vacinação",
+      "junta comercial",
+      "receita estadual",
+      "vapt vupt",
+      "sac cidadão"
     ],
-    "note": "Serviços privados (despachante, contador, clínica, corretora, assistência) só aparecem com nota >= minRating e >= minReviews avaliações no Google. Órgãos públicos não passam pelo filtro."
+    "note": "Serviços privados (despachante, contador, clínica, corretora, assistência) só aparecem com nota >= minRating e >= minReviews avaliações no Google. Órgão público não passa pelo filtro: um posto de saúde ou instituto de identificação com poucas avaliações não pode desaparecer da lista."
   },
   "vistoDestinations": {
     "Estados Unidos": {
@@ -4798,5 +4806,22 @@
     "yellowFeverLeadDays": 10,
     "note": "O CIVP é emitido pela Anvisa (gov.br/ConecteSUS) e vale por toda a vida. A validade só começa 10 dias depois da dose de febre amarela, então vacine-se com pelo menos 10 dias de antecedência da viagem. O Brasil é considerado pela OMS país com risco de transmissão de febre amarela, por isso países que exigem o certificado 'de quem vem de área de risco' estão exigindo de você. O Brasil NÃO exige nenhuma vacina de quem entra ou retorna ao país; a exigência é sempre do destino. Regras mudam sem aviso: confirme com o consulado do destino e de qualquer escala acima de 12 horas.",
     "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
+  },
+  "mei": {
+    "annualCeiling": 81000.0,
+    "monthlyCeilingFirstYear": 6750.0,
+    "tolerancePercent": 20,
+    "dasDay": 20,
+    "exemptProfitPercent": {
+      "comercio": 8,
+      "transporte": 16,
+      "servicos": 32,
+      "ambos": 8
+    },
+    "dasnMonth": 5,
+    "dasnDay": 31,
+    "warnAtPercent": 80,
+    "note": "Teto anual do MEI e, no ano de abertura, teto proporcional por mês (81.000/12). Estourar em até 20% (97.200) permite pagar a diferença e continuar no ano seguinte; acima disso o desenquadramento é retroativo. O lucro distribuído é isento até o percentual da receita bruta indicado por atividade (Lei 9.249/1995 art. 15 e Instrução Normativa do Simples); o que passa é rendimento tributável na declaração da pessoa. A DASN-SIMEI vence 31 de maio, mesmo com faturamento zero.",
+    "source": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor"
   }
 }
