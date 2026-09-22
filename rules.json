@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-17a",
+  "version": "2026-09-22a",
   "grupos": [
     {
       "id": "casa",
@@ -5458,12 +5458,12 @@
             "tipo": "taxa Detran",
             "nome": "DUDA para Renovação da CNH",
             "codigo": "204-6",
-            "comoEmitir": "O DUDA (Documento Único de Arrecadação) é emitido e pago no site do Bradesco; o valor da tabela do Detran-RJ é R$ 209,78. O exame médico é cobrado à parte pela clínica credenciada.",
-            "url": "https://www.detran.rj.gov.br/veiculo/veiculos-outros/taxas-dudas.html"
+            "comoEmitir": "Na página do Detran-RJ, toque no link do Bradesco, escolha Habilitação e depois o código 204-6 (Renovação da CNH). O banco pede para digitar o texto de uma imagem antes de continuar. O valor da tabela do Detran-RJ é R$ 209,78; o exame médico é cobrado à parte pela clínica credenciada.",
+            "url": "https://www.detran.rj.gov.br/detran-rj/bradesco-pagamento-de-boletos.html"
           },
           "fonte": "https://www.detran.rj.gov.br/todos-os-servicos/servicos-hab/renovacao-da-habilitacao.html",
-          "conferidoEm": "2026-09-09",
-          "nota": "O Posto Digital do Detran.RJ exige conta gov.br. A emissão do DUDA é feita fora do domínio oficial (rede Bradesco), por isso o link de pagamento aponta para a tabela oficial de DUDAs.",
+          "conferidoEm": "2026-09-22",
+          "nota": "O Posto Digital do Detran.RJ exige conta gov.br. O DUDA é emitido no site do Bradesco, fora de *.gov.br; por isso o link de pagamento é a página oficial do Detran-RJ que leva à emissão (a um toque do banco). O Bradesco não aceita o código pré-selecionado no endereço.",
           "orgao": "Detran-RJ"
         },
         "RN": {
@@ -5648,13 +5648,13 @@
           "orgao": "Detran-BA"
         },
         "CE": {
-          "url": "https://www.ce.gov.br/detran/clinicas-credenciadas/",
-          "nivel": "direto",
-          "orientacao": "Consulte aqui as clínicas credenciadas do Detran-CE e agende o exame oftalmológico depois de pagar a taxa do serviço; o exame é pago à clínica.",
+          "url": "https://www.ce.gov.br/detran/credenciados/",
+          "nivel": "portal",
+          "orientacao": "Abra o painel de credenciados do Detran-CE e localize uma clínica de medicina do tráfego da sua cidade. O painel mostra nome e endereço, mas não marca horário: o agendamento do exame é feito na Central de Serviços, depois de pagar a taxa. O exame é pago à clínica.",
           "pagamento": null,
           "fonte": "https://servicos.ce.gov.br/catalogo-de-servicos/1412",
-          "conferidoEm": "2026-09-09",
-          "nota": "O agendamento do exame é feito dentro da Central de Serviços (sistemas.detran.ce.gov.br/central), depois do pagamento da taxa."
+          "conferidoEm": "2026-09-22",
+          "nota": "A página antiga de clínicas credenciadas (www.ce.gov.br/detran/clinicas-credenciadas/) saiu do ar (404, medido em 22/09/2026); a lista oficial passou a ser o painel de credenciados. O agendamento continua dentro da Central de Serviços (sistemas.detran.ce.gov.br/central)."
         },
         "DF": {
           "url": "https://portal.detran.df.gov.br/#/servicos/detran-digital/credenciadas/empresas-credenciadas-clinica",
@@ -7439,13 +7439,13 @@
           "nota": "A 1ª via é gratuita. Nos postos do interior fora das Centrais Já! o agendamento é presencial. A 2ª via fica em alagoasdigital.al.gov.br/servico/9."
         },
         "AM": {
-          "url": "https://www.ssp.am.gov.br/",
+          "url": "https://www.ssp.am.gov.br/acesso-a-informacao/perguntas-e-respostas/",
           "nivel": "portal",
-          "orientacao": "Procure a orientação de emissão da Carteira de Identidade Nacional na SSP-AM: o agendamento é aberto todos os dias às 18h para os PACs de Manaus e às 18h30 de sexta para o interior, pelo endereço oficial cinam.ssp.am.gov.br.",
+          "orientacao": "Na pergunta 1 da página da SSP-AM, toque em \"Clique Aqui\" para abrir o agendamento oficial da Carteira de Identidade Nacional. Quando houver vagas, escolha o PAC, a via, a data e o horário, e confirme o celular pelo código enviado por SMS.",
           "pagamento": null,
-          "fonte": "https://www.ssp.am.gov.br/orientacoes-para-emissao-da-nova-carteira-de-identidade-nacional/",
-          "conferidoEm": "2026-09-09",
-          "nota": "Não há página de serviço da CIN em HTTPS num domínio oficial: cinam.ssp.am.gov.br só responde em HTTP e redireciona para o sistema contratado amcin.e-instituto.com.br (domínio de terceiro), o que viola a regra de domínio oficial + HTTPS. A fonte é a orientação publicada pela SSP-AM."
+          "fonte": "https://www.ssp.am.gov.br/acesso-a-informacao/perguntas-e-respostas/",
+          "conferidoEm": "2026-09-22",
+          "nota": "O agendamento roda num sistema contratado (amcin.e-instituto.com.br), fora de *.gov.br; a própria SSP-AM o chama de \"site oficial do agendamento\" e aponta para ele. Pela regra de domínio oficial + HTTPS, o app abre a página da SSP-AM, a um toque do agendamento. A página não informa mais horário de abertura das vagas."
         },
         "AP": {
           "url": "https://apdigital.portal.ap.gov.br/carta-de-servico/solicitacao-de-agendamento-para-emissao-da-1o-via-da-carteira-de-identidade-nacional-cin1",
@@ -7567,10 +7567,10 @@
         "PB": {
           "url": "https://agendamentorg.portaldacidadania.pb.gov.br/",
           "nivel": "direto",
-          "orientacao": "Agende a emissão da CIN escolhendo a Casa da Cidadania, a data e o horário; as vagas abrem de segunda a sexta, a partir das 9h, para o dia útil seguinte.",
+          "orientacao": "Toque em \"Quero agendar\" e escolha a Casa da Cidadania, a data e o horário disponíveis. As vagas dependem de disponibilidade.",
           "pagamento": null,
-          "fonte": "https://policiacivil.pb.gov.br/noticias/agendamento-da-carteira-de-identidade-nacional-cin-agora-e-diario",
-          "conferidoEm": "2026-09-09",
+          "fonte": "https://delegaciaonline.pc.pb.gov.br/",
+          "conferidoEm": "2026-09-22",
           "nota": "A 1ª via é gratuita. Leve certidão de nascimento ou casamento (original ou autenticada), comprovante de residência e CPF."
         },
         "PE": {
