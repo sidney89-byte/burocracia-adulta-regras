@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-22a",
+  "version": "2026-09-24a",
   "grupos": [
     {
       "id": "casa",
@@ -7413,7 +7413,7 @@
       "nacional": {
         "url": "https://www.gov.br/governodigital/pt-br/identidade/cin/duvidas-frequentes-sobre-a-cin-campanha",
         "nivel": "direto",
-        "orientacao": "Procure o seu estado na lista desta página do Governo Digital e abra o link de agendamento do Instituto de Identificação (em SP, o Poupatempo). Leve a certidão de nascimento ou de casamento no dia do atendimento — ela é exigida para emitir a CIN.",
+        "orientacao": "Procure o seu estado na lista desta página do Governo Digital e abra o link de agendamento do Instituto de Identificação. Leve a certidão de nascimento ou de casamento no dia do atendimento — ela é exigida para emitir a CIN.",
         "pagamento": null,
         "fonte": "https://www.gov.br/governodigital/pt-br/identidade/cin/duvidas-frequentes-sobre-a-cin-campanha",
         "conferidoEm": "2026-09-09",
