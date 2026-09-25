@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-24a",
+  "version": "2026-09-25a",
   "grupos": [
     {
       "id": "casa",
@@ -5306,7 +5306,8 @@
           },
           "fonte": "https://goias.gov.br/detran/informacoes-sobre-cnh/",
           "conferidoEm": "2026-09-09",
-          "nota": "Página do Portal Expresso (SPA); a rota está publicada em goias.gov.br/detran/informacoes-sobre-cnh. Se a CNH está vencida há mais de 5 anos, é exigido curso de direção defensiva/primeiros socorros ou prova de legislação."
+          "nota": "Página do Portal Expresso (SPA); a rota está publicada em goias.gov.br/detran/informacoes-sobre-cnh. Se a CNH está vencida há mais de 5 anos, é exigido curso de direção defensiva/primeiros socorros ou prova de legislação.",
+          "orgao": "Vapt Vupt"
         },
         "MA": {
           "url": "https://www.detran.ma.gov.br/inicio/paginas/Pagina.xhtml?id=19296",
@@ -5432,7 +5433,8 @@
           },
           "fonte": "https://portal.pi.gov.br/detran/renovacao-de-cnh/",
           "conferidoEm": "2026-09-09",
-          "nota": null
+          "nota": null,
+          "orgao": "Detran-PI"
         },
         "PR": {
           "url": "https://www.detran.pr.gov.br/servicos/Motorista/Carteira-de-motorista/Solicitar-a-renovacao-da-carteira-de-motorista-MD3PAr6a",
@@ -5495,7 +5497,8 @@
           },
           "fonte": "https://portaldocidadao.ro.gov.br/Servico/Detalhes?id=19efef01-eb31-43ad-8c87-08da0da9c759",
           "conferidoEm": "2026-09-09",
-          "nota": "Página \"SOLICITAR RENOVAÇÃO DA CNH\" do Portal do Cidadão de Rondônia; o botão de solicitação leva à Central de Serviços do Detran-RO, que pede login."
+          "nota": "Página \"SOLICITAR RENOVAÇÃO DA CNH\" do Portal do Cidadão de Rondônia; o botão de solicitação leva à Central de Serviços do Detran-RO, que pede login.",
+          "orgao": "Detran-RO"
         },
         "RR": {
           "url": "https://www.detran.rr.gov.br/renovacao-de-cnh-de-roraima/",
@@ -5526,7 +5529,8 @@
           },
           "fonte": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=947",
           "conferidoEm": "2026-09-09",
-          "nota": "Página oficial da Carta de Serviços do RS (mesmo conteúdo publicado em detran.rs.gov.br)."
+          "nota": "Página oficial da Carta de Serviços do RS (mesmo conteúdo publicado em detran.rs.gov.br).",
+          "orgao": "Autoescola (CFC)"
         },
         "SC": {
           "url": "https://www.detran.sc.gov.br/renovacao-cnh/",
@@ -5589,7 +5593,8 @@
           },
           "fonte": "https://www.to.gov.br/detran/renovacao-cnh-presencial/4x98h7wq0s3v",
           "conferidoEm": "2026-09-09",
-          "nota": "O Detran-TO só publica a página \"Renovação CNH - presencial\"; os serviços online ficam no Detran TO Fácil (https://appdetrantofacil.detran.to.gov.br/DetranTOFacil/), cujas rotas internas devolvem 404 se acessadas direto."
+          "nota": "O Detran-TO só publica a página \"Renovação CNH - presencial\"; os serviços online ficam no Detran TO Fácil (https://appdetrantofacil.detran.to.gov.br/DetranTOFacil/), cujas rotas internas devolvem 404 se acessadas direto.",
+          "orgao": "Detran-TO"
         }
       }
     },
@@ -7427,7 +7432,8 @@
           "pagamento": null,
           "fonte": "https://idpol.ac.gov.br/services/agendamento",
           "conferidoEm": "2026-09-09",
-          "nota": null
+          "nota": null,
+          "orgao": "OCA"
         },
         "AL": {
           "url": "https://alagoasdigital.al.gov.br/servico/8",
@@ -7436,7 +7442,8 @@
           "pagamento": null,
           "fonte": "https://alagoasdigital.al.gov.br/servico/8",
           "conferidoEm": "2026-09-09",
-          "nota": "A 1ª via é gratuita. Nos postos do interior fora das Centrais Já! o agendamento é presencial. A 2ª via fica em alagoasdigital.al.gov.br/servico/9."
+          "nota": "A 1ª via é gratuita. Nos postos do interior fora das Centrais Já! o agendamento é presencial. A 2ª via fica em alagoasdigital.al.gov.br/servico/9.",
+          "orgao": "Central Já!"
         },
         "AM": {
           "url": "https://www.ssp.am.gov.br/acesso-a-informacao/perguntas-e-respostas/",
@@ -7445,7 +7452,8 @@
           "pagamento": null,
           "fonte": "https://www.ssp.am.gov.br/acesso-a-informacao/perguntas-e-respostas/",
           "conferidoEm": "2026-09-22",
-          "nota": "O agendamento roda num sistema contratado (amcin.e-instituto.com.br), fora de *.gov.br; a própria SSP-AM o chama de \"site oficial do agendamento\" e aponta para ele. Pela regra de domínio oficial + HTTPS, o app abre a página da SSP-AM, a um toque do agendamento. A página não informa mais horário de abertura das vagas."
+          "nota": "O agendamento roda num sistema contratado (amcin.e-instituto.com.br), fora de *.gov.br; a própria SSP-AM o chama de \"site oficial do agendamento\" e aponta para ele. Pela regra de domínio oficial + HTTPS, o app abre a página da SSP-AM, a um toque do agendamento. A página não informa mais horário de abertura das vagas.",
+          "orgao": "PAC"
         },
         "AP": {
           "url": "https://apdigital.portal.ap.gov.br/carta-de-servico/solicitacao-de-agendamento-para-emissao-da-1o-via-da-carteira-de-identidade-nacional-cin1",
@@ -7454,7 +7462,8 @@
           "pagamento": null,
           "fonte": "https://apdigital.portal.ap.gov.br/carta-de-servico/solicitacao-de-agendamento-para-emissao-da-1o-via-da-carteira-de-identidade-nacional-cin1",
           "conferidoEm": "2026-09-09",
-          "nota": null
+          "nota": null,
+          "orgao": "Polícia Científica"
         },
         "BA": {
           "url": "https://servicos.ba.gov.br/detalhe/servico/2158",
@@ -7463,7 +7472,8 @@
           "pagamento": null,
           "fonte": "https://servicos.ba.gov.br/detalhe/servico/2158",
           "conferidoEm": "2026-09-09",
-          "nota": "A 1ª via da CIN é gratuita. O agendamento é feito na plataforma/app BA.GOV ou pela central 71 4020-5353; parte dos postos SAC atende por ordem de chegada."
+          "nota": "A 1ª via da CIN é gratuita. O agendamento é feito na plataforma/app BA.GOV ou pela central 71 4020-5353; parte dos postos SAC atende por ordem de chegada.",
+          "orgao": "SAC"
         },
         "CE": {
           "url": "https://servicos.ce.gov.br/catalogo-de-servicos/2486",
@@ -7472,7 +7482,8 @@
           "pagamento": null,
           "fonte": "https://servicos.ce.gov.br/catalogo-de-servicos/2486",
           "conferidoEm": "2026-09-09",
-          "nota": "A 1ª via é gratuita. O sistema de agendamento indicado pelo catálogo estadual fica fora do domínio gov.br, por isso o destino é a página oficial do serviço no Ceará Digital."
+          "nota": "A 1ª via é gratuita. O sistema de agendamento indicado pelo catálogo estadual fica fora do domínio gov.br, por isso o destino é a página oficial do serviço no Ceará Digital.",
+          "orgao": "Vapt Vupt"
         },
         "DF": {
           "url": "https://www.nahora.df.gov.br/agendamento-da-carteira-de-identidade",
@@ -7481,7 +7492,8 @@
           "pagamento": null,
           "fonte": "https://www.nahora.df.gov.br/agendamento-da-carteira-de-identidade",
           "conferidoEm": "2026-09-09",
-          "nota": "Emissão pela Polícia Civil do DF. A página da PCDF (pcdf.df.gov.br/servicos/carteira-de-identidade) redireciona para uma plataforma contratada fora de *.gov.br, por isso o destino registrado é o portal Na Hora."
+          "nota": "Emissão pela Polícia Civil do DF. A página da PCDF (pcdf.df.gov.br/servicos/carteira-de-identidade) redireciona para uma plataforma contratada fora de *.gov.br, por isso o destino registrado é o portal Na Hora.",
+          "orgao": "Na Hora"
         },
         "ES": {
           "url": "https://pci.es.gov.br/agendamento-carteira-de-identidade-nacional-cin",
@@ -7490,7 +7502,8 @@
           "pagamento": null,
           "fonte": "https://pci.es.gov.br/agendamento-carteira-de-identidade-nacional-cin",
           "conferidoEm": "2026-09-09",
-          "nota": "Emissão pelo Instituto de Identificação da Polícia Científica do ES."
+          "nota": "Emissão pelo Instituto de Identificação da Polícia Científica do ES.",
+          "orgao": "Polícia Científica"
         },
         "GO": {
           "url": "https://www.go.gov.br/servicos/servico/agendar-atendimento-presencial-no-vapt-vupt",
@@ -7499,7 +7512,8 @@
           "pagamento": null,
           "fonte": "https://identificacao.policiacivil.go.gov.br/1a-via-do-rg-goias/",
           "conferidoEm": "2026-09-09",
-          "nota": "Página do Portal Expresso (SPA); a rota está publicada em goias.gov.br/administracao/vaptvupt. Emissão pela Superintendência de Identificação Humana da Polícia Civil de Goiás. Não há página própria só de agendamento da CIN: o agendamento é o do Vapt Vupt."
+          "nota": "Página do Portal Expresso (SPA); a rota está publicada em goias.gov.br/administracao/vaptvupt. Emissão pela Superintendência de Identificação Humana da Polícia Civil de Goiás. Não há página própria só de agendamento da CIN: o agendamento é o do Vapt Vupt.",
+          "orgao": "Vapt Vupt"
         },
         "MA": {
           "url": "https://agendamento.ssp.ma.gov.br/",
@@ -7508,7 +7522,8 @@
           "pagamento": null,
           "fonte": "https://agendamento.ssp.ma.gov.br/",
           "conferidoEm": "2026-09-09",
-          "nota": "A 1ª via é gratuita. O atendimento ocorre no Ident-MA e nos postos das unidades Viva/Procon."
+          "nota": "A 1ª via é gratuita. O atendimento ocorre no Ident-MA e nos postos das unidades Viva/Procon.",
+          "orgao": "Ident"
         },
         "MG": {
           "url": "https://www.mg.gov.br/servico/obter-carteira-de-identidade-nacional",
@@ -7523,7 +7538,8 @@
           },
           "fonte": "https://www.mg.gov.br/servico/obter-carteira-de-identidade-nacional",
           "conferidoEm": "2026-09-09",
-          "nota": "Emissão pela Polícia Civil de Minas Gerais; entrega pelos Correios em até 15 dias úteis."
+          "nota": "Emissão pela Polícia Civil de Minas Gerais; entrega pelos Correios em até 15 dias úteis.",
+          "orgao": "UAI"
         },
         "MS": {
           "url": "https://servicos.sejusp.ms.gov.br/",
@@ -7547,7 +7563,8 @@
           },
           "fonte": "https://www.politec.mt.gov.br/carteira-de-identidade",
           "conferidoEm": "2026-09-09",
-          "nota": "O serviço também aparece na carta de serviços do Estado: https://portal.mt.gov.br/app/catalog/seguranca-e-justica/emitir-1a-via-da-carteira-de-identidade-nacional-(cin)."
+          "nota": "O serviço também aparece na carta de serviços do Estado: https://portal.mt.gov.br/app/catalog/seguranca-e-justica/emitir-1a-via-da-carteira-de-identidade-nacional-(cin).",
+          "orgao": "Ganha Tempo"
         },
         "PA": {
           "url": "https://agendamento.pc.pa.gov.br/",
@@ -7562,7 +7579,8 @@
           },
           "fonte": "https://agendamento.pc.pa.gov.br/",
           "conferidoEm": "2026-09-09",
-          "nota": "Sistema de Agendamento de Identidade Civil da Polícia Civil do Pará."
+          "nota": "Sistema de Agendamento de Identidade Civil da Polícia Civil do Pará.",
+          "orgao": "Estação Cidadania"
         },
         "PB": {
           "url": "https://agendamentorg.portaldacidadania.pb.gov.br/",
@@ -7571,7 +7589,8 @@
           "pagamento": null,
           "fonte": "https://delegaciaonline.pc.pb.gov.br/",
           "conferidoEm": "2026-09-22",
-          "nota": "A 1ª via é gratuita. Leve certidão de nascimento ou casamento (original ou autenticada), comprovante de residência e CPF."
+          "nota": "A 1ª via é gratuita. Leve certidão de nascimento ou casamento (original ou autenticada), comprovante de residência e CPF.",
+          "orgao": "Casa da Cidadania"
         },
         "PE": {
           "url": "https://www.agendamentocivil.sds.pe.gov.br/AgendamentoCivil/public/pages/info_passos.jsf",
@@ -7586,7 +7605,8 @@
           },
           "fonte": "https://www.iitb.pe.gov.br/agendamento.php",
           "conferidoEm": "2026-09-09",
-          "nota": "Marcado como portal porque o antigo pecidadao.pe.gov.br agora redireciona para www.pe.gov.br, cujas rotas de serviço são de uma aplicação de página única e não puderam ser verificadas em 09/09/2026. A 1ª via da CIN é gratuita."
+          "nota": "Marcado como portal porque o antigo pecidadao.pe.gov.br agora redireciona para www.pe.gov.br, cujas rotas de serviço são de uma aplicação de página única e não puderam ser verificadas em 09/09/2026. A 1ª via da CIN é gratuita.",
+          "orgao": "Instituto Tavares Buril"
         },
         "PI": {
           "url": "https://www.ssp.pi.gov.br/cidadania-digital/carteira-de-identidade-nacional/",
@@ -7595,7 +7615,8 @@
           "pagamento": null,
           "fonte": "https://www.ssp.pi.gov.br/cidadania-digital/carteira-de-identidade-nacional/",
           "conferidoEm": "2026-09-09",
-          "nota": "A 1ª via é gratuita, inclusive a troca do RG antigo pela CIN. A plataforma de agendamento é o Gov.pi Cidadão (pidigital.pi.gov.br), cujas rotas internas de serviço não têm URL pública estável."
+          "nota": "A 1ª via é gratuita, inclusive a troca do RG antigo pela CIN. A plataforma de agendamento é o Gov.pi Cidadão (pidigital.pi.gov.br), cujas rotas internas de serviço não têm URL pública estável.",
+          "orgao": "Instituto de Cidadania Digital"
         },
         "PR": {
           "url": "https://www.policiacivil.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-possui-a-CIN-ou-o-RG-expedido-no-Parana-WaowKoDJ",
@@ -7610,7 +7631,8 @@
           },
           "fonte": "https://www.policiacivil.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-possui-a-CIN-ou-o-RG-expedido-no-Parana-WaowKoDJ",
           "conferidoEm": "2026-09-09",
-          "nota": "Para quem não possui CIN ou RG do PR: parana.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-nao-possui-CIN-ou-RG-expedido-no-Parana-dloelrLv (agendamento presencial no IIPR)."
+          "nota": "Para quem não possui CIN ou RG do PR: parana.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-nao-possui-CIN-ou-RG-expedido-no-Parana-dloelrLv (agendamento presencial no IIPR).",
+          "orgao": "Instituto de Identificação"
         },
         "RJ": {
           "url": "https://www.detran.rj.gov.br/todos-os-agendamentos/agendamento-dic/carteira-de-identidade-civil.html",
@@ -7635,7 +7657,8 @@
           "pagamento": null,
           "fonte": "https://www.centraldocidadao.rn.gov.br/servicos/emissao-da-carteira-de-identidade-nacional-cin/",
           "conferidoEm": "2026-09-09",
-          "nota": "As vagas são liberadas todos os dias úteis às 8h para o dia útil seguinte. Leve certidão de nascimento ou casamento (original ou cópia autenticada), comprovante de residência e CPF."
+          "nota": "As vagas são liberadas todos os dias úteis às 8h para o dia útil seguinte. Leve certidão de nascimento ou casamento (original ou cópia autenticada), comprovante de residência e CPF.",
+          "orgao": "Central do Cidadão"
         },
         "RO": {
           "url": "https://agendamento.iicc.ro.gov.br/Agendamento/Agendamento",
@@ -7644,7 +7667,8 @@
           "pagamento": null,
           "fonte": "https://portaldocidadao.ro.gov.br/Servico/Detalhes?id=6519034e-f310-4cbb-3d7d-08da1e5c6341",
           "conferidoEm": "2026-09-09",
-          "nota": "O serviço também está descrito no Portal do Cidadão de Rondônia (fonte), que é o canal oficial de agendamento da CIN."
+          "nota": "O serviço também está descrito no Portal do Cidadão de Rondônia (fonte), que é o canal oficial de agendamento da CIN.",
+          "orgao": "Tudo Aqui"
         },
         "RR": {
           "url": "https://www.idnetbrasil.rr.gov.br/newagenda/pages/MasterPages/IUIniciar.aspx",
@@ -7653,7 +7677,8 @@
           "pagamento": null,
           "fonte": "https://www.idnetbrasil.rr.gov.br/newagenda/pages/MasterPages/IUIniciar.aspx",
           "conferidoEm": "2026-09-09",
-          "nota": "Idosos (60+), gestantes, lactantes com crianças de até 2 anos e pessoas com deficiência são dispensados do agendamento prévio, conforme a carta de serviços da Polícia Civil de RR."
+          "nota": "Idosos (60+), gestantes, lactantes com crianças de até 2 anos e pessoas com deficiência são dispensados do agendamento prévio, conforme a carta de serviços da Polícia Civil de RR.",
+          "orgao": "Instituto de Identificação"
         },
         "RS": {
           "url": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=498",
@@ -7662,7 +7687,8 @@
           "pagamento": null,
           "fonte": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=498",
           "conferidoEm": "2026-09-09",
-          "nota": "Consulta/cancelamento do agendamento: rs.gov.br/carta-de-servicos/servicos?servico=830."
+          "nota": "Consulta/cancelamento do agendamento: rs.gov.br/carta-de-servicos/servicos?servico=830.",
+          "orgao": "IGP"
         },
         "SC": {
           "url": "https://www.policiacientifica.sc.gov.br/carteira-de-identidade/",
@@ -7677,7 +7703,8 @@
           },
           "fonte": "https://www.policiacientifica.sc.gov.br/carteira-de-identidade/",
           "conferidoEm": "2026-09-09",
-          "nota": "O botão de agendamento leva a uma plataforma contratada (cidadaosc.griaule.com), fora de *.gov.br; por isso o destino registrado é a página oficial da Polícia Científica de SC."
+          "nota": "O botão de agendamento leva a uma plataforma contratada (cidadaosc.griaule.com), fora de *.gov.br; por isso o destino registrado é a página oficial da Polícia Científica de SC.",
+          "orgao": "Polícia Científica"
         },
         "SE": {
           "url": "https://agenda.cin.ssp.se.gov.br/Vsoft.iDSPS.Agendamento/",
@@ -7686,7 +7713,8 @@
           "pagamento": null,
           "fonte": "https://ssp.se.gov.br/Servicos/InstitutoIdentificacao",
           "conferidoEm": "2026-09-09",
-          "nota": "A 1ª via é gratuita. É preciso ter o CPF regularizado (validado já no agendamento) e apresentar certidão de nascimento ou casamento original."
+          "nota": "A 1ª via é gratuita. É preciso ter o CPF regularizado (validado já no agendamento) e apresentar certidão de nascimento ou casamento original.",
+          "orgao": "Instituto de Identificação"
         },
         "SP": {
           "url": "https://www.poupatempo.sp.gov.br/carta/D97C3844-A2D9-4C9E-B364-CB4FEB26A1FB",
@@ -7695,7 +7723,8 @@
           "pagamento": null,
           "fonte": "https://www.poupatempo.sp.gov.br/carta/D97C3844-A2D9-4C9E-B364-CB4FEB26A1FB",
           "conferidoEm": "2026-09-09",
-          "nota": "Emissão da 1ª via gratuita; agendamento também pelo app Poupatempo SP.GOV.BR ou nos totens de autoatendimento. A 2ª via tem carta de serviço própria."
+          "nota": "Emissão da 1ª via gratuita; agendamento também pelo app Poupatempo SP.GOV.BR ou nos totens de autoatendimento. A 2ª via tem carta de serviço própria.",
+          "orgao": "Poupatempo"
         },
         "TO": {
           "url": "https://servicos.to.gov.br/servico_detalhado.aspx?cod_assunto_documento_tipo=8410",
@@ -7704,7 +7733,8 @@
           "pagamento": null,
           "fonte": "https://servicos.to.gov.br/servico_detalhado.aspx?cod_assunto_documento_tipo=8410",
           "conferidoEm": "2026-09-09",
-          "nota": "O botão leva a https://servicos.to.gov.br/NovoAgendamentoAtendimento.aspx, que redireciona para a tela de login do Portal de Serviços."
+          "nota": "O botão leva a https://servicos.to.gov.br/NovoAgendamentoAtendimento.aspx, que redireciona para a tela de login do Portal de Serviços.",
+          "orgao": "Instituto de Identificação"
         }
       }
     },
