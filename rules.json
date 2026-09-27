@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-25a",
+  "version": "2026-09-27b",
   "grupos": [
     {
       "id": "casa",
@@ -70,7 +70,7 @@
     "cnh": {
       "grupo": "pessoais",
       "name": "CNH",
-      "icon": "car.fill",
+      "icon": "steeringwheel",
       "leadDays": 45,
       "reminderDaysBefore": [
         45,
@@ -119,7 +119,7 @@
     "passaporte": {
       "grupo": "pessoais",
       "name": "Passaporte",
-      "icon": "airplane",
+      "icon": "globe.americas.fill",
       "leadDays": 120,
       "reminderDaysBefore": [
         120,
@@ -171,7 +171,7 @@
     "ipva": {
       "grupo": "obrigacoes",
       "name": "IPVA e licenciamento",
-      "icon": "doc.text.fill",
+      "icon": "car.fill",
       "leadDays": 30,
       "reminderDaysBefore": [
         30,
@@ -662,7 +662,7 @@
     "visto": {
       "grupo": "viagem",
       "name": "Visto de viagem",
-      "icon": "airplane",
+      "icon": "airplane.departure",
       "leadDays": 120,
       "reminderDaysBefore": [
         180,
@@ -762,7 +762,7 @@
     "aluguel": {
       "grupo": "contratos",
       "name": "Aluguel",
-      "icon": "house",
+      "icon": "key.fill",
       "leadDays": 7,
       "reminderDaysBefore": [
         7,
@@ -974,7 +974,7 @@
     "anuidadeConselho": {
       "grupo": "obrigacoes",
       "name": "Anuidade do conselho",
-      "icon": "checkmark.seal",
+      "icon": "rosette",
       "leadDays": 60,
       "reminderDaysBefore": [
         60,
@@ -1032,7 +1032,7 @@
     "mei": {
       "grupo": "obrigacoes",
       "name": "MEI",
-      "icon": "building.columns",
+      "icon": "storefront.fill",
       "leadDays": 10,
       "reminderDaysBefore": [
         10,
@@ -1193,7 +1193,7 @@
     "contrato": {
       "grupo": "contratos",
       "name": "Contrato",
-      "icon": "doc.text",
+      "icon": "signature",
       "leadDays": 30,
       "reminderDaysBefore": [
         30,
@@ -1222,8 +1222,8 @@
     },
     "impostosDiversos": {
       "grupo": "obrigacoes",
-      "name": "Impostos diversos",
-      "icon": "doc.text.below.ecg",
+      "name": "Outro imposto ou taxa",
+      "icon": "percent",
       "leadDays": 7,
       "reminderDaysBefore": [
         7,
@@ -1251,7 +1251,7 @@
     "simplesNacional": {
       "grupo": "obrigacoes",
       "name": "Simples Nacional",
-      "icon": "building.2",
+      "icon": "briefcase.fill",
       "leadDays": 7,
       "reminderDaysBefore": [
         7,
@@ -4834,7 +4834,40 @@
       "leadDays": 30,
       "url": "https://travel-europe.europa.eu/etias",
       "validityYears": 3,
-      "note": "Brasileiro entra sem visto por até 90 dias a cada 180. O ETIAS ainda não está em vigor: previsto para o último trimestre de 2026, custará €20 (isento abaixo de 18 e acima de 70 anos) e valerá 3 anos ou até o passaporte vencer."
+      "note": "Brasileiro entra sem visto por até 90 dias a cada 180. O ETIAS ainda não está em vigor: previsto para o último trimestre de 2026, custará €20 (isento abaixo de 18 e acima de 70 anos) e valerá 3 anos ou até o passaporte vencer.",
+      "paises": [
+        "Alemanha",
+        "Áustria",
+        "Bélgica",
+        "Bulgária",
+        "Croácia",
+        "Dinamarca",
+        "Eslováquia",
+        "Eslovênia",
+        "Espanha",
+        "Estônia",
+        "Finlândia",
+        "França",
+        "Grécia",
+        "Holanda",
+        "Hungria",
+        "Itália",
+        "Letônia",
+        "Lituânia",
+        "Luxemburgo",
+        "Malta",
+        "Polônia",
+        "Portugal",
+        "Romênia",
+        "Suécia",
+        "Tchéquia",
+        "Islândia",
+        "Liechtenstein",
+        "Noruega",
+        "Suíça"
+      ],
+      "paisesFonte": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-area_en",
+      "conferencia": "26/09/2026: espaço Schengen com 29 países (Comissão Europeia); Bulgária e Romênia desde 01/01/2025; Chipre e Irlanda fora. Os 25 da UE foram deduzidos (27 membros menos Chipre e Irlanda) — a página lista pelo nome só os 4 de fora da UE."
     }
   },
   "vaccineDestinations": {
@@ -5143,6 +5176,500 @@
     "note": "O CIVP é emitido pela Anvisa (gov.br/ConecteSUS) e vale por toda a vida. A validade só começa 10 dias depois da dose de febre amarela, então vacine-se com pelo menos 10 dias de antecedência da viagem. O Brasil é considerado pela OMS país com risco de transmissão de febre amarela, por isso países que exigem o certificado 'de quem vem de área de risco' estão exigindo de você. O Brasil NÃO exige nenhuma vacina de quem entra ou retorna ao país; a exigência é sempre do destino. Regras mudam sem aviso: confirme com o consulado do destino e de qualquer escala acima de 12 horas.",
     "source": "https://cdn.who.int/media/docs/default-source/travel-and-health/vaccination-requirements-and-who-recommendations-ith-2022-country-list.pdf"
   },
+  "calendarioVacinal": {
+    "fonte": "https://www.gov.br/saude/pt-br/vacinacao/calendario",
+    "versao": "Calendário Nacional de Vacinação 2026 (PDFs por grupo, jul–ago/2026) + Instrução Normativa do CNV 2026, 3ª edição, atualizada em 17/07/2026",
+    "grupos": [
+      {
+        "grupo": "crianca",
+        "fonte": "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca",
+        "vacinas": [
+          {
+            "nome": "Hepatite B",
+            "dose": "dose ao nascer",
+            "idadeMeses": 0,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": "Nas primeiras 12 horas; esta dose só até 1 mês de vida"
+          },
+          {
+            "nome": "BCG",
+            "dose": "dose única",
+            "idadeMeses": 0,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Penta (DTP+Hib+HB)",
+            "dose": "1ª dose",
+            "idadeMeses": 2,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Poliomielite inativada VIP",
+            "dose": "1ª dose",
+            "idadeMeses": 2,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Rotavírus humano",
+            "dose": "1ª dose",
+            "idadeMeses": 2,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": "1ª dose só entre 1 mês e 15 dias e 11 meses e 29 dias"
+          },
+          {
+            "nome": "Pneumocócica 20-valente",
+            "dose": "1ª dose",
+            "idadeMeses": 2,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Meningocócica C",
+            "dose": "1ª dose",
+            "idadeMeses": 3,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Penta (DTP+Hib+HB)",
+            "dose": "2ª dose",
+            "idadeMeses": 4,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Poliomielite inativada VIP",
+            "dose": "2ª dose",
+            "idadeMeses": 4,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Rotavírus humano",
+            "dose": "2ª dose",
+            "idadeMeses": 4,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": "2ª dose só entre 3 meses e 15 dias e 23 meses e 29 dias"
+          },
+          {
+            "nome": "Pneumocócica 10-valente",
+            "dose": "2ª dose",
+            "idadeMeses": 4,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": "Na transição para a pneumo 20; sem a 10 no posto, usa-se a 20"
+          },
+          {
+            "nome": "Meningocócica C",
+            "dose": "2ª dose",
+            "idadeMeses": 5,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Penta (DTP+Hib+HB)",
+            "dose": "3ª dose",
+            "idadeMeses": 6,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Poliomielite inativada VIP",
+            "dose": "3ª dose",
+            "idadeMeses": 6,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Influenza",
+            "dose": "1ª dose",
+            "idadeMeses": 6,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": "Primeira vez: 2 doses com 30 dias de intervalo"
+          },
+          {
+            "nome": "Influenza",
+            "dose": "anual",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "6 meses a menores de 6 anos",
+            "observacao": "Quem já tomou em anos anteriores recebe 1 dose por ano"
+          },
+          {
+            "nome": "Covid-19",
+            "dose": "1ª dose",
+            "idadeMeses": 6,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Covid-19",
+            "dose": "2ª dose",
+            "idadeMeses": 7,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Covid-19",
+            "dose": "3ª dose",
+            "idadeMeses": 9,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Febre amarela",
+            "dose": "1 dose",
+            "idadeMeses": 9,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Pneumocócica 20-valente",
+            "dose": "reforço",
+            "idadeMeses": 12,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Meningocócica ACWY",
+            "dose": "1 dose (reforço)",
+            "idadeMeses": 12,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Tríplice viral SCR",
+            "dose": "1ª dose",
+            "idadeMeses": 12,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "DTP",
+            "dose": "1º reforço",
+            "idadeMeses": 15,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Poliomielite inativada VIP",
+            "dose": "1º reforço",
+            "idadeMeses": 15,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Tríplice viral SCR",
+            "dose": "2ª dose",
+            "idadeMeses": 15,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Varicela",
+            "dose": "1ª dose",
+            "idadeMeses": 15,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Hepatite A",
+            "dose": "1 dose",
+            "idadeMeses": 15,
+            "idadeAnos": null,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "DTP",
+            "dose": "2º reforço",
+            "idadeMeses": null,
+            "idadeAnos": 4,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Poliomielite inativada VIP",
+            "dose": "2º reforço",
+            "idadeMeses": null,
+            "idadeAnos": 4,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Varicela",
+            "dose": "2ª dose",
+            "idadeMeses": null,
+            "idadeAnos": 4,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "Febre amarela",
+            "dose": "reforço",
+            "idadeMeses": null,
+            "idadeAnos": 4,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "HPV4",
+            "dose": "1 dose",
+            "idadeMeses": null,
+            "idadeAnos": 9,
+            "faixa": null,
+            "observacao": "Em atraso, até 14 anos, 11 meses e 29 dias"
+          }
+        ]
+      },
+      {
+        "grupo": "adolescente",
+        "fonte": "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-adolescentes-jovens",
+        "vacinas": [
+          {
+            "nome": "HPV4",
+            "dose": "1 dose",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "até 14 anos, 11 meses e 29 dias (conforme histórico)",
+            "observacao": null
+          },
+          {
+            "nome": "Hepatite B",
+            "dose": "3 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": null
+          },
+          {
+            "nome": "Febre amarela",
+            "dose": "1 dose",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": "Para viagem a área de risco, pelo menos 10 dias antes"
+          },
+          {
+            "nome": "Tríplice viral SCR",
+            "dose": "2 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": null
+          },
+          {
+            "nome": "Dengue",
+            "dose": "2 doses",
+            "idadeMeses": null,
+            "idadeAnos": 10,
+            "faixa": "10 a 14 anos, 11 meses e 29 dias",
+            "observacao": "Intervalo de 3 meses entre as doses"
+          },
+          {
+            "nome": "Meningocócica ACWY",
+            "dose": "1 dose",
+            "idadeMeses": null,
+            "idadeAnos": 11,
+            "faixa": "11 a 14 anos, 11 meses e 29 dias",
+            "observacao": null
+          },
+          {
+            "nome": "dT (dupla adulto)",
+            "dose": "reforço",
+            "idadeMeses": null,
+            "idadeAnos": 14,
+            "faixa": null,
+            "observacao": null
+          },
+          {
+            "nome": "dT (dupla adulto)",
+            "dose": "reforço",
+            "idadeMeses": null,
+            "idadeAnos": 24,
+            "faixa": null,
+            "observacao": null
+          }
+        ]
+      },
+      {
+        "grupo": "adulto",
+        "fonte": "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-adulto",
+        "vacinas": [
+          {
+            "nome": "Hepatite B",
+            "dose": "3 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": null
+          },
+          {
+            "nome": "dT (dupla adulto)",
+            "dose": "3 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": null
+          },
+          {
+            "nome": "dT (dupla adulto)",
+            "dose": "reforço",
+            "idadeMeses": null,
+            "idadeAnos": 34,
+            "faixa": null,
+            "observacao": "Depois, 1 dose a cada 10 anos"
+          },
+          {
+            "nome": "Febre amarela",
+            "dose": "1 dose",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": "Para viagem a área de risco, pelo menos 10 dias antes"
+          },
+          {
+            "nome": "Tríplice viral SCR",
+            "dose": "2 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "até 29 anos",
+            "observacao": null
+          },
+          {
+            "nome": "Tríplice viral SCR",
+            "dose": "1 dose",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "30 a 59 anos",
+            "observacao": null
+          }
+        ]
+      },
+      {
+        "grupo": "idoso",
+        "fonte": "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-idoso",
+        "vacinas": [
+          {
+            "nome": "Hepatite B",
+            "dose": "3 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "conforme histórico vacinal",
+            "observacao": null
+          },
+          {
+            "nome": "dT (dupla adulto)",
+            "dose": "reforço a cada 10 anos",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "10 anos após a última dose",
+            "observacao": null
+          },
+          {
+            "nome": "Influenza trivalente",
+            "dose": "anual",
+            "idadeMeses": null,
+            "idadeAnos": 60,
+            "faixa": "a partir de 60 anos",
+            "observacao": "1 dose a cada temporada"
+          },
+          {
+            "nome": "Covid-19",
+            "dose": "semestral",
+            "idadeMeses": null,
+            "idadeAnos": 60,
+            "faixa": "a partir de 60 anos",
+            "observacao": "1 dose a cada 6 meses"
+          }
+        ]
+      },
+      {
+        "grupo": "gestante",
+        "fonte": "https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-gestante",
+        "vacinas": [
+          {
+            "nome": "Hepatite B",
+            "dose": "3 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "ao saber da gravidez (conforme histórico)",
+            "observacao": null
+          },
+          {
+            "nome": "dT (dupla adulto)",
+            "dose": "3 doses",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "ao saber da gravidez (conforme histórico)",
+            "observacao": null
+          },
+          {
+            "nome": "Influenza trivalente",
+            "dose": "1 dose por temporada",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "ao saber da gravidez",
+            "observacao": null
+          },
+          {
+            "nome": "Covid-19",
+            "dose": "1 dose a cada gestação",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "ao saber da gravidez",
+            "observacao": null
+          },
+          {
+            "nome": "dTpa",
+            "dose": "1 dose a cada gestação",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "a partir da 20ª semana",
+            "observacao": null
+          },
+          {
+            "nome": "Vírus sincicial respiratório",
+            "dose": "1 dose a cada gestação",
+            "idadeMeses": null,
+            "idadeAnos": null,
+            "faixa": "a partir da 28ª semana",
+            "observacao": null
+          }
+        ]
+      }
+    ],
+    "note": "O calendário do SUS indica estas vacinas por idade. Confirme no posto de saúde o que já foi tomado: o app não sabe o seu histórico.",
+    "conferencia": "26/09/2026: 6 documentos oficiais no ar (HTTP 200). Fora de propósito: linhas só para grupos especiais (indígenas, trabalhadores da saúde, casos excepcionais, CRIE) e o esquema de covid infantil por fabricante (Pfizer 3 doses; Moderna 2) — usado o de 3 doses. Pneumo 10 aos 4 meses vale só na transição para a 20 (sem data de fim). Influenza e covid de rotina para adolescentes e adultos saudáveis não estão nos calendários desses grupos."
+  },
   "mei": {
     "annualCeiling": 81000.0,
     "monthlyCeilingFirstYear": 6750.0,
@@ -5158,7 +5685,29 @@
     "dasnDay": 31,
     "warnAtPercent": 80,
     "note": "Teto anual do MEI e, no ano de abertura, teto proporcional por mês (81.000/12). Estourar em até 20% (97.200) permite pagar a diferença sem acréscimos e sair do MEI só em 1º de janeiro do ano seguinte, virando ME; acima disso o desenquadramento é retroativo. O lucro distribuído é isento até o percentual da receita bruta indicado por atividade (Lei 9.249/1995 art. 15 e Instrução Normativa do Simples); o que passa é rendimento tributável na declaração da pessoa. A DASN-SIMEI vence 31 de maio, mesmo com faturamento zero.",
-    "source": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor"
+    "source": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
+    "dasAjusteDiaNaoUtil": "adia",
+    "dasnAjusteDiaNaoUtil": "nenhum",
+    "conferencia": "26/09/2026: DAS-SIMEI dia 20, adiado para o 1º dia útil seguinte quando cai em dia não útil (Res. CGSN 140/2018, art. 40 e §3º; manual do PGMEI); DASN-SIMEI último dia de maio, sem adiar nem antecipar (Perguntas e Respostas MEI 3.9). https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/92278"
+  },
+  "simples": {
+    "dasDay": 20,
+    "dasAjusteDiaNaoUtil": "adia",
+    "defisMonth": 3,
+    "defisDay": 31,
+    "note": "No Simples Nacional, a apuração do mês (PGDAS-D) e o DAS vencem no dia 20 do mês seguinte; se o dia 20 cair em fim de semana, o prazo vai para o dia útil seguinte. A declaração anual (DEFIS) vence em 31 de março.",
+    "source": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/92278",
+    "conferencia": "26/09/2026: Res. CGSN 140/2018 arts. 38 e 40 (DAS dia 20, §3º adia) e art. 72 §1º (DEFIS 31/03). A Res. CGSN 190/2026 (04/08/2026) muda PGDAS-D e DEFIS a partir de 01/01/2027 — rever antes de 2027."
+  },
+  "irQuotas": {
+    "maxQuotas": 8,
+    "quotaMinima": 50.0,
+    "minimoParaParcelar": 100.0,
+    "dispensadoAbaixoDe": 10.0,
+    "vencimentoDasQuotas": "ultimoDiaUtilDoMes",
+    "note": "O imposto a pagar da declaração pode ser dividido em até 8 quotas mensais, cada uma de pelo menos R$ 50; abaixo de R$ 100 é quota única, e abaixo de R$ 10 não se paga. A 1ª quota (ou a única) vence no prazo da entrega; as demais, no último dia útil de cada mês. A 2ª tem 1% a mais e, a partir da 3ª, somam-se juros (Selic acumulada) e 1%: confira o valor no DARF de cada mês.",
+    "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/darf",
+    "conferencia": "26/09/2026: página DARF da Receita (8 quotas, mínimo R$ 50, total ≥ R$ 100, < R$ 10 dispensado, 1ª sem juros, 2ª +1%, demais Selic + 1%); Lei 9.250/1995 art. 14 (quotas mensais, vencimento no último dia útil de cada mês)."
   },
   "servicos": {
     "cnh.renovar": {
@@ -7911,5 +8460,128 @@
         "orgao": "Receita Federal"
       }
     }
+  },
+  "conselhos": {
+    "note": "A anuidade vence na data do conselho; em alguns, o valor e o prazo variam por regional. Confira no site do seu conselho regional.",
+    "conferencia": "26/09/2026: pesquisa em fontes oficiais dos conselhos (ToFacinCoordination/ciclo-claude/passeio-25-09/PESQUISA-TIPOS.md). OAB: prazo varia por seccional (sem data nacional). CRP e CRN numerados por região, não por UF.",
+    "lista": [
+      {
+        "sigla": "CRM",
+        "nome": "Conselho Regional de Medicina",
+        "prazo": {
+          "month": 3,
+          "day": 31
+        },
+        "parcelas": null,
+        "variaPorRegional": false,
+        "regiao": "uf",
+        "source": "https://portal.cfm.org.br/noticias/medicos-tem-ate-fim-de-marco-para-pagar-anuidade-2026/"
+      },
+      {
+        "sigla": "OAB",
+        "nome": "Ordem dos Advogados do Brasil",
+        "prazo": null,
+        "parcelas": null,
+        "variaPorRegional": true,
+        "regiao": "uf",
+        "source": "https://diario.oab.org.br/pages/materia/1005327"
+      },
+      {
+        "sigla": "CREA",
+        "nome": "Conselho Regional de Engenharia e Agronomia",
+        "prazo": {
+          "month": 3,
+          "day": 31
+        },
+        "parcelas": null,
+        "variaPorRegional": true,
+        "regiao": "uf",
+        "source": "https://www.creape.org.br/anuidade-2026"
+      },
+      {
+        "sigla": "CRC",
+        "nome": "Conselho Regional de Contabilidade",
+        "prazo": {
+          "month": 3,
+          "day": 31
+        },
+        "parcelas": 5,
+        "variaPorRegional": false,
+        "regiao": "uf",
+        "source": "https://www1.cfc.org.br/sisweb/SRE/docs/Res_1774.pdf"
+      },
+      {
+        "sigla": "COREN",
+        "nome": "Conselho Regional de Enfermagem",
+        "prazo": {
+          "month": 5,
+          "day": 31
+        },
+        "parcelas": 5,
+        "variaPorRegional": true,
+        "regiao": "uf",
+        "source": "https://www.cofen.gov.br/resolucao-cofen-no-790-de-29-de-setembro-de-2025/"
+      },
+      {
+        "sigla": "CRO",
+        "nome": "Conselho Regional de Odontologia",
+        "prazo": {
+          "month": 3,
+          "day": 31
+        },
+        "parcelas": 5,
+        "variaPorRegional": false,
+        "regiao": "uf",
+        "source": "https://website.cfo.org.br/anuidade-2026-confira-as-regras-e-condicoes-para-o-pagamento/"
+      },
+      {
+        "sigla": "CRP",
+        "nome": "Conselho Regional de Psicologia",
+        "prazo": {
+          "month": 3,
+          "day": 31
+        },
+        "parcelas": 6,
+        "variaPorRegional": true,
+        "regiao": "numero",
+        "source": "https://www.crprs.org.br/noticias/anuidade-2026"
+      },
+      {
+        "sigla": "CRF",
+        "nome": "Conselho Regional de Farmácia",
+        "prazo": {
+          "month": 3,
+          "day": 31
+        },
+        "parcelas": 6,
+        "variaPorRegional": false,
+        "regiao": "uf",
+        "source": "https://site.cff.org.br/noticia/noticias-do-cff/08/12/2025/congelada-anuidade-nao-sera-reajustada-em-2026"
+      },
+      {
+        "sigla": "CAU",
+        "nome": "Conselho de Arquitetura e Urbanismo",
+        "prazo": {
+          "month": 6,
+          "day": 30
+        },
+        "parcelas": 6,
+        "variaPorRegional": false,
+        "regiao": "uf",
+        "source": "https://caurs.gov.br/arquitetos-e-urbanistas-podem-obter-descontos-na-anuidade-do-cau-em-2026/"
+      },
+      {
+        "sigla": "CRN",
+        "nome": "Conselho Regional de Nutricionistas",
+        "prazo": {
+          "month": 7,
+          "day": 10
+        },
+        "parcelas": 10,
+        "variaPorRegional": true,
+        "regiao": "numero",
+        "source": "https://crn4.org.br/noticias/anuidade-2026"
+      }
+    ]
   }
 }
