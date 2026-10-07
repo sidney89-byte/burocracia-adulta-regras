@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-27b",
+  "version": "2026-10-07a",
   "grupos": [
     {
       "id": "casa",
@@ -38,7 +38,7 @@
       "nome": "Documentos pessoais",
       "cor": {
         "claro": "#5A6B7D",
-        "escuro": "#8A9BAE"
+        "escuro": "#8696A9"
       }
     },
     {
@@ -46,7 +46,7 @@
       "nome": "Viagem",
       "cor": {
         "claro": "#1A8A8A",
-        "escuro": "#3FB0B0"
+        "escuro": "#3AA2A2"
       }
     },
     {
