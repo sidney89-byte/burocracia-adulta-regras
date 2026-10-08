@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-07a",
+  "version": "2026-10-08a",
   "grupos": [
     {
       "id": "casa",
@@ -5686,13 +5686,13 @@
     "warnAtPercent": 80,
     "note": "Teto anual do MEI e, no ano de abertura, teto proporcional por mês (81.000/12). Estourar em até 20% (97.200) permite pagar a diferença sem acréscimos e sair do MEI só em 1º de janeiro do ano seguinte, virando ME; acima disso o desenquadramento é retroativo. O lucro distribuído é isento até o percentual da receita bruta indicado por atividade (Lei 9.249/1995 art. 15 e Instrução Normativa do Simples); o que passa é rendimento tributável na declaração da pessoa. A DASN-SIMEI vence 31 de maio, mesmo com faturamento zero.",
     "source": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
-    "dasAjusteDiaNaoUtil": "adia",
+    "dasAjusteDiaNaoUtil": "antecipa",
     "dasnAjusteDiaNaoUtil": "nenhum",
-    "conferencia": "26/09/2026: DAS-SIMEI dia 20, adiado para o 1º dia útil seguinte quando cai em dia não útil (Res. CGSN 140/2018, art. 40 e §3º; manual do PGMEI); DASN-SIMEI último dia de maio, sem adiar nem antecipar (Perguntas e Respostas MEI 3.9). https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/92278"
+    "conferencia": "26/09/2026: DAS-SIMEI dia 20, adiado para o 1º dia útil seguinte quando cai em dia não útil (Res. CGSN 140/2018, art. 40 e §3º; manual do PGMEI); DASN-SIMEI último dia de maio, sem adiar nem antecipar (Perguntas e Respostas MEI 3.9). 08/10/2026: decisão do Sidney — o app ANTECIPA o DAS (MEI e Simples) para o dia útil anterior quando o dia 20 cai em dia não útil: a norma permite pagar no dia útil seguinte, mas pagar antes nunca gera multa e o passo já dizia “antecipe”. https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/92278"
   },
   "simples": {
     "dasDay": 20,
-    "dasAjusteDiaNaoUtil": "adia",
+    "dasAjusteDiaNaoUtil": "antecipa",
     "defisMonth": 3,
     "defisDay": 31,
     "note": "No Simples Nacional, a apuração do mês (PGDAS-D) e o DAS vencem no dia 20 do mês seguinte; se o dia 20 cair em fim de semana, o prazo vai para o dia útil seguinte. A declaração anual (DEFIS) vence em 31 de março.",

@@ -1,6 +1,6 @@
 {
   "schema": "tofacin-rules-signature-p256-v1",
   "keyId": "regras-se-2026-10",
-  "sha256": "2f1d875b7b9ec51fab9e077bb78b23f19c0fedd18e41d2e9fc3767cf1f22b439",
-  "signature": "MEQCIEsppHrg09naiZkuE7acReJWGpYNg9VeJ0nuNpEuvFogAiB/7TB+SmsXZcE1oLCpPvmLehd9u2qayZY8ukD4mgz74A=="
+  "sha256": "e0576a91e7228f5761784dcb511c3fc129acac9a02804ac7560061d2e0bc2d76",
+  "signature": "MEYCIQCtq0pyOvg6mc5eeGosaI85jdKwaPBxOBo2u1C/EvarTwIhAI4umezdiP6ZlcKquuejdQml4YRo+tlw9doZcEEzC7Zs"
 }
