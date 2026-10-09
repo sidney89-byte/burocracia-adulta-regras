@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-08a",
+  "version": "2026-10-08b",
   "grupos": [
     {
       "id": "casa",
@@ -77,29 +77,35 @@
         15,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "cnh.exame-medico",
           "text": "Agendar exame médico em clínica credenciada",
           "daysBefore": 45,
           "place": "Clínica de exame médico para CNH"
         },
         {
+          "id": "cnh.exame-psicologico",
           "text": "Fazer exame psicológico (se motorista profissional)",
           "daysBefore": 40,
           "place": "Clínica de exame médico para CNH"
         },
         {
+          "id": "cnh.taxa",
           "text": "Pagar taxa de renovação no site do Detran",
           "daysBefore": 30,
           "url": "{detran}",
           "servico": "cnh.renovar"
         },
         {
+          "id": "cnh.biometria",
           "text": "Coletar biometria/foto no Detran, se solicitado",
           "daysBefore": 15,
           "place": "Detran"
         },
         {
+          "id": "cnh.cnh-digital",
           "text": "Baixar a CNH digital no app Carteira Digital de Trânsito",
           "daysBefore": 0,
           "url": "https://www.gov.br/pt-br/servicos/obter-carteira-digital-de-transito"
@@ -126,31 +132,37 @@
         60,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "passaporte.formulario",
           "text": "Preencher formulário no site da Polícia Federal",
           "daysBefore": 120,
           "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte",
           "servico": "passaporte.formulario"
         },
         {
+          "id": "passaporte.gru",
           "text": "Pagar a GRU (R$ 257,25)",
           "daysBefore": 110,
           "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte",
           "servico": "passaporte.gru"
         },
         {
+          "id": "passaporte.agendar",
           "text": "Agendar atendimento na PF (filas podem passar de 60 dias)",
           "daysBefore": 100,
           "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte",
           "servico": "passaporte.agendar"
         },
         {
+          "id": "passaporte.documentos",
           "text": "Levar RG, CPF, título e comprovante de quitação eleitoral",
           "daysBefore": 7,
           "place": "Polícia Federal"
         },
         {
+          "id": "passaporte.retirar",
           "text": "Retirar o passaporte novo pessoalmente",
           "daysBefore": 0,
           "place": "Polícia Federal"
@@ -178,26 +190,31 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "ipva.consultar-valor",
           "text": "Consultar valor e calendário pelo final da placa no site do Detran/Sefaz",
           "daysBefore": 30,
           "url": "{detran}",
           "servico": "veiculo.ipva"
         },
         {
+          "id": "ipva.pagar",
           "text": "Pagar IPVA (à vista com desconto ou parcelado)",
           "daysBefore": 20,
           "url": "{detran}",
           "servico": "veiculo.ipva"
         },
         {
+          "id": "ipva.multas",
           "text": "Quitar multas pendentes",
           "daysBefore": 10,
           "url": "{detran}",
           "servico": "veiculo.multas"
         },
         {
+          "id": "ipva.licenciamento",
           "text": "Pagar taxa de licenciamento e baixar o CRLV digital",
           "daysBefore": 0,
           "url": "https://www.gov.br/pt-br/servicos/obter-carteira-digital-de-transito"
@@ -223,27 +240,33 @@
         30,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "planoSaude.indice",
           "text": "Verificar o índice de reajuste anual anunciado",
           "daysBefore": 60,
           "url": "https://www.gov.br/ans/pt-br"
         },
         {
+          "id": "planoSaude.comparar",
           "text": "Comparar com outros planos antes da renovação",
           "daysBefore": 45,
           "url": "https://www.gov.br/ans/pt-br"
         },
         {
+          "id": "planoSaude.carencias",
           "text": "Conferir carências ao trocar (portabilidade evita carência)",
           "daysBefore": 30,
           "url": "https://www.gov.br/ans/pt-br"
         },
         {
+          "id": "planoSaude.dependentes",
           "text": "Atualizar dependentes",
           "daysBefore": 7
         },
         {
+          "id": "planoSaude.guardar",
           "text": "Guardar a apólice/contrato renovado",
           "daysBefore": 0
         }
@@ -251,6 +274,11 @@
       "cost": "Reajuste anual (ANS define o teto para planos individuais)",
       "place": "Operadora ou corretor; portabilidade pelo site da ANS",
       "tip": "A portabilidade pode ser solicitada após cumprir a permanência mínima no plano, observados os requisitos da ANS. Confira as condições antes de trocar.",
+      "ir": {
+        "text": "Conta no Imposto de Renda como despesa médica, sem limite de valor, na declaração completa: para você e os dependentes da declaração, descontado o que o plano reembolsou. Guarde os boletos e o informe da operadora.",
+        "source": "Receita Federal, Perguntas e Respostas IRPF 2026 (exercício 2026, ano-calendário 2025, v1.0), perguntas 012, 387 e 389 — https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf",
+        "ano": 2026
+      },
       "recurring": true,
       "nearbyQueries": [
         "Corretora de planos de saúde"
@@ -266,32 +294,39 @@
         30,
         7
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "annualDeadline": {
         "month": 5,
         "lastBusinessDay": true
       },
       "checklist": [
         {
+          "id": "impostoRenda.informe-empregador",
           "text": "Baixar informe de rendimentos de cada empregador/fonte",
           "daysBefore": 75
         },
         {
+          "id": "impostoRenda.informes-bancos",
           "text": "Baixar informes de bancos, corretoras e previdência",
           "daysBefore": 60
         },
         {
+          "id": "impostoRenda.recibos",
           "text": "Reunir recibos médicos e de escola (com CPF/CNPJ do prestador)",
           "daysBefore": 45
         },
         {
+          "id": "impostoRenda.informe-plano",
           "text": "Ter o informe do plano de saúde",
           "daysBefore": 45
         },
         {
+          "id": "impostoRenda.bens-dividas",
           "text": "Listar bens e dívidas com valores em 31/12",
           "daysBefore": 30
         },
         {
+          "id": "impostoRenda.enviar",
           "text": "Enviar a declaração pelo programa ou pelo app Meu Imposto de Renda",
           "daysBefore": 7,
           "url": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda",
@@ -318,18 +353,23 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "garantia.nota-fiscal",
           "text": "Guardar a nota fiscal (foto ou PDF)"
         },
         {
+          "id": "garantia.numero-serie",
           "text": "Anotar número de série e loja"
         },
         {
+          "id": "garantia.testar",
           "text": "Testar o produto antes do fim da garantia",
           "daysBefore": 30
         },
         {
+          "id": "garantia.assistencia",
           "text": "Acionar a assistência técnica se houver defeito",
           "daysBefore": 7,
           "place": "Assistência técnica autorizada"
@@ -355,30 +395,37 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "iptu.carne",
           "text": "Conferir se o carnê chegou ou emitir a 2ª via no site da prefeitura",
           "daysBefore": 30,
           "url": "{cityPay}"
         },
         {
+          "id": "iptu.valor-venal",
           "text": "Conferir o valor venal e contestar se estiver errado (prazo curto!)",
           "daysBefore": 25,
           "place": "Prefeitura"
         },
         {
+          "id": "iptu.isencao",
           "text": "Verificar se tem direito a isenção (aposentado, imóvel de baixo valor, etc.)",
           "daysBefore": 20,
           "url": "{cityPay}"
         },
         {
+          "id": "iptu.cota-ou-parcelas",
           "text": "Decidir: cota única com desconto ou parcelas",
           "daysBefore": 15
         },
         {
+          "id": "iptu.pagar",
           "text": "Pagar e guardar o comprovante",
           "daysBefore": 0,
-          "url": "{cityPay}"
+          "url": "{cityPay}",
+          "pagamento": true
         }
       ],
       "cost": "Varia pelo valor venal; cota única costuma ter desconto",
@@ -401,25 +448,31 @@
         15,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "seguroAuto.cotacao",
           "text": "Pedir cotação na sua corretora e em outras duas",
           "daysBefore": 45,
           "place": "Corretora de seguros"
         },
         {
+          "id": "seguroAuto.comparar",
           "text": "Comparar cobertura (roubo, colisão, terceiros, carro reserva) e franquia",
           "daysBefore": 30
         },
         {
+          "id": "seguroAuto.bonus",
           "text": "Conferir bônus e classe de bônus na apólice atual",
           "daysBefore": 30
         },
         {
+          "id": "seguroAuto.assinar",
           "text": "Decidir e assinar a proposta antes do fim da vigência",
           "daysBefore": 7
         },
         {
+          "id": "seguroAuto.guardar",
           "text": "Guardar a apólice nova e anotar o número",
           "daysBefore": 0
         }
@@ -442,25 +495,31 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "seguroResidencial.cotacao",
           "text": "Pedir cotação (incêndio, roubo, danos elétricos, responsabilidade civil)",
           "daysBefore": 30,
           "place": "Corretora de seguros"
         },
         {
+          "id": "seguroResidencial.valor-bens",
           "text": "Atualizar o valor do imóvel e dos bens segurados",
           "daysBefore": 20
         },
         {
+          "id": "seguroResidencial.assistencias",
           "text": "Conferir assistências incluídas (chaveiro, encanador, eletricista)",
           "daysBefore": 20
         },
         {
+          "id": "seguroResidencial.renovar",
           "text": "Renovar ou trocar antes do fim da vigência",
           "daysBefore": 7
         },
         {
+          "id": "seguroResidencial.guardar",
           "text": "Guardar a apólice nova e anotar o número",
           "daysBefore": 0
         }
@@ -483,25 +542,31 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "seguroVida.beneficiarios",
           "text": "Revisar beneficiários e percentuais",
           "daysBefore": 30
         },
         {
+          "id": "seguroVida.capital",
           "text": "Conferir capital segurado frente à renda e dívidas da família",
           "daysBefore": 30
         },
         {
+          "id": "seguroVida.comparar",
           "text": "Comparar preço e coberturas (invalidez, doenças graves)",
           "daysBefore": 20,
           "place": "Corretora de seguros"
         },
         {
+          "id": "seguroVida.renovar",
           "text": "Renovar antes do fim da vigência",
           "daysBefore": 7
         },
         {
+          "id": "seguroVida.guardar",
           "text": "Guardar a apólice e avisar os beneficiários onde ela está",
           "daysBefore": 0
         }
@@ -524,20 +589,26 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "contaLuz.conferir-chegada",
           "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
           "daysBefore": 5
         },
         {
+          "id": "contaLuz.conferir-valor",
           "text": "Conferir consumo e valor; contestar se estiver fora do normal",
           "daysBefore": 3
         },
         {
+          "id": "contaLuz.pagar",
           "text": "Pagar até o vencimento (copiar o código e colar no banco)",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "contaLuz.guardar",
           "text": "Guardar a fatura e o comprovante"
         }
       ],
@@ -560,20 +631,26 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "contaAgua.conferir-chegada",
           "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
           "daysBefore": 5
         },
         {
+          "id": "contaAgua.conferir-valor",
           "text": "Conferir consumo e valor; contestar se estiver fora do normal",
           "daysBefore": 3
         },
         {
+          "id": "contaAgua.pagar",
           "text": "Pagar até o vencimento (copiar o código e colar no banco)",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "contaAgua.guardar",
           "text": "Guardar a fatura e o comprovante"
         }
       ],
@@ -596,20 +673,26 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "condominio.conferir-chegada",
           "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
           "daysBefore": 5
         },
         {
+          "id": "condominio.conferir-valor",
           "text": "Conferir consumo e valor; contestar se estiver fora do normal",
           "daysBefore": 3
         },
         {
+          "id": "condominio.pagar",
           "text": "Pagar até o vencimento (copiar o código e colar no banco)",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "condominio.guardar",
           "text": "Guardar a fatura e o comprovante"
         }
       ],
@@ -633,20 +716,26 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "contaTelefone.conferir-chegada",
           "text": "Conferir se a fatura chegou (e-mail, app ou site da empresa)",
           "daysBefore": 5
         },
         {
+          "id": "contaTelefone.conferir-valor",
           "text": "Conferir consumo e valor; contestar se estiver fora do normal",
           "daysBefore": 3
         },
         {
+          "id": "contaTelefone.pagar",
           "text": "Pagar até o vencimento (copiar o código e colar no banco)",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "contaTelefone.guardar",
           "text": "Guardar a fatura e o comprovante"
         }
       ],
@@ -672,74 +761,87 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "visto.validade-passaporte",
           "text": "Confira a validade do passaporte: muitos países exigem 6 meses a mais que a viagem",
           "daysBefore": 180,
           "url": null,
           "place": null
         },
         {
+          "id": "visto.exigencia",
           "text": "Descubra se o destino exige visto, autorização eletrônica (eTA/ETA/ETIAS) ou nada",
           "daysBefore": 150,
           "url": "https://www.gov.br/mre/pt-br",
           "place": null
         },
         {
+          "id": "visto.eua-ds160",
           "text": "EUA: preencha o DS-160 e pague a taxa MRV no sistema oficial de agendamento",
           "daysBefore": 120,
           "url": "https://ais.usvisa-info.com/pt-br/niv",
           "place": null
         },
         {
+          "id": "visto.eua-entrevista",
           "text": "EUA: agende a entrevista (CASV para biometria + consulado) e leve o comprovante do DS-160",
           "daysBefore": 100,
           "url": "https://ais.usvisa-info.com/pt-br/niv",
           "place": "Consulado dos EUA / CASV"
         },
         {
+          "id": "visto.canada",
           "text": "Canadá: peça a eTA online (CAD 7) se você já teve visto canadense nos últimos 10 anos ou tem visto americano válido; caso contrário peça o visto de visitante",
           "daysBefore": 60,
           "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
           "place": null
         },
         {
+          "id": "visto.australia",
           "text": "Austrália: peça o Visitor visa 600 pelo ImmiAccount (brasileiro não usa ETA/eVisitor)",
           "daysBefore": 90,
           "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-overseas",
           "place": null
         },
         {
+          "id": "visto.reino-unido",
           "text": "Reino Unido: peça a ETA (£20, vale 2 anos) antes de comprar a passagem de conexão",
           "daysBefore": 30,
           "url": "https://www.gov.uk/eta/apply",
           "place": null
         },
         {
+          "id": "visto.schengen",
           "text": "Europa/Schengen: quando o ETIAS entrar em vigor (previsto para o último trimestre de 2026), peça a autorização (€20) antes de embarcar",
           "daysBefore": 30,
           "url": "https://travel-europe.europa.eu/etias",
           "place": null
         },
         {
+          "id": "visto.india",
           "text": "Índia: peça o e-Visa no portal oficial pelo menos 4 dias antes do embarque",
           "daysBefore": 30,
           "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
           "place": null
         },
         {
+          "id": "visto.china",
           "text": "China: confira se a isenção de visto para brasileiros (até 30 dias) segue valendo na data da viagem",
           "daysBefore": 45,
           "url": "https://br.china-embassy.gov.cn/por/lqfw/lqfw2/",
           "place": null
         },
         {
+          "id": "visto.documentos-viagem",
           "text": "Separe seguro-viagem, comprovante de hospedagem, passagem de volta e comprovação financeira",
           "daysBefore": 30,
           "url": null,
           "place": null
         },
         {
+          "id": "visto.confirmar-emissao",
           "text": "Confirme que o visto/autorização foi emitido e salve o PDF no celular",
           "daysBefore": 7,
           "url": null,
@@ -770,38 +872,47 @@
         1,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "aluguel.conferir-valor",
           "text": "Confira o boleto ou o valor do PIX e se já entraram condomínio e IPTU",
           "daysBefore": 7,
           "url": null,
           "place": null
         },
         {
+          "id": "aluguel.pagar",
           "text": "Pague até a data do contrato para não pegar multa e juros de mora",
           "daysBefore": 0,
           "url": null,
-          "place": null
+          "place": null,
+          "pagamento": true,
+          "linkDaEmpresa": false
         },
         {
+          "id": "aluguel.reajuste",
           "text": "No mês do aniversário do contrato, confira o reajuste anual pelo índice combinado (IPCA ou IGP-M)",
           "daysBefore": 30,
           "url": "https://www3.bcb.gov.br/CALCIDADAO/publico/exibirFormCorrecaoValores.do?method=exibirFormCorrecaoValores",
           "place": null
         },
         {
+          "id": "aluguel.renovar-ou-sair",
           "text": "Faltando 3 meses para o fim do contrato, decida entre renovar, renegociar ou sair",
           "daysBefore": 90,
           "url": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm",
           "place": null
         },
         {
+          "id": "aluguel.aviso-saida",
           "text": "Se for sair, avise por escrito com 30 dias de antecedência e agende a vistoria de saída",
           "daysBefore": 30,
           "url": null,
           "place": "Imobiliária"
         },
         {
+          "id": "aluguel.guardar",
           "text": "Guarde os comprovantes: eles provam a quitação em caso de cobrança indevida",
           "daysBefore": 0,
           "url": null,
@@ -830,22 +941,29 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "educacao.conferir-boleto",
           "text": "Conferir o boleto no portal ou app da escola/faculdade",
           "daysBefore": 5
         },
         {
+          "id": "educacao.pagar",
           "text": "Pagar até o vencimento (copiar o código e colar no banco)",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "educacao.guardar",
           "text": "Guardar o boleto e o comprovante para o Imposto de Renda"
         },
         {
+          "id": "educacao.informe-anual",
           "text": "No fim do ano, pedir o informe de pagamentos da instituição para a declaração"
         },
         {
+          "id": "educacao.rematricula",
           "text": "Rematrícula: conferir o prazo e o desconto de pontualidade"
         }
       ],
@@ -870,32 +988,39 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "cartaoCredito.previa",
           "text": "Na data de fechamento, veja a prévia da fatura no app do banco",
           "daysBefore": 10,
           "url": null,
           "place": null
         },
         {
+          "id": "cartaoCredito.conferir-lancamentos",
           "text": "Confira lançamento por lançamento e conteste em até 90 dias o que não reconhecer",
           "daysBefore": 7,
           "url": "https://www.consumidor.gov.br/",
           "place": null
         },
         {
+          "id": "cartaoCredito.pagar",
           "text": "Pague o total até o vencimento; se não der, pague o máximo possível e peça o parcelamento da fatura",
           "daysBefore": 0,
           "url": "https://www.bcb.gov.br/meubc/faqs/p/cartao-de-credito",
-          "place": null
+          "place": null,
+          "pagamento": true
         },
         {
+          "id": "cartaoCredito.rotativo",
           "text": "Se acabou no rotativo, troque por um parcelamento com juros menores ainda neste ciclo",
           "daysBefore": 0,
           "url": null,
           "place": null
         },
         {
+          "id": "cartaoCredito.reclamar",
           "text": "Se não resolveu com o banco, registre reclamação no Banco Central ou no consumidor.gov.br",
           "daysBefore": 0,
           "url": "https://www.bcb.gov.br/meubc/registrar-reclamacao",
@@ -925,20 +1050,24 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "rg.validade",
           "text": "Veja a validade impressa no seu documento e a regra por idade da CIN",
           "daysBefore": 90,
           "url": "https://www.gov.br/governodigital/pt-br/identidade/cin",
           "place": null
         },
         {
+          "id": "rg.certidao",
           "text": "Separe a certidão de nascimento ou de casamento original ou cópia autenticada e o CPF",
           "daysBefore": 60,
           "url": null,
           "place": "Cartório"
         },
         {
+          "id": "rg.agendar",
           "text": "Agende o atendimento no portal do seu estado (Poupatempo em SP, Detran ou Instituto de Identificação nos demais)",
           "daysBefore": 45,
           "url": "https://www.poupatempo.sp.gov.br/",
@@ -946,12 +1075,14 @@
           "servico": "rg.agendar"
         },
         {
+          "id": "rg.comparecer",
           "text": "Compareça no dia com os documentos originais para foto e biometria",
           "daysBefore": 30,
           "url": null,
           "place": "Poupatempo ou Instituto de Identificação"
         },
         {
+          "id": "rg.versao-digital",
           "text": "Ao receber, ative a versão digital no app gov.br",
           "daysBefore": 0,
           "url": "https://www.gov.br/governodigital/pt-br/identidade/cin",
@@ -983,32 +1114,40 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "anuidadeConselho.resolucao",
           "text": "Em dezembro, procure a resolução da anuidade do ano seguinte no site do seu conselho",
           "daysBefore": 60,
           "url": "https://www.oab.org.br/",
           "place": null
         },
         {
+          "id": "anuidadeConselho.comparar",
           "text": "Compare: pagar à vista em janeiro costuma dar desconto, parcelar não dá",
           "daysBefore": 45,
           "url": null,
           "place": null
         },
         {
+          "id": "anuidadeConselho.boleto",
           "text": "Emita o boleto no portal do conselho regional (OAB, CRM, CREA, CRC, CRP, CRO ou COREN)",
           "daysBefore": 30,
           "url": "https://www.confea.org.br/",
           "place": null
         },
         {
+          "id": "anuidadeConselho.pagar",
           "text": "Pague à vista ou contrate o parcelamento antes do vencimento",
           "daysBefore": 0,
           "url": null,
-          "place": null
+          "place": null,
+          "pagamento": true,
+          "linkDaEmpresa": false
         },
         {
+          "id": "anuidadeConselho.atualizar-cadastro",
           "text": "Se mudou de endereço ou de situação (licença, aposentadoria), atualize o cadastro: isso pode reduzir ou isentar a anuidade",
           "daysBefore": 30,
           "url": "https://portal.cfm.org.br/",
@@ -1040,8 +1179,10 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "mei.emitir-das",
           "text": "Emita o DAS do mês no PGMEI ou no app MEI",
           "daysBefore": 10,
           "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes/atspo/pgmei.app/identificacao",
@@ -1049,18 +1190,22 @@
           "servico": "mei.das"
         },
         {
+          "id": "mei.pagar",
           "text": "Pague até o dia 20 (se cair em fim de semana ou feriado, antecipe)",
           "daysBefore": 0,
           "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/pagamento-de-contribuicao-mensal",
-          "place": null
+          "place": null,
+          "pagamento": true
         },
         {
+          "id": "mei.guardar-notas",
           "text": "Guarde as notas e o controle mensal de faturamento: eles alimentam a declaração anual",
           "daysBefore": 0,
           "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
           "place": null
         },
         {
+          "id": "mei.dasn",
           "text": "Entre janeiro e maio, entregue a DASN-SIMEI com o faturamento do ano anterior",
           "daysBefore": 30,
           "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes/ATSPO/dasnsimei.app/Identificacao",
@@ -1068,6 +1213,7 @@
           "servico": "mei.dasn"
         },
         {
+          "id": "mei.das-atrasado",
           "text": "Se tiver DAS atrasado, gere as guias com juros no próprio PGMEI ou peça parcelamento",
           "daysBefore": 0,
           "url": "https://www.gov.br/mei",
@@ -1097,44 +1243,52 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "vacina.carteira-digital",
           "text": "Baixe a carteira digital no Meu SUS Digital e confira o que já tomou",
           "daysBefore": 60,
           "url": "https://meususdigital.saude.gov.br/",
           "place": null
         },
         {
+          "id": "vacina.calendario",
           "text": "Compare com o calendário nacional do adulto e liste o que está atrasado",
           "daysBefore": 45,
           "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario",
           "place": null
         },
         {
+          "id": "vacina.dt",
           "text": "Reforço de dT (difteria e tétano) a cada 10 anos",
           "daysBefore": 30,
           "url": null,
           "place": "UBS"
         },
         {
+          "id": "vacina.febre-amarela",
           "text": "Febre amarela: dose única para a vida, aplicada pelo menos 10 dias antes de viajar",
           "daysBefore": 30,
           "url": null,
           "place": "UBS"
         },
         {
+          "id": "vacina.influenza",
           "text": "Influenza: uma dose por ano, na campanha (em geral entre março e maio)",
           "daysBefore": 30,
           "url": null,
           "place": "UBS ou clínica particular"
         },
         {
+          "id": "vacina.hepatite-hpv",
           "text": "Hepatite B: esquema de 3 doses para quem nunca tomou; HPV conforme a faixa e a indicação clínica",
           "daysBefore": 30,
           "url": null,
           "place": "UBS"
         },
         {
+          "id": "vacina.civp",
           "text": "Para viagem que exige comprovante, peça o CIVP à Anvisa (até 5 dias úteis)",
           "daysBefore": 30,
           "url": "https://www.gov.br/pt-br/servicos/obter-o-certificado-internacional-de-vacinacao-e-profilaxia",
@@ -1164,20 +1318,26 @@
         2,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "contaGas.conferir-chegada",
           "text": "Conferir se a conta chegou (e-mail, app ou site da distribuidora)",
           "daysBefore": 5
         },
         {
+          "id": "contaGas.conferir-valor",
           "text": "Conferir consumo (m³) e valor; contestar se estiver fora do normal",
           "daysBefore": 3
         },
         {
+          "id": "contaGas.pagar",
           "text": "Pagar até o vencimento (copiar o código e colar no banco)",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "contaGas.guardar",
           "text": "Guardar a conta e o comprovante"
         }
       ],
@@ -1200,17 +1360,22 @@
         7,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "contrato.partes",
           "text": "Conferir as partes, o objeto e os anexos do contrato"
         },
         {
+          "id": "contrato.aviso",
           "text": "Conferir o prazo de aviso para cancelar ou renovar"
         },
         {
+          "id": "contrato.reajustes",
           "text": "Revisar reajustes e condições antes do prazo final"
         },
         {
+          "id": "contrato.guardar",
           "text": "Guardar o contrato e os aditivos assinados"
         }
       ],
@@ -1230,15 +1395,20 @@
         3,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "impostosDiversos.conferir-guia",
           "text": "Conferir contribuinte, tributo, competência e valor na guia oficial"
         },
         {
+          "id": "impostosDiversos.pagar",
           "text": "Pagar a guia pelo canal indicado pelo órgão responsável",
-          "daysBefore": 0
+          "daysBefore": 0,
+          "pagamento": true
         },
         {
+          "id": "impostosDiversos.guardar",
           "text": "Guardar a guia e o comprovante de pagamento"
         }
       ],
@@ -1258,21 +1428,27 @@
         3,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "simplesNacional.pgdas",
           "text": "Conferir a apuração da empresa no PGDAS-D",
           "url": "https://www.gov.br/pt-br/servicos/declarar-apuracoes-mensais-do-simples-nacional",
           "servico": "simples.pgdas"
         },
         {
+          "id": "simplesNacional.conferir-das",
           "text": "Conferir CNPJ, competência, valor e vencimento do DAS emitido"
         },
         {
+          "id": "simplesNacional.pagar",
           "text": "Pagar o DAS emitido no portal oficial",
           "daysBefore": 0,
-          "url": "https://www.gov.br/pt-br/servicos/declarar-apuracoes-mensais-do-simples-nacional"
+          "url": "https://www.gov.br/pt-br/servicos/declarar-apuracoes-mensais-do-simples-nacional",
+          "pagamento": true
         },
         {
+          "id": "simplesNacional.guardar",
           "text": "Guardar o DAS, o comprovante e o recibo da apuração"
         }
       ],
@@ -1292,20 +1468,25 @@
         1,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "receitaMedica.comprar",
           "text": "Comprar ou retirar o medicamento antes de a receita vencer",
           "daysBefore": 3,
           "place": "Farmácia ou drogaria"
         },
         {
+          "id": "receitaMedica.controlado",
           "text": "Receita de medicamento controlado: levar documento com foto e a via em papel",
           "daysBefore": 3
         },
         {
+          "id": "receitaMedica.guardar",
           "text": "Guardar a receita e a nota da compra; na controlada a farmácia retém uma das vias"
         },
         {
+          "id": "receitaMedica.renovar",
           "text": "Uso contínuo: marcar o retorno com o médico para renovar a receita antes de acabar a caixa"
         }
       ],
@@ -1328,17 +1509,22 @@
         1,
         0
       ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
       "checklist": [
         {
+          "id": "processo.numero",
           "text": "Guarde o número do processo com os 20 dígitos, como está escrito"
         },
         {
+          "id": "processo.responsavel",
           "text": "Anote quem cuida do processo e como falar com essa pessoa"
         },
         {
+          "id": "processo.consultar",
           "text": "Toque em Consultar agora de vez em quando para ver o que mudou"
         },
         {
+          "id": "processo.guardar",
           "text": "Guarde aqui as decisões e os documentos que você receber"
         }
       ],
@@ -5708,6 +5894,21 @@
     "note": "O imposto a pagar da declaração pode ser dividido em até 8 quotas mensais, cada uma de pelo menos R$ 50; abaixo de R$ 100 é quota única, e abaixo de R$ 10 não se paga. A 1ª quota (ou a única) vence no prazo da entrega; as demais, no último dia útil de cada mês. A 2ª tem 1% a mais e, a partir da 3ª, somam-se juros (Selic acumulada) e 1%: confira o valor no DARF de cada mês.",
     "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/darf",
     "conferencia": "26/09/2026: página DARF da Receita (8 quotas, mínimo R$ 50, total ≥ R$ 100, < R$ 10 dispensado, 1ª sem juros, 2ª +1%, demais Selic + 1%); Lei 9.250/1995 art. 14 (quotas mensais, vencimento no último dia útil de cada mês)."
+  },
+  "irCalendario": {
+    "anos": [
+      {
+        "anoDaEntrega": 2026,
+        "entregaDe": {
+          "data": "2026-03-23",
+          "ref": "IN RFB nº 2.312/2026 (DOU 16/03/2026): entrega de 23/03/2026 a 29/05/2026 — https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/prazo (conferido em 08/10/2026)"
+        },
+        "informesDe": {
+          "data": "2026-02-27",
+          "ref": "IN RFB nº 2.060/2021: o comprovante de rendimentos é fornecido até o último dia útil de fevereiro do ano seguinte ao do pagamento (27/02/2026) — artigo não conferido; texto citado por portaltributario.com.br/guia/comprovante-de-rendimentos-pagos-e-de-imposto-de-renda-na-fonte.htm (conferido em 08/10/2026)"
+        }
+      }
+    ]
   },
   "servicos": {
     "cnh.renovar": {
