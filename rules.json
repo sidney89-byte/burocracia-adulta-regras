@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-08b",
+  "version": "2026-11-12a",
   "grupos": [
     {
       "id": "casa",
@@ -106,7 +106,7 @@
         },
         {
           "id": "cnh.cnh-digital",
-          "text": "Baixar a CNH digital no app Carteira Digital de Trânsito",
+          "text": "Baixar a CNH digital no app CNH do Brasil (antiga Carteira Digital de Trânsito)",
           "daysBefore": 0,
           "url": "https://www.gov.br/pt-br/servicos/obter-carteira-digital-de-transito"
         }
@@ -138,21 +138,21 @@
           "id": "passaporte.formulario",
           "text": "Preencher formulário no site da Polícia Federal",
           "daysBefore": 120,
-          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte/documentacao/formulario/instrucoes",
           "servico": "passaporte.formulario"
         },
         {
           "id": "passaporte.gru",
           "text": "Pagar a GRU (R$ 257,25)",
           "daysBefore": 110,
-          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte/documentacao/formulario/pagar-taxa/pagamento-da-taxa",
           "servico": "passaporte.gru"
         },
         {
           "id": "passaporte.agendar",
           "text": "Agendar atendimento na PF (filas podem passar de 60 dias)",
           "daysBefore": 100,
-          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte/documentacao/formulario/pagar-taxa/agendamento/instrucoes-de-agendamento",
           "servico": "passaporte.agendar"
         },
         {
@@ -246,7 +246,7 @@
           "id": "planoSaude.indice",
           "text": "Verificar o índice de reajuste anual anunciado",
           "daysBefore": 60,
-          "url": "https://www.gov.br/ans/pt-br"
+          "url": "https://www.gov.br/ans/pt-br/assuntos/consumidor/reajuste-variacao-de-mensalidade"
         },
         {
           "id": "planoSaude.comparar",
@@ -258,7 +258,7 @@
           "id": "planoSaude.carencias",
           "text": "Conferir carências ao trocar (portabilidade evita carência)",
           "daysBefore": 30,
-          "url": "https://www.gov.br/ans/pt-br"
+          "url": "https://www.gov.br/ans/pt-br/assuntos/contratacao-e-troca-de-plano/formas-de-ingressar-num-plano-sem-carencias-ou-cobertura-parcial-temporaria/portabilidade-de-carencias"
         },
         {
           "id": "planoSaude.dependentes",
@@ -329,7 +329,7 @@
           "id": "impostoRenda.enviar",
           "text": "Enviar a declaração pelo programa ou pelo app Meu Imposto de Renda",
           "daysBefore": 7,
-          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda",
+          "url": "https://www.gov.br/pt-br/servicos/declarar-meu-imposto-de-renda",
           "servico": "ir.entregar"
         }
       ],
@@ -781,7 +781,7 @@
           "id": "visto.eua-ds160",
           "text": "EUA: preencha o DS-160 e pague a taxa MRV no sistema oficial de agendamento",
           "daysBefore": 120,
-          "url": "https://ais.usvisa-info.com/pt-br/niv",
+          "url": "https://br.usembassy.gov/pt/non-immigrant-visas-overview-portuguese/",
           "place": null
         },
         {
@@ -931,6 +931,44 @@
         "lotérica"
       ]
     },
+    "financiamento": {
+      "grupo": "contratos",
+      "name": "Financiamento",
+      "icon": "banknote",
+      "leadDays": 5,
+      "reminderDaysBefore": [
+        5,
+        2,
+        0
+      ],
+      "notaEditorial": "leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
+      "checklist": [
+        {
+          "id": "financiamento.conferir-boleto",
+          "text": "Confira o boleto do mês no app ou site do banco",
+          "daysBefore": 5
+        },
+        {
+          "id": "financiamento.pagar",
+          "text": "Pague até o vencimento (copie o código e cole no banco)",
+          "daysBefore": 0,
+          "pagamento": true
+        },
+        {
+          "id": "financiamento.guardar",
+          "text": "Guarde o comprovante",
+          "daysBefore": 0
+        }
+      ],
+      "cost": "O valor da parcela do seu contrato.",
+      "place": "App ou site do banco.",
+      "tip": "Guarde o contrato e o carnê aqui no app.",
+      "recurring": true,
+      "cadence": "monthly",
+      "nearbyQueries": [
+        "agência bancária"
+      ]
+    },
     "educacao": {
       "grupo": "saude",
       "name": "Mensalidade escolar",
@@ -1008,7 +1046,7 @@
           "id": "cartaoCredito.pagar",
           "text": "Pague o total até o vencimento; se não der, pague o máximo possível e peça o parcelamento da fatura",
           "daysBefore": 0,
-          "url": "https://www.bcb.gov.br/meubc/faqs/p/cartao-de-credito",
+          "url": "https://www.bcb.gov.br/meubc/faqs/s/cartao",
           "place": null,
           "pagamento": true
         },
@@ -1023,7 +1061,7 @@
           "id": "cartaoCredito.reclamar",
           "text": "Se não resolveu com o banco, registre reclamação no Banco Central ou no consumidor.gov.br",
           "daysBefore": 0,
-          "url": "https://www.bcb.gov.br/meubc/registrar-reclamacao",
+          "url": "https://www.bcb.gov.br/meubc/registrar_reclamacao",
           "place": null
         }
       ],
@@ -1056,7 +1094,7 @@
           "id": "rg.validade",
           "text": "Veja a validade impressa no seu documento e a regra por idade da CIN",
           "daysBefore": 90,
-          "url": "https://www.gov.br/governodigital/pt-br/identidade/cin",
+          "url": "https://www.gov.br/governodigital/pt-br/identidade/cin/perguntas-frequentes-sobre-a-cin",
           "place": null
         },
         {
@@ -1070,7 +1108,7 @@
           "id": "rg.agendar",
           "text": "Agende o atendimento no portal do seu estado (Poupatempo em SP, Detran ou Instituto de Identificação nos demais)",
           "daysBefore": 45,
-          "url": "https://www.poupatempo.sp.gov.br/",
+          "url": "https://www.gov.br/governodigital/pt-br/identidade/cin/duvidas-frequentes-sobre-a-cin-campanha",
           "place": "Poupatempo ou Instituto de Identificação",
           "servico": "rg.agendar"
         },
@@ -1085,7 +1123,7 @@
           "id": "rg.versao-digital",
           "text": "Ao receber, ative a versão digital no app gov.br",
           "daysBefore": 0,
-          "url": "https://www.gov.br/governodigital/pt-br/identidade/cin",
+          "url": "https://www.gov.br/governodigital/pt-br/identidade/carteira-de-documentos-digitais",
           "place": null
         }
       ],
@@ -1101,6 +1139,33 @@
         "cartório de registro civil",
         "foto 3x4"
       ]
+    },
+    "outroDocumento": {
+      "grupo": "pessoais",
+      "name": "Outro documento pessoal",
+      "icon": "doc.text",
+      "leadDays": 30,
+      "reminderDaysBefore": [
+        30,
+        7,
+        0
+      ],
+      "notaEditorial": "Tipo aberto (decisão do Sidney, 23/10/2026): o nome é da pessoa e a validade é opcional. leadDays e reminderDaysBefore: escolha editorial do Tô Facin, não prazo legal.",
+      "checklist": [
+        {
+          "id": "outroDocumento.validade",
+          "text": "Confira a validade impressa no documento e onde ele é renovado",
+          "daysBefore": 45,
+          "url": null,
+          "place": null
+        }
+      ],
+      "cost": "Depende do documento: confira no órgão que o emite.",
+      "place": "No órgão que emite o documento.",
+      "tip": "Confira no documento ou no órgão que o emite como renovar.",
+      "recurring": false,
+      "nearbyQueries": [],
+      "cadence": null
     },
     "anuidadeConselho": {
       "grupo": "obrigacoes",
@@ -1193,7 +1258,7 @@
           "id": "mei.pagar",
           "text": "Pague até o dia 20 (se cair em fim de semana ou feriado, antecipe)",
           "daysBefore": 0,
-          "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/pagamento-de-contribuicao-mensal",
+          "url": "https://www.gov.br/pt-br/servicos/emitir-das-para-pagamento-de-tributos-do-mei",
           "place": null,
           "pagamento": true
         },
@@ -1216,7 +1281,7 @@
           "id": "mei.das-atrasado",
           "text": "Se tiver DAS atrasado, gere as guias com juros no próprio PGMEI ou peça parcelamento",
           "daysBefore": 0,
-          "url": "https://www.gov.br/mei",
+          "url": "https://www.gov.br/pt-br/servicos/emitir-das-para-pagamento-de-tributos-do-mei",
           "place": null
         }
       ],
@@ -1444,7 +1509,7 @@
           "id": "simplesNacional.pagar",
           "text": "Pagar o DAS emitido no portal oficial",
           "daysBefore": 0,
-          "url": "https://www.gov.br/pt-br/servicos/declarar-apuracoes-mensais-do-simples-nacional",
+          "url": "https://www.gov.br/pt-br/servicos/emitir-das-para-pagamento-de-tributos-do-simples-nacional",
           "pagamento": true
         },
         {
@@ -1724,7 +1789,7 @@
         }
       },
       "detranURL": "https://www.detran.al.gov.br/",
-      "ipvaURL": "https://www.sefaz.al.gov.br/"
+      "ipvaURL": "https://ipvaonline.sefaz.al.gov.br/"
     },
     "AP": {
       "name": "Amapá",
@@ -1872,7 +1937,7 @@
         }
       },
       "detranURL": "https://www.detran.am.gov.br/",
-      "ipvaURL": "https://www.sefaz.am.gov.br/"
+      "ipvaURL": "https://online.sefaz.am.gov.br/ipva/ipva.asp"
     },
     "BA": {
       "name": "Bahia",
@@ -1967,7 +2032,7 @@
         }
       },
       "detranURL": "https://www.ba.gov.br/detran/",
-      "ipvaURL": "https://www.ba.gov.br/sefaz/ipva"
+      "ipvaURL": "https://servicos.sefaz.ba.gov.br/sistemas/IPVAA/Modulos/IPVAA/emissao_dae_ipva.aspx"
     },
     "CE": {
       "name": "Ceará",
@@ -2157,7 +2222,7 @@
         }
       },
       "detranURL": "https://www.detran.df.gov.br/",
-      "ipvaURL": "https://www.receita.fazenda.df.gov.br/"
+      "ipvaURL": "https://ww1.receita.fazenda.df.gov.br/emissao-segunda-via/ipva"
     },
     "ES": {
       "name": "Espírito Santo",
@@ -2537,7 +2602,7 @@
         }
       },
       "detranURL": "https://www.detran.mt.gov.br/",
-      "ipvaURL": "https://www5.sefaz.mt.gov.br/"
+      "ipvaURL": "https://www5.sefaz.mt.gov.br/servicos?c=75032612&e=75032935"
     },
     "MS": {
       "name": "Mato Grosso do Sul",
@@ -2632,7 +2697,7 @@
         }
       },
       "detranURL": "https://www.detran.ms.gov.br/",
-      "ipvaURL": "https://www.sefaz.ms.gov.br/"
+      "ipvaURL": "https://servicos.efazenda.ms.gov.br/ipvapublico/Home/Index"
     },
     "MG": {
       "name": "Minas Gerais",
@@ -2727,7 +2792,7 @@
           }
         }
       },
-      "ipvaURL": "https://www.fazenda.mg.gov.br/"
+      "ipvaURL": "https://veiculosmg.fazenda.mg.gov.br/"
     },
     "PA": {
       "name": "Pará",
@@ -3012,7 +3077,7 @@
           }
         }
       },
-      "ipvaURL": "https://www.fazenda.pr.gov.br/"
+      "ipvaURL": "https://www.fazenda.pr.gov.br/servicos/Cidadao/IPVA/Consultar-debitos-e-emitir-guia-do-IPVA-GPoyx9rQ"
     },
     "PE": {
       "name": "Pernambuco",
@@ -3106,8 +3171,8 @@
           }
         }
       },
-      "detranURL": "https://detran.pe.gov.br/",
-      "ipvaURL": "https://www.sefaz.pe.gov.br/"
+      "detranURL": "https://www.detran.pe.gov.br/",
+      "ipvaURL": "https://www.sefaz.pe.gov.br/Servicos/IPVA/Paginas/Parcelamento-de-IPVA.aspx"
     },
     "PI": {
       "name": "Piauí",
@@ -3392,7 +3457,7 @@
         }
       },
       "detranURL": "https://www.detran.rn.gov.br/",
-      "ipvaURL": "https://www.sefaz.rn.gov.br/postagem/ipva-consulta/"
+      "ipvaURL": "https://portal.detran.rn.gov.br/veiculo/consultaDebitos"
     },
     "RS": {
       "name": "Rio Grande do Sul",
@@ -3582,7 +3647,7 @@
         }
       },
       "detranURL": "https://www.detran.ro.gov.br/",
-      "ipvaURL": "https://sefin.ro.gov.br/"
+      "ipvaURL": "https://ipva.sefin.ro.gov.br/"
     },
     "RR": {
       "name": "Roraima",
@@ -3772,7 +3837,7 @@
         }
       },
       "detranURL": "https://www.detran.sc.gov.br/",
-      "ipvaURL": "https://www.sef.sc.gov.br/"
+      "ipvaURL": "https://www.sef.sc.gov.br/servicos/consultar-debitos-de-ipva-e-gerar-guia-de-recolhimento-dare"
     },
     "SP": {
       "name": "São Paulo",
@@ -3867,7 +3932,7 @@
           }
         }
       },
-      "ipvaURL": "https://portal.fazenda.sp.gov.br/servicos/ipva"
+      "ipvaURL": "https://www.ipva.fazenda.sp.gov.br/ipvanet_consulta"
     },
     "SE": {
       "name": "Sergipe",
@@ -4057,7 +4122,7 @@
         }
       },
       "detranURL": "https://www.to.gov.br/detran/",
-      "ipvaURL": "https://www.to.gov.br/sefaz/"
+      "ipvaURL": "https://ipva.sefaz.to.gov.br/dare.php"
     }
   },
   "passportDestinations": {
@@ -4246,7 +4311,7 @@
       "discountPercent": 10,
       "installments": 6,
       "lastInstallmentMonth": 10,
-      "payURL": "https://www.receita.fazenda.df.gov.br/aplicacoes/CartaServicos/servico.cfm?codTipoPessoa=6&codServico=529&codSubCategoria=58",
+      "payURL": "https://ww1.receita.fazenda.df.gov.br/emissao-segunda-via/iptu",
       "note": "Data pelo dígito final da inscrição (CIDF): 1-2 em 11/5, 3-4 em 12/5, 5-6 em 13/5, 7-8 em 14/5, 9-0-X em 15/5. Os 10% dependem de não haver débitos; até 6 parcelas, a última entre 13 e 19/10. Conferido em 07/09/2026."
     },
     "Recife": {
@@ -4264,7 +4329,7 @@
       "discountPercent": 10,
       "installments": 10,
       "lastInstallmentMonth": 11,
-      "payURL": "https://recifeemdia.recife.pe.gov.br",
+      "payURL": "https://recifeemdia.recife.pe.gov.br/index.php/emitirDamIptu",
       "note": "Data única (10/2). Pelo FAQ oficial do Recife em Dia, quem pagou os débitos ou regularizou a situação fiscal até 30/11 do ano anterior tem 10% na parcela única ou 5% em cada prestação do parcelamento; quem não regularizou tem só 5%, e apenas na parcela única. São 10 cotas mensais fixas, sempre no dia 10 (último mês calculado: novembro). A notícia oficial do calendário 2026 saiu do ar (403); a data de 10/2 vem de Folha PE, Diario de Pernambuco e CBN Recife, concordantes. Créditos de NFS-e podem abater até 50% do IPTU. Conferido em 07/09/2026."
     },
     "Fortaleza": {
@@ -4282,7 +4347,7 @@
       "discountPercent": 8,
       "installments": 11,
       "lastInstallmentMonth": 12,
-      "payURL": "https://www.sefin.fortaleza.ce.gov.br/Home",
+      "payURL": "https://grpfordam.sefin.fortaleza.ce.gov.br/grpfor/pagesPublic/iptu/damIptu/imprimirDamIptu.seam",
       "note": "Três opções de cota única: 8% até 6/2, 6% até 6/3, 4% até 8/4 (5º dia útil do mês); cadastrados no Nota Fortaleza somam até +2%, chegando a 10%. Descontos só para adimplentes. Até 11 parcelas (mínimo R$ 82,59) no 5º dia útil de cada mês; último mês (dezembro) calculado a partir de 11 parcelas iniciando em fevereiro. Isenção para imóveis com valor venal até R$ 101.260,13 e categorias como aposentados, ex-combatentes e entidades religiosas, conforme critérios."
     },
     "Goiânia": {
@@ -4300,7 +4365,7 @@
       "discountPercent": 10,
       "installments": 11,
       "lastInstallmentMonth": 12,
-      "payURL": "https://www.goiania.go.gov.br/sing_servicos/emissao-duam-itu-iptu-issqn/",
+      "payURL": "https://tributos.goiania.go.gov.br/PortalTributos/ConsultaTributos",
       "note": "Data única (20/2) para cota única com 10% ou 1ª de 11 parcelas iguais, vencendo dia 20 de cada mês até dezembro; também 12x no cartão de crédito. As páginas de notícias da prefeitura não abriram (403); dados vêm da reprodução do release oficial da Prefeitura de Goiânia (LegisWeb) e de Encontra Goiânia/QuintoAndar, concordantes. IPTU Social isenta imóveis com valor venal até R$ 181.600,88 (cerca de 100 mil imóveis)."
     },
     "Manaus": {
@@ -4314,7 +4379,7 @@
       "discountPercent": 10,
       "installments": 10,
       "lastInstallmentMonth": 12,
-      "payURL": "https://semefatende.manaus.am.gov.br/",
+      "payURL": "https://semefatende.manaus.am.gov.br/inventario.php?id=3663",
       "note": "Desconto escalonado no carnê digital (app Manaus Atende): 12% até 30/1, 11% até 27/2 e 10% até 16/3; no carnê físico a cota única tem 8%. Parcelado em até 10 vezes, primeira parcela em 16/3, com 2% de desconto por parcela paga em dia no carnê digital."
     },
     "Belém": {
@@ -4328,7 +4393,7 @@
       "discountPercent": 10,
       "installments": 10,
       "lastInstallmentMonth": 11,
-      "payURL": "https://financas.belem.pa.gov.br/",
+      "payURL": "https://www.belem.pa.gov.br/sefin/rotinas/2ViaExercicio/principalexercicio.php",
       "note": "Edital de Lançamento SEFIN nº 1/2026: cota única com 10% de desconto até 10/2 ou com 7% até 10/3. O parcelamento vai até 10 vezes, sem desconto, com a primeira parcela em 10/2. O endereço sefin.belem.pa.gov.br passou a redirecionar para financas.belem.pa.gov.br. Conferido em 07/09/2026."
     },
     "Campinas": {
@@ -4374,7 +4439,7 @@
       "discountPercent": 15,
       "installments": 6,
       "lastInstallmentMonth": 12,
-      "payURL": "https://semfaz.saoluis.ma.gov.br",
+      "payURL": "https://stm.semfaz.saoluis.ma.gov.br/credenciamento/jsp/emissaoIptu/emissaoIptu.jsf",
       "note": "A cota única tem 15% de desconto e vence em 10/7/2026, mesma data da primeira parcela. O parcelamento vai até 6 vezes, sem desconto."
     },
     "Maceió": {
@@ -4388,21 +4453,21 @@
       "discountPercent": 20,
       "installments": 10,
       "lastInstallmentMonth": 12,
-      "payURL": "https://online.maceio.al.gov.br",
+      "payURL": "https://www.online.maceio.al.gov.br/n/iptu2025/",
       "note": "Desconto escalonado na cota única: 20% até 30/1, 10% até 27/2 e 5% até 31/3. O parcelamento vai até 10 vezes sem desconto, de 31/3 a 28/12/2026."
     },
     "Natal": {
       "state": "RN",
       "validFor": 2026,
-      "source": "https://www.natal.rn.gov.br/news/post2/43858",
+      "source": "https://natal.rn.gov.br/sefin/noticia.php?id=426318",
       "singleQuotaTo": {
         "month": 1,
-        "day": 9
+        "day": 16
       },
       "discountPercent": 16,
       "installments": 10,
       "payURL": "https://natal.rn.gov.br/sefin",
-      "note": "Cota única antecipada até 9/1 dá 16% de desconto para quem estava adimplente em 30/12/2025; depois dessa data o desconto cai para 12%. O parcelamento vai até 10 vezes, com a primeira parcela em 20/2 (zonas Sul e Leste) ou 20/3 (zonas Norte e Oeste)."
+      "note": "Cota única antecipada até 16/1 (prazo prorrogado pela Prefeitura; era 9/1) dá 16% de desconto para quem estava adimplente em 30/12/2025; depois dessa data o desconto cai para 12%. O parcelamento vai até 10 vezes, com a primeira parcela em 20/2 (zonas Sul e Leste) ou 20/3 (zonas Norte e Oeste)."
     },
     "João Pessoa": {
       "state": "PB",
@@ -4443,7 +4508,7 @@
       "discountPercent": 10,
       "installments": 12,
       "lastInstallmentMonth": 12,
-      "payURL": "https://iptu.campogrande.ms.gov.br",
+      "payURL": "https://iptu.campogrande.ms.gov.br/portal-web/paginas/iptu/",
       "note": "Pagamento à vista com 10% de desconto até 12/1/2026, apenas para quem não tem débitos em Dívida Ativa. O parcelamento vai até 12 vezes conforme o valor do imposto, com a primeira parcela na mesma data."
     },
     "Cuiabá": {
@@ -4457,7 +4522,7 @@
       "discountPercent": 10,
       "installments": 10,
       "lastInstallmentMonth": 12,
-      "payURL": "https://portalfazenda.cuiaba.mt.gov.br/portalfazenda/PortalContribuinte/Home",
+      "payURL": "https://portalfazenda.cuiaba.mt.gov.br/portalfazenda/PortalContribuinte/FiltrarGuias?modulo=imobiliario",
       "note": "A cota única com 10% de desconto vencia em 25/3/2026 e teve o prazo prorrogado para 10/4. O parcelamento vai até 10 vezes, com a última parcela em 30/12/2026."
     },
     "Florianópolis": {
@@ -4471,7 +4536,7 @@
       "discountPercent": 20,
       "installments": 10,
       "lastInstallmentMonth": 12,
-      "payURL": "https://iptu.pmf.sc.gov.br/iptu-virtual/main-iptu/index.php",
+      "payURL": "https://www.pmf.sc.gov.br/servicos/index.php?id=5706&pagina=servpagina",
       "note": "Cota única: 20% até 5/1 (ou 20/1 para quem se enquadra no critério de bom pagador do art. 244, §8º da LC 007/97), 10% até 5/2 e 5% até 5/3. Ou 10 parcelas, de março a dezembro. Conferido em 07/09/2026."
     },
     "Vitória": {
@@ -4530,7 +4595,7 @@
       "discountPercent": 20,
       "installments": 8,
       "lastInstallmentMonth": 11,
-      "payURL": "https://agencia.macapa.ap.gov.br",
+      "payURL": "https://macapa.ap.gov.br/",
       "note": "Decreto nº 175/2026: cota única com 20% de desconto até 10/4; entre 11/4 e 10/5 o desconto cai para 10%. O parcelamento vai até 8 parcelas, vencendo todo dia 10, de abril a novembro de 2026."
     },
     "Boa Vista": {
@@ -4557,7 +4622,7 @@
       },
       "discountPercent": 20,
       "installments": 8,
-      "payURL": "https://portalcidadao.riobranco.ac.gov.br",
+      "payURL": "https://receita.riobranco.ac.gov.br/emissao-iptu",
       "note": "Cota única até 30/4/2026 com 20% de desconto para quem não tem débitos de exercícios anteriores (10% para quem tem pendências). O parcelamento vai até 8 vezes, sem desconto."
     },
     "Palmas": {
@@ -4571,7 +4636,7 @@
       "discountPercent": 20,
       "installments": 10,
       "lastInstallmentMonth": 12,
-      "payURL": "https://portal2013.palmas.to.gov.br/servicos/online/1/1/",
+      "payURL": "https://iptu.palmas.to.gov.br/",
       "note": "A cota única vence em 31/3/2026 com até 20% de desconto, que pode chegar a 30% somando o abatimento de quem está adimplente com o município. O parcelamento vai até 10 vezes, com a última parcela em 29/12/2026."
     },
     "São Gonçalo": {
@@ -4613,7 +4678,7 @@
       "discountPercent": 10,
       "installments": 10,
       "lastInstallmentMonth": 12,
-      "payURL": "https://contribuinte.novaiguacu.rj.gov.br/",
+      "payURL": "https://parcelamento.novaiguacu.rj.gov.br/iptu-inicio",
       "note": "Cota única até 10 de fevereiro com 10% de desconto, ou até 10 parcelas no dia 15 de cada mês (ou no próximo dia útil), de março a dezembro. Conferido em 07/09/2026."
     },
     "Niterói": {
@@ -4696,7 +4761,7 @@
       "discountPercent": 10,
       "installments": 12,
       "lastInstallmentMonth": 12,
-      "payURL": "https://www.ribeiraopreto.sp.gov.br/fazenda/pesquisa-debito-imovel",
+      "payURL": "https://www.ribeiraopreto.sp.gov.br/egtpr/portal/consulta-debitos/imovel",
       "note": "Cota única e 1ª parcela vencem em 30 de janeiro, com 10% de desconto à vista. O parcelamento vai até 12 vezes, com a última parcela em 10 de dezembro."
     },
     "São José dos Campos": {
@@ -4714,8 +4779,8 @@
       "discountPercent": 7.5,
       "installments": 10,
       "lastInstallmentMonth": 11,
-      "payURL": "https://servicos.sjc.sp.gov.br/servicos/iptu/index.aspx",
-      "note": "A cota única e a 1ª parcela vencem entre 9 e 13 de fevereiro, conforme a data impressa no carnê; à vista há 7,5% de desconto. Parcelamento em até 10 vezes, de março a novembro."
+      "payURL": "https://www.sjc.sp.gov.br/servicos/gestao-administrativa-e-financas/iptu-2026/pagamento/",
+      "note": "A cota única e a 1ª parcela vencem entre 9 e 13 de fevereiro, conforme a data impressa no carnê; à vista há 7,5% de desconto. Parcelamento em até 10 vezes, de fevereiro a novembro."
     },
     "Santos": {
       "state": "SP",
@@ -5932,7 +5997,7 @@
           "orgao": "Detran-AC"
         },
         "AL": {
-          "url": "https://www.detran.al.gov.br/conteudo/procedimentos-detalhes/56face198c36c73654000000/",
+          "url": "https://www.detran.al.gov.br/habilitacao/guia-renovacao-cnh/",
           "nivel": "direto",
           "orientacao": "Siga as etapas oficiais: emita a guia de renovação pela web, pague no agente arrecadador indicado na guia e depois agende o exame clínico (e o psicológico, se marcar atividade remunerada).",
           "pagamento": {
@@ -5943,7 +6008,7 @@
             "url": "https://www.detran.al.gov.br/habilitacao/guia-renovacao-cnh/"
           },
           "fonte": "https://www.detran.al.gov.br/conteudo/procedimentos-detalhes/56face198c36c73654000000/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Se houver alteração de dados (nome, filiação, RG, CPF, data de nascimento), é preciso ir a um posto do Detran-AL antes de emitir e pagar a guia.",
           "orgao": "Detran-AL"
         },
@@ -6139,9 +6204,9 @@
           "orgao": "Detran-PA"
         },
         "PB": {
-          "url": "https://detran.pb.gov.br/habilitacao-1/renovacao-cnh",
+          "url": "https://detran.pb.gov.br/servi%C3%A7os/habilita%C3%A7%C3%A3o/",
           "nivel": "direto",
-          "orientacao": "Siga o passo a passo oficial: crie conta no Portal de Serviços do Detran-PB, emita e pague a guia de renovação (opção S21) e depois agende exame médico (S17) e captura de foto/biometria.",
+          "orientacao": "Na seção 'Renovação', escolha a opção de renovação da CNH indicada para o seu caso e siga as etapas oficiais.",
           "pagamento": {
             "tipo": "boleto",
             "nome": "Guia de renovação de CNH",
@@ -6150,7 +6215,7 @@
             "url": "https://wsdetran.pb.gov.br/detran-portal-servicos/servlet/easynat-app?op=S21"
           },
           "fonte": "https://detran.pb.gov.br/habilitacao-1/renovacao-cnh",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O Portal de Serviços exige cadastro próprio (validação por e-mail), não gov.br.",
           "orgao": "Detran-PB"
         },
@@ -6205,7 +6270,7 @@
         "RJ": {
           "url": "https://www.detran.rj.gov.br/todos-os-servicos/servicos-hab/renovacao-da-habilitacao.html",
           "nivel": "direto",
-          "orientacao": "Pague primeiro o DUDA código 204-6 (Renovação da CNH) e depois abra o pedido no Posto Digital do Detran.RJ, na aba Habilitação. Se você se enquadra na renovação automática (RNPC, sem infrações em 12 meses), a via digital sai sem taxa; a via impressa exige o DUDA de 2ª via, código 214-3.",
+          "orientacao": "Na renovação padrão, quem tem 60 anos ou mais é isento do DUDA; nos demais casos, pague primeiro o DUDA código 204-6 (Renovação da CNH). Depois abra o pedido no Detran RJ Digital, na aba Habilitação. Se você se enquadra na renovação automática (RNPC, sem infrações em 12 meses), a via digital sai sem taxa; a via impressa exige o DUDA de 2ª via, código 214-3.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "DUDA para Renovação da CNH",
@@ -6214,14 +6279,14 @@
             "url": "https://www.detran.rj.gov.br/detran-rj/bradesco-pagamento-de-boletos.html"
           },
           "fonte": "https://www.detran.rj.gov.br/todos-os-servicos/servicos-hab/renovacao-da-habilitacao.html",
-          "conferidoEm": "2026-09-22",
+          "conferidoEm": "2026-11-12",
           "nota": "O Posto Digital do Detran.RJ exige conta gov.br. O DUDA é emitido no site do Bradesco, fora de *.gov.br; por isso o link de pagamento é a página oficial do Detran-RJ que leva à emissão (a um toque do banco). O Bradesco não aceita o código pré-selecionado no endereço.",
           "orgao": "Detran-RJ"
         },
         "RN": {
           "url": "https://portal.detran.rn.gov.br/habilitacao/renovacaoCNH",
           "nivel": "direto",
-          "orientacao": "Abra a renovação no Portal de Serviços do Detran-RN com a conta gov.br, pague a guia gerada e depois agende os exames médico e psicológico nas clínicas credenciadas.",
+          "orientacao": "Abra a renovação no Portal de Serviços do Detran-RN com a conta gov.br, pague a guia gerada e depois agende o exame médico e, se exercer atividade remunerada, a avaliação psicológica nas clínicas credenciadas.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Guia de recolhimento do Detran-RN (GRD) da renovação",
@@ -6230,7 +6295,7 @@
             "url": null
           },
           "fonte": "https://portal.detran.rn.gov.br/habilitacao/renovacaoCNH",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Portal de página única: a rota /habilitacao/renovacaoCNH está declarada no roteador da própria aplicação. O site institucional www.detran.rn.gov.br está suspenso pelo período eleitoral de 2026 (HTTP 503).",
           "orgao": "Detran-RN"
         },
@@ -6251,9 +6316,9 @@
           "orgao": "Detran-RO"
         },
         "RR": {
-          "url": "https://www.detran.rr.gov.br/renovacao-de-cnh-de-roraima/",
+          "url": "https://www.detran.rr.gov.br/renovacao-da-cnh-em-roraima/",
           "nivel": "direto",
-          "orientacao": "Siga o passo a passo da página: agende a captação biométrica em HABILITAÇÃO-CNH > Serviços para CNH, compareça a uma unidade do Detran-RR para receber a guia da taxa e a indicação da clínica, e faça o exame médico em até 40 dias.",
+          "orientacao": "Siga o passo a passo da página: em HABILITAÇÃO-CNH > Serviços para CNH, abra o agendamento da captação biométrica, emita e pague a taxa e aguarde 40 minutos para marcar a coleta; a clínica vem no comprovante de agendamento, e o exame médico deve ser feito após a biometria, em até 40 dias corridos.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Taxa de renovação da CNH",
@@ -6262,7 +6327,7 @@
             "url": null
           },
           "fonte": "https://www.detran.rr.gov.br/renovacao-de-cnh-de-roraima/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O agendamento da captação biométrica roda em sistema de terceiro (rr.getran.com.br), fora do domínio oficial; por isso o destino é a página do serviço no site do Detran-RR.",
           "orgao": "Detran-RR"
         },
@@ -6317,7 +6382,7 @@
         "SP": {
           "url": "https://www.detran.sp.gov.br/detransp/pb/servico/habilitacao/_renovar_cnh?id=carta_de_servico_renovar_cnh",
           "nivel": "direto",
-          "orientacao": "Faça o pedido de renovação online no portal do Detran-SP com login gov.br; no fim do pedido pague por PIX a taxa de emissão da CNH e, se quiser a via física, também a taxa de postagem dos Correios. Depois agende o exame médico dentro do próprio pedido.",
+          "orientacao": "Faça o pedido de renovação online no portal do Detran-SP com login gov.br; se quiser a via física, pague por PIX a taxa de emissão da CNH e a taxa de postagem dos Correios. A CNH Digital é gratuita. Depois agende o exame médico dentro do próprio pedido.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Taxa de emissão da CNH (+ taxa de envio pelos Correios, se pedir a via física)",
@@ -6326,7 +6391,7 @@
             "url": "https://pixipva.fazenda.sp.gov.br/auth"
           },
           "fonte": "https://www.poupatempo.sp.gov.br/carta/F8D2DBE7-66BE-4AEC-9B0F-25912922D566",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Página SPA do novo portal Detran-SP (título confirmado: \"Renovar CNH - Detran-SP\"). Exige conta gov.br prata ou ouro.",
           "orgao": "Detran-SP"
         },
@@ -6373,12 +6438,12 @@
           "orgao": "Detran-AL"
         },
         "AM": {
-          "url": "https://digital.detran.am.gov.br/sga/apps/agendamento-servico/agendamento.jsp",
+          "url": "https://www.detran.am.gov.br/servicos/renovacao-de-cnh/",
           "nivel": "direto",
-          "orientacao": "Escolha o tipo de serviço e a unidade para agendar o atendimento do Detran-AM; o exame de saúde em si é marcado direto com a clínica indicada na guia de pagamento da renovação.",
+          "orientacao": "Agende o exame de saúde direto com a clínica indicada na guia de pagamento da renovação do Detran-AM.",
           "pagamento": null,
           "fonte": "https://www.detran.am.gov.br/servicos/renovacao-de-cnh/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O Detran-AM não tem página própria de agendamento de exame médico: a clínica vem selecionada na guia do Detran e o contato é feito com ela.",
           "orgao": "Detran-AM"
         },
@@ -6543,7 +6608,7 @@
         "PR": {
           "url": "https://www.detran.pr.gov.br/servicos/Motorista/Exames-e-provas/Agendar-ou-cancelar-exames-lqNJnNx8",
           "nivel": "direto",
-          "orientacao": "Depois de pagar a guia da taxa, agende aqui o exame médico (e o de EAR ou toxicológico, se necessário). Para escolher onde fazer, use a busca de clínicas credenciadas ao Detran-PR.",
+          "orientacao": "Depois de pagar a guia da taxa, agende aqui o exame médico (e o de EAR ou toxicológico, se necessário). A distribuição entre as clínicas credenciadas é automática, conforme o endereço informado ao Detran-PR.",
           "pagamento": {
             "tipo": "pago à clínica",
             "nome": "Exame de aptidão física e mental",
@@ -6552,14 +6617,14 @@
             "url": "https://www.detran.pr.gov.br/servicos/Motorista/Exames-e-provas/Localizar-clinicas-credenciadas-ao-Detran-PR-pA3LxG3b"
           },
           "fonte": "https://www.detran.pr.gov.br/servicos/Motorista/Carteira-de-motorista/Solicitar-a-renovacao-da-carteira-de-motorista-MD3PAr6a",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null,
           "orgao": "Detran-PR"
         },
         "RJ": {
           "url": "https://www.detran.rj.gov.br/consultas/consultas-hab/clinicas-medico-psicologicas.html",
           "nivel": "direto",
-          "orientacao": "Consulte as clínicas de medicina e psicologia credenciadas pelo Detran-RJ e marque diretamente com a clínica escolhida. O exame de aptidão física e mental custa R$ 90,00 e o reexame, após inaptidão temporária, R$ 45,00.",
+          "orientacao": "Consulte as clínicas de medicina e psicologia credenciadas pelo Detran-RJ e marque diretamente com a clínica indicada pelo sistema do Detran-RJ. O exame de aptidão física e mental custa R$ 90,00 e o reexame, após inaptidão temporária, R$ 45,00.",
           "pagamento": {
             "tipo": "pago à clínica",
             "nome": "Exame de aptidão física e mental",
@@ -6568,7 +6633,7 @@
             "url": null
           },
           "fonte": "https://www.detran.rj.gov.br/habilitacao/habilitacao-outros/exames-habilitacao.html",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null,
           "orgao": "Detran-RJ"
         },
@@ -6603,9 +6668,9 @@
           "orgao": "Detran-RR"
         },
         "RS": {
-          "url": "https://www.detran.rs.gov.br/exames-medicos-e-avaliacoes-psicologicas",
+          "url": "https://www.detran.rs.gov.br/habilitacao-cnh/servicos/1005",
           "nivel": "direto",
-          "orientacao": "Consulte aqui as listas oficiais de médicos e psicólogos credenciados do DetranRS. O exame médico é feito por meio do CFC do município de residência, que abre o processo de Renovação de Exames.",
+          "orientacao": "Consulte aqui as orientações oficiais para fazer o exame médico do DetranRS. O exame médico é feito por meio do CFC do município de residência, que abre o processo de Renovação de Exames.",
           "pagamento": {
             "tipo": "pago à clínica",
             "nome": "Exame médico e avaliação psicológica",
@@ -6614,7 +6679,7 @@
             "url": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=953"
           },
           "fonte": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=947",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "As listas de credenciados são publicadas em arquivos PDF/Excel nessa página; não há agendamento online direto pelo DetranRS.",
           "orgao": "Detran-RS"
         },
@@ -6661,12 +6726,12 @@
           "orgao": "Detran-SP"
         },
         "TO": {
-          "url": "https://www.to.gov.br/detran/clinicas-medicas-e-psicologicas-de-transito/1kzpcsnlcype",
+          "url": "https://www.to.gov.br/detran/relacao-credenciados/6te0h5onq6me",
           "nivel": "direto",
           "orientacao": "Escolha uma clínica médica ou psicológica credenciada pelo Detran-TO e marque o exame direto com ela, levando a guia do processo já paga.",
           "pagamento": null,
           "fonte": "https://www.to.gov.br/detran/clinicas-medicas-e-psicologicas-de-transito/1kzpcsnlcype",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O Detran-TO não tem agendamento online de exame de saúde; a página oficial lista as clínicas credenciadas."
         }
       }
@@ -6885,9 +6950,9 @@
           "orgao": "Detran-AL"
         },
         "AM": {
-          "url": "https://www.detran.am.gov.br/servicos/licenciamento-anual-crlv-e/",
+          "url": "https://digital.detran.am.gov.br/site/apps/veiculo/filtroplacarenavam-consultaveiculo.jsp",
           "nivel": "direto",
-          "orientacao": "No Portal de Serviços (Detran Digital) abra Veículos > Licenciamento Anual, digite placa e Renavam, clique em Consultar e escolha LICENCIAR para gerar o boleto (ou PAGAMENTO COM CARTÃO DE CRÉDITO).",
+          "orientacao": "Digite placa e Renavam, clique em Consultar e escolha LICENCIAR para gerar o boleto (ou PAGAMENTO COM CARTÃO DE CRÉDITO).",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Boleto do licenciamento anual",
@@ -6896,7 +6961,7 @@
             "url": "https://digital.detran.am.gov.br/site/"
           },
           "fonte": "https://www.detran.am.gov.br/servicos/licenciamento-anual-crlv-e/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O licenciamento só conclui com IPVA, taxas do Detran e multas quitados.",
           "orgao": "Detran-AM"
         },
@@ -6964,7 +7029,7 @@
           "orgao": "Detran-DF"
         },
         "ES": {
-          "url": "https://detran.es.gov.br/Contents/Item/Display/10525",
+          "url": "https://detran.es.gov.br/veiculos/servicos-online",
           "nivel": "direto",
           "orientacao": "Informe placa e Renavam para emitir o boleto do licenciamento no site oficial do Detran|ES; é possível gerar o BOLETO UNIFICADO, com IPVA, DPVAT, multas e taxa de licenciamento no mesmo documento. Depois de pago, o CRLV-e fica disponível.",
           "pagamento": {
@@ -6975,7 +7040,7 @@
             "url": "https://detran.es.gov.br/veiculos/servicos-online"
           },
           "fonte": "https://detran.es.gov.br/veiculos/servicos-online",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O botão leva ao sistema publicodetran.es.gov.br; em HTTPS ele redireciona para o login Acesso Cidadão. O Detran|ES alerta para emitir o boleto só pelo site oficial.",
           "orgao": "Detran-ES"
         },
@@ -7060,7 +7125,7 @@
         "PA": {
           "url": "https://detrandigital.detran.pa.gov.br/veiculos/licenciamento-anual",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam em Licenciamento Anual para ver os débitos e gerar a guia da taxa de licenciamento; depois de pagar, baixe o CRLV-e em Veículos > CRLV Digital.",
+          "orientacao": "Confira a documentação e os procedimentos de Licenciamento Anual na página; para atendimento, procure o Detran sede, um posto de serviços em Belém ou a Ciretran da sua jurisdição; depois de pagar, baixe o CRLV-e em Veículos > CRLV Digital.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Taxa de licenciamento anual",
@@ -7069,7 +7134,7 @@
             "url": "https://detrandigital.detran.pa.gov.br/veiculos/licenciamento-anual"
           },
           "fonte": "https://detrandigital.detran.pa.gov.br/veiculos/licenciamento-anual",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Rota documentada no próprio bundle do DETRAN Digital (SPA). O emissor antigo sistemas-renavam.detran.pa.gov.br (.../b/indexBLicencAnoAtual.jsf) estava redirecionando para a home do Detran-PA em 09/09/2026.",
           "orgao": "Detran-PA"
         },
@@ -7171,7 +7236,7 @@
         "RO": {
           "url": "https://centralservicos.detran.ro.gov.br/consulta/veiculo",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam na Consulta Pública do Detran-RO para ver IPVA, taxas e multas e gerar o boleto do licenciamento; pago o boleto, o CRLV-e fica disponível para impressão.",
+          "orientacao": "Informe a placa na Consulta Pública do Detran-RO para ver IPVA, taxas e multas e gerar o boleto do licenciamento; pago o boleto, o CRLV-e fica disponível para impressão.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Boleto do licenciamento anual",
@@ -7180,14 +7245,14 @@
             "url": "https://centralservicos.detran.ro.gov.br/consulta/veiculo"
           },
           "fonte": "https://centralservicos.detran.ro.gov.br/consulta/veiculo",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O atalho /crlv-digital anunciado na home do Detran-RO devolvia 404 em 09/09/2026.",
           "orgao": "Detran-RO"
         },
         "RR": {
           "url": "https://www.detran.rr.gov.br/cidadao/financeiro",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam em \"Consultar débitos de veículo\" para ver licenciamento, IPVA e multas e gerar o boleto; pago o boleto, imprima o CRLV em Cidadão > Veículos.",
+          "orientacao": "Entre com sua conta gov.br no portal Cidadão do Detran-RR para ver licenciamento, IPVA e multas dos seus veículos e gerar o boleto; pago o boleto, imprima o CRLV em Cidadão > Veículos.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Boleto do licenciamento anual",
@@ -7196,7 +7261,7 @@
             "url": "https://www.detran.rr.gov.br/cidadao/financeiro"
           },
           "fonte": "https://www.detran.rr.gov.br/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Rota do portal Cidadão do Detran-RR, divulgada na home oficial como \"Consultar débitos de veículo – Gerar Boleto\"; a impressão do CRLV fica em https://www.detran.rr.gov.br/cidadao/veiculos.",
           "orgao": "Detran-RR"
         },
@@ -7349,9 +7414,9 @@
           "orgao": "Detran-AP"
         },
         "BA": {
-          "url": "https://servicos.sefaz.ba.gov.br/sistemas/DSCRE/Modulos/Publico/ConsultaDebitos.aspx",
+          "url": "https://servicos.sefaz.ba.gov.br/sistemas/IPVAA/Modulos/IPVAA/emissao_dae_ipva.aspx",
           "nivel": "direto",
-          "orientacao": "Consulte os débitos do veículo pelo RENAVAM (ou pelo número do PAF) e emita o DAE do IPVA; pague até o vencimento nos bancos conveniados ou por PIX.",
+          "orientacao": "Escolha o tipo de receita do veículo e emita o DAE do IPVA; pague até o vencimento nos bancos conveniados ou por PIX.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "DAE do IPVA",
@@ -7360,7 +7425,7 @@
             "url": "https://servicos.sefaz.ba.gov.br/sistemas/IPVAA/Modulos/IPVAA/emissao_dae_ipva.aspx"
           },
           "fonte": "https://www.sefaz.ba.gov.br/inspetoria-eletronica/ipva/pagamento-ipva/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O pagamento do licenciamento (taxa, DPVAT e multas) só fica disponível no dia seguinte ao pagamento do IPVA.",
           "orgao": "Sefaz-BA"
         },
@@ -7381,7 +7446,7 @@
           "orgao": "Sefaz-CE"
         },
         "DF": {
-          "url": "https://www.receita.fazenda.df.gov.br/aplicacoes/CartaServicos/servico.cfm?codTipoPessoa=6&codServico=530&codSubCategoria=205",
+          "url": "https://ww1.receita.fazenda.df.gov.br/emissao-segunda-via/ipva",
           "nivel": "direto",
           "orientacao": "Com o Renavam em mãos, consulte e emita o DAR do IPVA no Portal da Receita do DF, à vista ou em até 6 cotas; há 10% de desconto no pagamento integral até o vencimento da cota única, se não houver débito de anos anteriores.",
           "pagamento": {
@@ -7392,11 +7457,11 @@
             "url": "https://www.receita.fazenda.df.gov.br/aplicacoes/CartaServicos/servico.cfm?codTipoPessoa=6&codServico=530&codSubCategoria=205"
           },
           "fonte": "https://www.receita.fazenda.df.gov.br/aplicacoes/CartaServicos/servico.cfm?codTipoPessoa=6&codServico=530&codSubCategoria=205",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Licenciamento e multas do veículo no DF são do Detran-DF, não da Receita."
         },
         "ES": {
-          "url": "https://detran.es.gov.br/Contents/Item/Display/10522",
+          "url": "https://detran.es.gov.br/veiculos/servicos-online",
           "nivel": "direto",
           "orientacao": "Informe placa e Renavam para emitir o boleto do IPVA no site oficial do Detran|ES; se preferir, gere o BOLETO UNIFICADO, que junta IPVA, DPVAT, taxa de licenciamento e multas com códigos de barras por vencimento.",
           "pagamento": {
@@ -7407,14 +7472,14 @@
             "url": "https://detran.es.gov.br/veiculos/servicos-online"
           },
           "fonte": "https://detran.es.gov.br/veiculos/servicos-online",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Os sistemas internet.sefaz.es.gov.br e e-dua.sefaz.es.gov.br não responderam a partir deste PC (conexão expirada em duas tentativas); por isso o caminho oficial indicado é o do Detran|ES, que também emite o boleto do IPVA.",
           "orgao": "Detran-ES"
         },
         "GO": {
           "url": "https://goias.gov.br/economia/ipva-consultar-e-emitir-dare/",
           "nivel": "direto",
-          "orientacao": "Consulte o IPVA e emita o DARE na Secretaria da Economia de Goiás, à vista ou em até 6 parcelas, inclusive para débito inscrito em dívida ativa. Para pagar tudo de uma vez, o Portal Expresso emite guia única com IPVA, multas e taxas do veículo.",
+          "orientacao": "Consulte o IPVA em atraso e emita o DARE na Secretaria da Economia de Goiás, à vista ou em até 6 parcelas, inclusive para débito inscrito em dívida ativa. Se o IPVA ainda não venceu, acesse o site do Detran-GO. Para pagar tudo de uma vez, o Portal Expresso emite guia única com IPVA, multas e taxas do veículo.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "DARE - Documento de Arrecadação de Receitas Estaduais (IPVA/GO)",
@@ -7423,13 +7488,13 @@
             "url": "https://www.go.gov.br/servicos/servico-id/1138"
           },
           "fonte": "https://goias.gov.br/economia/ipva-consultar-e-emitir-dare/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null
         },
         "MA": {
           "url": "https://ipva.sefaz.ma.gov.br/",
           "nivel": "direto",
-          "orientacao": "Consulte o IPVA do veículo por placa/Renavam na consulta pública da Sefaz-MA e emita o DARE para pagamento na rede bancária.",
+          "orientacao": "Consulte o IPVA do veículo por CPF/CNPJ e Renavam ou CPF/CNPJ e chassi na consulta pública da Sefaz-MA e emita o DARE para pagamento na rede bancária.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "DARE do IPVA",
@@ -7438,12 +7503,12 @@
             "url": "https://sistemas1.sefaz.ma.gov.br/dare/"
           },
           "fonte": "https://ipva.sefaz.ma.gov.br/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Aplicação de página única da Sefaz-MA, título 'IPVA - Consulta Pública'.",
           "orgao": "Sefaz-MA"
         },
         "MG": {
-          "url": "https://www.fazenda.mg.gov.br/empresas/impostos/ipva/pagamento.html",
+          "url": "https://veiculosmg.fazenda.mg.gov.br/",
           "nivel": "direto",
           "orientacao": "Informe o Renavam para emitir a guia (DAE) do IPVA em cota única com 3% de desconto ou em três parcelas; a mesma tela permite gerar a guia da Taxa de Licenciamento. Pague por PIX, cartão de crédito ou boleto em banco credenciado.",
           "pagamento": {
@@ -7454,14 +7519,14 @@
             "url": "https://www.fazenda.mg.gov.br/empresas/impostos/ipva/pagamento.html"
           },
           "fonte": "https://www.fazenda.mg.gov.br/empresas/impostos/ipva/pagamento.html",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null,
           "orgao": "Sefaz-MG"
         },
         "MS": {
-          "url": "https://www.sefaz.ms.gov.br/ipva/",
+          "url": "https://servicos.efazenda.ms.gov.br/ipvapublico/Home/Index",
           "nivel": "direto",
-          "orientacao": "Escolha \"Pague aqui\" com placa e Renavam (ou com login gov.br) para gerar o DAEMS do IPVA; pague de preferência por PIX, que dá baixa automática.",
+          "orientacao": "Informe placa e Renavam para gerar o DAEMS do IPVA; pague de preferência por PIX, que dá baixa automática.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "DAEMS do IPVA",
@@ -7470,7 +7535,7 @@
             "url": "https://servicos.efazenda.ms.gov.br/daemsabertopublico/consultadaems?TipoConsulta=IPVA"
           },
           "fonte": "https://www.sefaz.ms.gov.br/ipva/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null,
           "orgao": "Sefaz-MS"
         },
@@ -7586,7 +7651,7 @@
           "orgao": "Sefaz-RJ"
         },
         "RN": {
-          "url": "https://www.sefaz.rn.gov.br/postagem/ipva-consulta/",
+          "url": "https://portal.detran.rn.gov.br/veiculo/consultaDebitos",
           "nivel": "direto",
           "orientacao": "Siga daqui para a consulta de débitos do veículo e emita a guia: ela cobre IPVA do exercício e anteriores, dívida ativa, taxa de licenciamento, DPVAT, multas e taxa dos bombeiros.",
           "pagamento": {
@@ -7597,7 +7662,7 @@
             "url": "https://portal.detran.rn.gov.br/veiculo/consultaDebitos"
           },
           "fonte": "https://www.sefaz.rn.gov.br/postagem/ipva-consulta/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Pagar só o IPVA do exercício não regulariza o veículo: todos os débitos precisam ser quitados para licenciar.",
           "orgao": "Sefaz-RN"
         },
@@ -7619,7 +7684,7 @@
         "RR": {
           "url": "https://www.detran.rr.gov.br/cidadao/financeiro",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam na consulta de débitos do Detran-RR para ver o IPVA e gerar o boleto; o pagamento pode ser em cota única com desconto ou em três parcelas.",
+          "orientacao": "Entre com sua conta gov.br no portal Cidadão do Detran-RR para ver o IPVA dos seus veículos e gerar o boleto; o pagamento pode ser em cota única com desconto ou em até dez parcelas, conforme o calendário.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "Boleto do IPVA",
@@ -7628,14 +7693,14 @@
             "url": "https://www.detran.rr.gov.br/cidadao/financeiro"
           },
           "fonte": "https://www.detran.rr.gov.br/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O site da Sefaz-RR (sefaz.rr.gov.br e www.sefaz.rr.gov.br) devolvia 404 em todas as rotas testadas em 09/09/2026; a via oficial que respondeu foi a consulta de débitos do Detran-RR.",
           "orgao": "Detran-RR"
         },
         "RS": {
           "url": "https://receita.fazenda.rs.gov.br/servicos-ao-cidadao/servicos?servico=1922",
           "nivel": "direto",
-          "orientacao": "Emita a guia do IPVA informando CPF/CNPJ e o código Renavam; também é possível gerar o código PIX pelo app oficial IPVA RS, da Receita Estadual. No PIX do IPVA o beneficiário é sempre a Sefaz/RS.",
+          "orientacao": "Emita a guia do IPVA com login gov.br; para IPVA em dívida ativa, use a área pública informando CPF/CNPJ e o código Renavam. Também é possível gerar o código PIX pelo app oficial IPVA RS, da Receita Estadual. No PIX do IPVA o beneficiário é sempre a Sefaz/RS.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "Guia de arrecadação do IPVA (Receita Estadual RS)",
@@ -7644,14 +7709,14 @@
             "url": "https://receita.fazenda.rs.gov.br/servicos-ao-cidadao/servicos?servico=1922"
           },
           "fonte": "https://receita.fazenda.rs.gov.br/servicos-ao-cidadao/servicos?servico=1922",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O único aplicativo oficial é o IPVA RS; Governo, DetranRS e Sefaz não enviam boletos por e-mail, SMS ou WhatsApp.",
           "orgao": "Sefaz-RS"
         },
         "SC": {
           "url": "https://www.sef.sc.gov.br/servicos/consultar-debitos-de-ipva-e-gerar-guia-de-recolhimento-dare",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam para ver os débitos do veículo e, na lista de débitos, clique no que quer pagar para abrir e imprimir o DARE. A mesma consulta mostra a taxa de licenciamento.",
+          "orientacao": "Informe placa e Renavam, acesse o serviço com login gov.br e entre em \"Consultar Veículos\" e \"MEUS VEÍCULOS\". Selecione o veículo e use \"Boleto\" para baixar o DARE ou \"Pix\" para gerar o código de pagamento. A mesma consulta mostra a taxa de licenciamento. Como alternativa sem login, use o chatbot Catarina no site do Detran/SC e escolha \"Consulta Débitos\".",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "DARE - Documento de Arrecadação de Receitas Estaduais (IPVA/SC)",
@@ -7660,7 +7725,7 @@
             "url": "https://www.sef.sc.gov.br/servicos/consultar-debitos-de-ipva-e-gerar-guia-de-recolhimento-dare"
           },
           "fonte": "https://www.sef.sc.gov.br/servicos/consultar-debitos-de-ipva-e-gerar-guia-de-recolhimento-dare",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null
         },
         "SE": {
@@ -7696,9 +7761,9 @@
           "orgao": "Sefaz-SP"
         },
         "TO": {
-          "url": "https://ipva.sefaz.to.gov.br/",
+          "url": "https://ipva.sefaz.to.gov.br/dare.php",
           "nivel": "direto",
-          "orientacao": "Consulte o IPVA pelo Renavam no sistema da Sefaz-TO e emita o DARE do imposto; pague em cota única para aproveitar o desconto do calendário.",
+          "orientacao": "Consulte o IPVA pelo Renavam e pela placa no sistema da Sefaz-TO e emita o DARE do imposto; pague em cota única para aproveitar o desconto do calendário.",
           "pagamento": {
             "tipo": "guia IPVA",
             "nome": "DARE do IPVA",
@@ -7707,7 +7772,7 @@
             "url": "https://ipva.sefaz.to.gov.br/"
           },
           "fonte": "https://servicos.to.gov.br/servico_detalhado.aspx?cod_assunto_documento_tipo=8173",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null,
           "orgao": "Sefaz-TO"
         }
@@ -7749,9 +7814,9 @@
           "orgao": "Detran-AC"
         },
         "AL": {
-          "url": "https://www.detran.al.gov.br/servicos_infracoes",
+          "url": "https://www.detran.al.gov.br/veiculos/guia_infracoes/",
           "nivel": "portal",
-          "orientacao": "Nesta lista de serviços de infração, use 'Guia infrações' para consultar as multas do veículo e emitir a guia de pagamento.",
+          "orientacao": "Informe placa e Renavam nesta página para consultar as multas do veículo e emitir a guia de pagamento.",
           "pagamento": {
             "tipo": "multa",
             "nome": "Guia de infrações",
@@ -7760,7 +7825,7 @@
             "url": null
           },
           "fonte": "https://www.detran.al.gov.br/servicos_infracoes",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "A página direta https://www.detran.al.gov.br/veiculos/guia_infracoes/ não pôde ser verificada em 09/09/2026: o servidor encerrou a conexão TLS nas duas tentativas. Por isso o destino registrado é a lista de serviços de infração.",
           "orgao": "Detran-AL"
         },
@@ -7845,7 +7910,7 @@
           "orgao": "Detran-DF"
         },
         "ES": {
-          "url": "https://detran.es.gov.br/Contents/Item/Display/10523",
+          "url": "https://detran.es.gov.br/veiculos/servicos-online",
           "nivel": "direto",
           "orientacao": "Informe placa e Renavam para emitir o boleto das multas no site oficial do Detran|ES; o boleto de licenciamento também traz todas as multas pendentes, se preferir pagar tudo junto.",
           "pagamento": {
@@ -7856,7 +7921,7 @@
             "url": "https://detran.es.gov.br/infracoes/servicos-online"
           },
           "fonte": "https://detran.es.gov.br/infracoes/servicos-online",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O Detran|ES alerta para emitir o boleto apenas pelo site oficial, nunca por links de buscadores.",
           "orgao": "Detran-ES"
         },
@@ -7955,7 +8020,7 @@
           "orgao": "Detran-PA"
         },
         "PB": {
-          "url": "https://detran.pb.gov.br/formularios/multas-consulta-e-emissao-de-boleto-bancario",
+          "url": "https://detran.pb.gov.br/servi%C3%A7os/infra%C3%A7%C3%B5es/consultar-ou-emitir-boleto-de-multas/",
           "nivel": "direto",
           "orientacao": "Consulte as multas do veículo e emita aqui o boleto bancário para pagamento; o extrato completo fica na opção S36 do Portal de Serviços.",
           "pagamento": {
@@ -7966,7 +8031,7 @@
             "url": "https://detran.pb.gov.br/formularios/multas-consulta-e-emissao-de-boleto-bancario"
           },
           "fonte": "https://detran.pb.gov.br/infracoes/infracoes/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O extrato de multas fica em wsdetran.pb.gov.br/detran-portal-servicos/servlet/easynat-app?op=S36.",
           "orgao": "Detran-PB"
         },
@@ -8034,7 +8099,7 @@
           "orgao": "Detran-RJ"
         },
         "RN": {
-          "url": "https://portal.detran.rn.gov.br/infracao/consultarInfracoes",
+          "url": "https://portal.detran.rn.gov.br/veiculo/consultaDebitos",
           "nivel": "direto",
           "orientacao": "Consulte as infrações do veículo no Portal de Serviços do Detran-RN e emita a guia de recolhimento para pagar as multas.",
           "pagamento": {
@@ -8045,14 +8110,14 @@
             "url": "https://portal.detran.rn.gov.br/veiculo/consultaDebitos"
           },
           "fonte": "https://portal.detran.rn.gov.br/infracao/consultarInfracoes",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Portal de página única; a rota /infracao/consultarInfracoes está declarada no roteador da própria aplicação.",
           "orgao": "Detran-RN"
         },
         "RO": {
           "url": "https://centralservicos.detran.ro.gov.br/consulta/veiculo",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam na Consulta Pública do Detran-RO para ver as multas do veículo e gerar o boleto de pagamento.",
+          "orientacao": "Informe a placa na Consulta Pública do Detran-RO para ver as multas do veículo e gerar o boleto de pagamento.",
           "pagamento": {
             "tipo": "multa",
             "nome": "Boleto da multa de trânsito",
@@ -8061,14 +8126,14 @@
             "url": "https://centralservicos.detran.ro.gov.br/consulta/veiculo"
           },
           "fonte": "https://detran.ro.gov.br/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Divulgado na home do Detran-RO como \"IPVA, Taxas e Multas\".",
           "orgao": "Detran-RO"
         },
         "RR": {
           "url": "https://www.detran.rr.gov.br/cidadao/financeiro",
           "nivel": "direto",
-          "orientacao": "Informe placa e Renavam em \"Consultar débitos de veículo\" para ver as multas e gerar o boleto; defesa prévia e recurso à JARI têm páginas próprias no site do Detran-RR.",
+          "orientacao": "Entre com sua conta gov.br no portal Cidadão do Detran-RR para ver as multas dos seus veículos e gerar o boleto; defesa prévia e recurso à JARI têm páginas próprias no site do Detran-RR.",
           "pagamento": {
             "tipo": "multa",
             "nome": "Boleto da multa de trânsito",
@@ -8077,7 +8142,7 @@
             "url": "https://www.detran.rr.gov.br/cidadao/financeiro"
           },
           "fonte": "https://www.detran.rr.gov.br/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": null,
           "orgao": "Detran-RR"
         },
@@ -8147,7 +8212,7 @@
         "TO": {
           "url": "https://appdetrantofacil.detran.to.gov.br/DetranTOFacil/",
           "nivel": "portal",
-          "orientacao": "Entre no Detran TO Fácil e abra o módulo Infração para consultar as autuações do veículo e emitir o DARE da multa; para recorrer, use \"Recorrer da Penalidade de Multa de Trânsito\" na carta de serviços do Estado.",
+          "orientacao": "Entre no Detran TO Fácil e abra o módulo Infrações para consultar as autuações do veículo e emitir o DARE da multa; para recorrer, use \"Recorrer da Penalidade de Multa de Trânsito\" na carta de serviços do Estado.",
           "pagamento": {
             "tipo": "multa",
             "nome": "DARE da multa de trânsito",
@@ -8156,7 +8221,7 @@
             "url": "https://www.sefaz.to.gov.br/dare/servlet/hnetccwkda"
           },
           "fonte": "https://www.to.gov.br/detran/servicos-digitais/b3y8fsrzuid",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O Detran-TO não publica página própria de consulta de multas; a seção Infrações do site só traz editais e tabelas. As rotas internas do Detran TO Fácil (/Infracao) devolvem 404 quando acessadas direto, por isso o destino é a entrada do portal.",
           "orgao": "Detran-TO"
         }
@@ -8236,12 +8301,12 @@
           "orgao": "Vapt Vupt"
         },
         "DF": {
-          "url": "https://www.nahora.df.gov.br/agendamento-da-carteira-de-identidade",
+          "url": "https://www.nahora.df.gov.br/agendamento-online/",
           "nivel": "direto",
           "orientacao": "Faça o agendamento on-line da Carteira de Identidade Nacional para uma unidade Na Hora ou para um posto junto às delegacias; use o seu próprio CPF, porque o atendimento não é feito se o agendamento estiver no CPF de outra pessoa.",
           "pagamento": null,
           "fonte": "https://www.nahora.df.gov.br/agendamento-da-carteira-de-identidade",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Emissão pela Polícia Civil do DF. A página da PCDF (pcdf.df.gov.br/servicos/carteira-de-identidade) redireciona para uma plataforma contratada fora de *.gov.br, por isso o destino registrado é o portal Na Hora.",
           "orgao": "Na Hora"
         },
@@ -8343,9 +8408,9 @@
           "orgao": "Casa da Cidadania"
         },
         "PE": {
-          "url": "https://www.agendamentocivil.sds.pe.gov.br/AgendamentoCivil/public/pages/info_passos.jsf",
+          "url": "https://www.pe.gov.br/app/catalog/carta-de-servicos?tag=RG",
           "nivel": "portal",
-          "orientacao": "Confira aqui os passos oficiais do Sistema de Cadastro Civil (IITB/SDS-PE) e faça o agendamento pelo portal do cidadão do Estado; na 2ª via, pague o DAE antes de fechar o agendamento.",
+          "orientacao": "Escolha aqui a 1ª ou a 2ª via da CIN e faça o agendamento pelo portal do cidadão do Estado; na 2ª via, pague o DAE antes de fechar o agendamento.",
           "pagamento": {
             "tipo": "boleto",
             "nome": "DAE da 2ª via da carteira de identidade",
@@ -8354,7 +8419,7 @@
             "url": null
           },
           "fonte": "https://www.iitb.pe.gov.br/agendamento.php",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Marcado como portal porque o antigo pecidadao.pe.gov.br agora redireciona para www.pe.gov.br, cujas rotas de serviço são de uma aplicação de página única e não puderam ser verificadas em 09/09/2026. A 1ª via da CIN é gratuita.",
           "orgao": "Instituto Tavares Buril"
         },
@@ -8371,7 +8436,7 @@
         "PR": {
           "url": "https://www.policiacivil.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-possui-a-CIN-ou-o-RG-expedido-no-Parana-WaowKoDJ",
           "nivel": "direto",
-          "orientacao": "Quem já tem CIN ou RG expedido no Paraná solicita a Carteira de Identidade Nacional pela internet, sem agendamento presencial. Quem nunca teve documento emitido no PR precisa agendar atendimento no Instituto de Identificação (página própria no mesmo portal).",
+          "orientacao": "Quem já tem CIN ou RG expedido no Paraná solicita a Carteira de Identidade Nacional pela internet, mas cadastros muito antigos podem exigir agendamento presencial. Quem nunca teve documento emitido no PR precisa agendar atendimento no Instituto de Identificação (página própria no mesmo portal).",
           "pagamento": {
             "tipo": "taxa estadual",
             "nome": "Taxa da Carteira de Identidade Nacional",
@@ -8380,14 +8445,14 @@
             "url": null
           },
           "fonte": "https://www.policiacivil.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-possui-a-CIN-ou-o-RG-expedido-no-Parana-WaowKoDJ",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "Para quem não possui CIN ou RG do PR: parana.pr.gov.br/servicos/Servicos/Identidade-CIN/Solicitar-a-Carteira-de-Identidade-Nacional-CIN-Para-quem-nao-possui-CIN-ou-RG-expedido-no-Parana-dloelrLv (agendamento presencial no IIPR).",
           "orgao": "Instituto de Identificação"
         },
         "RJ": {
-          "url": "https://www.detran.rj.gov.br/todos-os-agendamentos/agendamento-dic/carteira-de-identidade-civil.html",
+          "url": "https://www.detran.rj.gov.br/todos-os-agendamentos/agendamento-dic/carteira-de-identidade-civil-agendamento-2.html",
           "nivel": "direto",
-          "orientacao": "Agende aqui o atendimento de Identificação Civil do Detran-RJ para emitir a carteira de identidade; escolha o posto, a data e o horário e leve os documentos originais exigidos.",
+          "orientacao": "Agende aqui o atendimento de Identificação Civil do Detran-RJ para emitir a carteira de identidade pelo Detran RJ Digital, com sua conta gov.br; escolha o posto, a data e o horário e leve os documentos originais exigidos.",
           "pagamento": {
             "tipo": "DUDA",
             "nome": "DUDA para outras vias de identidade",
@@ -8396,7 +8461,7 @@
             "url": "https://www.detran.rj.gov.br/veiculo/veiculos-outros/taxas-dudas.html"
           },
           "fonte": "https://www.detran.rj.gov.br/todos-os-agendamentos/agendamento-dic/carteira-de-identidade-civil.html",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "No RJ a identificação civil é feita pelo próprio Detran-RJ.",
           "orgao": "Detran-RJ"
         },
@@ -8413,10 +8478,10 @@
         "RO": {
           "url": "https://agendamento.iicc.ro.gov.br/Agendamento/Agendamento",
           "nivel": "direto",
-          "orientacao": "Escolha unidade, data e horário no agendamento do Instituto de Identificação Civil e Criminal de Rondônia e leve os documentos originais; novas vagas são liberadas diariamente às 15h.",
+          "orientacao": "Escolha unidade, data e horário no agendamento do Instituto de Identificação Civil e Criminal de Rondônia e leve os documentos originais; novas vagas são liberadas às sextas-feiras às 12h30 ou, se houver feriado na sexta, no último dia útil da semana.",
           "pagamento": null,
           "fonte": "https://portaldocidadao.ro.gov.br/Servico/Detalhes?id=6519034e-f310-4cbb-3d7d-08da1e5c6341",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-12",
           "nota": "O serviço também está descrito no Portal do Cidadão de Rondônia (fonte), que é o canal oficial de agendamento da CIN.",
           "orgao": "Tudo Aqui"
         },
@@ -8494,10 +8559,10 @@
       "nacional": {
         "url": "https://www.gov.br/pf/pt-br/assuntos/passaporte/documentacao/formulario/instrucoes",
         "nivel": "direto",
-        "orientacao": "Clique em 'Preencher formulário' e responda o formulário eletrônico da Polícia Federal usando o Firefox, como a própria página recomenda (em outros navegadores o formulário falha). Só depois de enviar o formulário é que a taxa do passaporte pode ser gerada.",
+        "orientacao": "Clique em 'Preencher formulário' e responda o formulário eletrônico da Polícia Federal. No celular, use Chrome ou Firefox, como a própria página recomenda; no Safari, o portal pode não funcionar corretamente. Só depois de enviar o formulário é que a taxa do passaporte pode ser gerada.",
         "pagamento": null,
         "fonte": "https://www.gov.br/pf/pt-br/assuntos/passaporte/documentacao/formulario/instrucoes",
-        "conferidoEm": "2026-09-09",
+        "conferidoEm": "2026-11-12",
         "nota": "URL efetiva de https://www.gov.br/pf/pt-br/assuntos/passaporte/documentacao/formulario. O botão abre o SINPA da PF: https://servicos.pf.gov.br/sinpa/inicializacaoSolicitacao.do?dispatch=inicializarSolicitacaoPassaporte",
         "orgao": "Polícia Federal"
       }
@@ -8645,7 +8710,7 @@
       "kind": "impostosDiversos",
       "titulo": "Emitir DARF (SicalcWeb)",
       "nacional": {
-        "url": "https://sicalc.receita.fazenda.gov.br/sicalc/principal",
+        "url": "https://sicalc.receita.fazenda.gov.br/sicalc/rapido/contribuinte",
         "nivel": "direto",
         "orientacao": "No SicalcWeb, sem login, informe o código da receita, o período de apuração, o vencimento e o valor; ele calcula multa e juros e emite o DARF com código de barras. Se não souber o código, consulte a tabela oficial de códigos de receita da Receita Federal antes de preencher.",
         "pagamento": {
@@ -8656,7 +8721,7 @@
           "url": "https://siefreceitas.receita.economia.gov.br/codigos-de-receita-de-tributos-e-contribuicoes-darf-e-dje"
         },
         "fonte": "https://www.gov.br/pt-br/servicos/emitir-darf-para-pagamento-de-tributos-federais",
-        "conferidoEm": "2026-09-09",
+        "conferidoEm": "2026-11-12",
         "nota": "Códigos DARF mais comuns para pessoa física, com o nome oficial da tabela de códigos de receita da RFB (https://siefreceitas.receita.economia.gov.br/codigos-de-receita-de-tributos-e-contribuicoes-darf-e-dje): 0211 — IRPF Declaração de Ajuste Anual, Saída Definitiva do País e Declaração Final de Espólio (quotas do IR); 0190 — IRPF Carnê-Leão; 0246 — IRPF Complementação Mensal (recolhimento complementar); 4600 — IRPF Ganhos de Capital na Alienação de Bens Duráveis; 6015 — IRPF Ganhos Líquidos em Operações em Bolsa (renda variável); 8523 — IRPF Ganhos de Capital na Alienação de Bens e Direitos Localizados no Exterior. Não incluí nenhum código que eu não tenha achado na tabela da Receita. URL efetiva: sicalc.receita.economia.gov.br redireciona para sicalc.receita.fazenda.gov.br.",
         "orgao": "Receita Federal"
       }
