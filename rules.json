@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-12a",
+  "version": "2026-11-16a",
   "grupos": [
     {
       "id": "casa",
@@ -217,7 +217,7 @@
           "id": "ipva.licenciamento",
           "text": "Pagar taxa de licenciamento e baixar o CRLV digital",
           "daysBefore": 0,
-          "url": "https://www.gov.br/pt-br/servicos/obter-carteira-digital-de-transito"
+          "url": "https://www.gov.br/pt-br/servicos/emitir-o-certificado-de-registro-e-licenciamento-de-veiculo-digital-crlv-e"
         }
       ],
       "cost": "IPVA: % do valor do veículo por estado + taxa de licenciamento (~R$ 100–170)",
@@ -252,7 +252,7 @@
           "id": "planoSaude.comparar",
           "text": "Comparar com outros planos antes da renovação",
           "daysBefore": 45,
-          "url": "https://www.gov.br/ans/pt-br"
+          "url": "https://www.ans.gov.br/gpw-beneficiario/pages/inicial.xhtml"
         },
         {
           "id": "planoSaude.carencias",
@@ -1037,9 +1037,9 @@
         },
         {
           "id": "cartaoCredito.conferir-lancamentos",
-          "text": "Confira lançamento por lançamento e conteste em até 90 dias o que não reconhecer",
+          "text": "Confira lançamento por lançamento e conteste com o banco, o quanto antes, o que não reconhecer",
           "daysBefore": 7,
-          "url": "https://www.consumidor.gov.br/",
+          "url": "https://www.bcb.gov.br/meubc/faqs/p/vitima-nao-reconhece-uma-compra-com-seu-cartao",
           "place": null
         },
         {
@@ -1185,7 +1185,7 @@
           "id": "anuidadeConselho.resolucao",
           "text": "Em dezembro, procure a resolução da anuidade do ano seguinte no site do seu conselho",
           "daysBefore": 60,
-          "url": "https://www.oab.org.br/",
+          "url": null,
           "place": null
         },
         {
@@ -1199,7 +1199,7 @@
           "id": "anuidadeConselho.boleto",
           "text": "Emita o boleto no portal do conselho regional (OAB, CRM, CREA, CRC, CRP, CRO ou COREN)",
           "daysBefore": 30,
-          "url": "https://www.confea.org.br/",
+          "url": null,
           "place": null
         },
         {
@@ -1215,7 +1215,7 @@
           "id": "anuidadeConselho.atualizar-cadastro",
           "text": "Se mudou de endereço ou de situação (licença, aposentadoria), atualize o cadastro: isso pode reduzir ou isentar a anuidade",
           "daysBefore": 30,
-          "url": "https://portal.cfm.org.br/",
+          "url": null,
           "place": "Sede do conselho regional"
         }
       ],
@@ -2317,7 +2317,7 @@
         }
       },
       "detranURL": "https://detran.es.gov.br/",
-      "ipvaURL": "https://sefaz.es.gov.br/"
+      "ipvaURL": "https://detran.es.gov.br/veiculos/servicos-online"
     },
     "GO": {
       "name": "Goiás",
@@ -4779,8 +4779,8 @@
       "discountPercent": 7.5,
       "installments": 10,
       "lastInstallmentMonth": 11,
-      "payURL": "https://www.sjc.sp.gov.br/servicos/gestao-administrativa-e-financas/iptu-2026/pagamento/",
-      "note": "A cota única e a 1ª parcela vencem entre 9 e 13 de fevereiro, conforme a data impressa no carnê; à vista há 7,5% de desconto. Parcelamento em até 10 vezes, de fevereiro a novembro."
+      "payURL": "https://www.sjc.sp.gov.br/iitributario",
+      "note": "A cota única e a 1ª parcela vencem entre 9 e 13 de fevereiro, conforme a data impressa no carnê; à vista há 7,5% de desconto. Parcelamento em até 10 vezes, de fevereiro a novembro. Para emitir a guia de novembro, acesse o novo Sistema de Arrecadação, Fiscalização e Tributário indicado pela Prefeitura; os demais serviços podem estar em manutenção."
     },
     "Santos": {
       "state": "SP",
@@ -4805,7 +4805,7 @@
       "discountPercent": 5,
       "installments": 6,
       "lastInstallmentMonth": 8,
-      "payURL": "https://segundavia.uberlandia.mg.gov.br/",
+      "payURL": "https://cidadao.uberlandia.mg.gov.br/",
       "note": "A cota única com 5% de desconto vencia em 27 de fevereiro e foi prorrogada para 16 de março; sem desconto, o pagamento integral vai até 31 de março. Parcelamento em até 6 vezes, de março a agosto."
     },
     "Contagem": {
@@ -5981,9 +5981,9 @@
       "titulo": "Renovar a CNH",
       "porUF": {
         "AC": {
-          "url": "https://www.detran.ac.gov.br/portal-de-servicos/renovacao-de-exames/",
+          "url": "https://www.ac.gov.br/servico/cnh-renovacao",
           "nivel": "direto",
-          "orientacao": "Use o serviço \"Renovação de Exames\" do portal do Detran-AC para abrir a renovação da CNH e gerar a guia da taxa; depois marque o exame médico em uma das clínicas cadastradas.",
+          "orientacao": "Confira os documentos e os locais de atendimento na página \"CNH – Renovação\" do Governo do Acre para solicitar a renovação; o procedimento inclui exame médico e captura de imagem e biometria.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Taxa de renovação da CNH",
@@ -5992,7 +5992,7 @@
             "url": null
           },
           "fonte": "https://www.detran.ac.gov.br/portal-de-servicos/renovacao-de-exames/",
-          "conferidoEm": "2026-09-09",
+          "conferidoEm": "2026-11-13",
           "nota": "O Detran-AC executa o serviço num sistema de terceiro (ac.getran.com.br), fora do domínio oficial; por isso o destino é a página do serviço no site do Detran-AC. Valores em https://www.detran.ac.gov.br/cnh-habilitacao/valores-de-servicos-de-habilitacao/.",
           "orgao": "Detran-AC"
         },
@@ -6236,9 +6236,9 @@
           "orgao": "Detran-PE"
         },
         "PI": {
-          "url": "https://portal.pi.gov.br/detran/renovacao-de-cnh/",
-          "nivel": "direto",
-          "orientacao": "Abra a renovação pela página oficial do Detran-PI, emita a taxa da CNH e faça o exame de aptidão física e mental em uma clínica credenciada.",
+          "url": "https://portal.pi.gov.br/detran/duvidas-frequentes-cnh-2/",
+          "nivel": "portal",
+          "orientacao": "Consulte o procedimento de renovação da CNH na página oficial do Detran-PI. Ela indica o serviço digital Gov.pi Cidadão, o pagamento da taxa, a captura de foto e biometria e o exame médico.",
           "pagamento": {
             "tipo": "taxa Detran",
             "nome": "Taxa de renovação da CNH",
@@ -6246,9 +6246,9 @@
             "comoEmitir": "Emita a taxa em 'Emissão de Taxas' do Detran-PI (consulta por CPF/placa). Tabela de taxas da CNH publicada em portal.pi.gov.br/detran/habilitacao/taxa-de-carteira-nacional-de-habilitacao-cnh/.",
             "url": "https://portal.pi.gov.br/detran/habilitacao/taxa-de-carteira-nacional-de-habilitacao-cnh/"
           },
-          "fonte": "https://portal.pi.gov.br/detran/renovacao-de-cnh/",
-          "conferidoEm": "2026-09-09",
-          "nota": null,
+          "fonte": "https://portal.pi.gov.br/detran/duvidas-frequentes-cnh-2/",
+          "conferidoEm": "2026-11-16",
+          "nota": "O destino é a orientação oficial; a disponibilidade da solicitação digital depende do sistema Gov.pi Cidadão.",
           "orgao": "Detran-PI"
         },
         "PR": {
